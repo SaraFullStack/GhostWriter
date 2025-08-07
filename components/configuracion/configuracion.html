@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Configuración de idioma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans h-full flex flex-col items-center p-6">
+
+  <h2 id="title" class="text-2xl font-bold mb-6">Seleccionar idioma</h2>
+
+  <div class="flex flex-wrap justify-center gap-6 max-w-xl">
+    <button data-lang="en" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-gb text-6xl"></span>
+      <span class="mt-2 text-lg">English</span>
+    </button>
+    <button data-lang="es" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-es text-6xl"></span>
+      <span class="mt-2 text-lg">Español</span>
+    </button>
+    <button data-lang="zh" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-cn text-6xl"></span>
+      <span class="mt-2 text-lg">中文</span>
+    </button>
+    <button data-lang="ja" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-jp text-6xl"></span>
+      <span class="mt-2 text-lg">日本語</span>
+    </button>
+    <button data-lang="ko" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-kr text-6xl"></span>
+      <span class="mt-2 text-lg">한국어</span>
+    </button>
+    <button data-lang="de" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-de text-6xl"></span>
+      <span class="mt-2 text-lg">Deutsch</span>
+    </button>
+    <button data-lang="fr" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-fr text-6xl"></span>
+      <span class="mt-2 text-lg">Français</span>
+    </button>
+    <button data-lang="pt" class="language-btn flex flex-col items-center p-3 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <span class="fi fi-pt text-6xl"></span>
+      <span class="mt-2 text-lg">Português</span>
+    </button>
+  </div>
+
+  <button id="btnGuardarIdioma" class="mt-8 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 disabled:opacity-50" disabled>Guardar</button>
+
+  <script>
+    const buttons = document.querySelectorAll('.language-btn');
+    const btnGuardar = document.getElementById('btnGuardarIdioma');
+    const title = document.getElementById('title');
+
+    // Traducciones
+    const translations = {
+      en: { title: "Select Language", save: "Save" },
+      es: { title: "Seleccionar idioma", save: "Guardar" },
+      zh: { title: "选择语言", save: "保存" },
+      ja: { title: "言語を選択", save: "保存" },
+      ko: { title: "언어 선택", save: "저장" },
+      de: { title: "Sprache wählen", save: "Speichern" },
+      fr: { title: "Choisir la langue", save: "Enregistrer" },
+      pt: { title: "Selecionar idioma", save: "Salvar" }
+    };
+
+    let selectedLang = null;
+
+    function applyLanguage(lang) {
+      selectedLang = lang;
+      // Seleccionar botón
+      buttons.forEach(b => {
+        b.classList.toggle('bg-blue-600', b.dataset.lang === lang);
+        b.classList.toggle('text-white', b.dataset.lang === lang);
+      });
+      // Cambiar textos
+      if (translations[lang]) {
+        title.textContent = translations[lang].title;
+        btnGuardar.textContent = translations[lang].save;
+      }
+      btnGuardar.disabled = false;
+      localStorage.setItem('preferredLang', lang);
+    }
+
+    // Detectar idioma navegador (solo los dos primeros caracteres)
+    function detectBrowserLang() {
+      const navLang = navigator.language.slice(0, 2);
+      return Object.keys(translations).includes(navLang) ? navLang : 'en';
+    }
+
+    // Evento click en botones
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+    });
+
+    // Al hacer click en guardar
+    btnGuardar.addEventListener('click', () => {
+      // Aquí puedes añadir lógica para cambiar idioma real de la app o recargar con ese idioma
+      // Por ejemplo, recargar página con idioma en URL o hacer fetch de textos
+      console.log(`Idioma guardado: ${selectedLang}`);
+    });
+
+    // Al cargar página, cargar idioma guardado o detectar navegador
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferredLang') || detectBrowserLang();
+      applyLanguage(savedLang);
+    });
+  </script>
+
+</body>
+</html>

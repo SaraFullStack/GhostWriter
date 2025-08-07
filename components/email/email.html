@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bandeja de Correo - Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #emailList {
+      max-height: 80vh;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans h-full flex flex-col p-4">
+  <!-- Botón cerrar fijo arriba derecha -->
+  <button
+    onclick="window.parent.postMessage('cerrarCorreo', '*')"
+    class="fixed top-4 right-4 bg-red-700 hover:bg-red-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-50"
+    aria-label="Cerrar modal"
+  >
+    &times;
+  </button>
+
+  <header class="mb-4">
+    <h1 class="text-2xl font-bold text-center">Bandeja de Entrada</h1>
+  </header>
+
+  <div class="flex flex-1 border rounded shadow bg-gray-800 overflow-hidden" style="height: 85vh;">
+
+ <nav id="emailList" class="w-1/3 border-r border-gray-700 overflow-y-auto">
+    <ul>
+      <li class="cursor-pointer px-4 py-3 border-b border-gray-700 hover:bg-gray-700 flex justify-between items-center" onclick="mostrarCorreo(0)">
+        <div>
+          <p class="font-semibold">Soporte Técnico</p>
+          <p class="text-sm text-gray-400 truncate">Bienvenido a la plataforma</p>
+        </div>
+        <span class="text-xs text-gray-500">10:30</span>
+      </li>
+      <li class="cursor-pointer px-4 py-3 border-b border-gray-700 hover:bg-gray-700 flex justify-between items-center" onclick="mostrarCorreo(1)">
+        <div>
+          <p class="font-semibold">Notificaciones</p>
+          <p class="text-sm text-gray-400 truncate">Tu cuenta ha sido actualizada</p>
+        </div>
+        <span class="text-xs text-gray-500">09:15</span>
+      </li>
+      <li class="cursor-pointer px-4 py-3 border-b border-gray-700 hover:bg-gray-700 flex justify-between items-center" onclick="mostrarCorreo(2)">
+        <div>
+          <p class="font-semibold">Equipo de Ventas</p>
+          <p class="text-sm text-gray-400 truncate">Oferta especial para ti</p>
+        </div>
+        <span class="text-xs text-gray-500">08:50</span>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="emailPreview" class="flex-1 p-6 overflow-y-auto">
+    <h2 id="emailSubject" class="text-xl font-bold mb-2">Selecciona un correo</h2>
+    <p id="emailFrom" class="text-gray-400 mb-4"></p>
+    <div id="emailBody" class="prose max-w-none text-gray-300">
+      <p>Elige un correo de la lista para ver su contenido aquí.</p>
+    </div>
+  </section>
+
+  <!-- Scripts al final -->
+  <script src="email.js"></script>
+  <script>
+    function mostrarCorreo(index) {
+      const correo = correos[index];
+      document.getElementById('emailSubject').textContent = correo.subject;
+      document.getElementById('emailFrom').textContent = `De: ${correo.from}`;
+      document.getElementById('emailBody').innerHTML = correo.body;
+
+      // Resaltar correo seleccionado
+      const items = document.querySelectorAll('#emailList li');
+      items.forEach((item, i) => {
+        item.classList.toggle('bg-gray-700', i === index);
+      });
+    }
+  </script>
+</body>

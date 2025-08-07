@@ -1,0 +1,98 @@
+body, html {
+      margin: 0; padding: 0; height: 100%;
+      font-family: 'Inter', sans-serif;
+      background:
+        linear-gradient(135deg, #5a2a5e, #a04d73);
+      user-select: none;
+      overflow: hidden;
+    }
+    /* Barra superior */
+    #topbar {
+      height: 32px;
+      background-color: #2e2e2e;
+      color: #ddd;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      user-select: none;
+    }
+    #topbar .left, #topbar .center, #topbar .right {
+      display: flex;
+      align-items: center;
+    }
+    #topbar .left > * {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    #topbar .center {
+      flex-grow: 1;
+      justify-content: center;
+      font-weight: 600;
+    }
+    #topbar .right > * {
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+    /* Barra inferior dock */
+    #dock {
+      position: fixed;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255 255 255 / 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 24px;
+      padding: 6px 12px;
+      display: flex;
+      gap: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      user-select: none;
+      z-index: 100;
+    }
+    #dock i {
+      font-size: 24px;
+      color: white;
+      padding: 8px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    #dock i:hover {
+      background: rgba(255 255 255 / 0.3);
+      transform: scale(1.2);
+      color: #ff6600;
+      filter: drop-shadow(0 0 4px #ff6600);
+    }
+    /* Escritorio */
+    main {
+      padding: 48px 16px 64px; /* espacio para barras */
+      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 20px;
+      overflow-y: auto;
+    }
+    .icon {
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+    }
+    .icon i {
+      font-size: 40px;
+      margin-bottom: 6px;
+      transition: color 0.2s ease;
+    }
+    .icon:hover i {
+      color: #ff6600;
+      filter: drop-shadow(0 0 6px #ff6600);
+    }
+    .icon span {
+      font-size: 11px;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }

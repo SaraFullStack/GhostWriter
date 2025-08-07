@@ -1,0 +1,46 @@
+{
+  "press": {
+    "sports": {
+      "name": "Vertex Sports",
+      "logo_url": "assets/logos/vertex_sports.png"
+    },
+    "politics": {
+      "name": "Republic Pulse",
+      "logo_url": "assets/logos/republic_pulse.png"
+    },
+    "culture": {
+      "name": "Literary Echo",
+      "logo_url": "assets/logos/literary_echo.png"
+    },
+    "science": {
+      "name": "Innovative Horizon",
+      "logo_url": "assets/logos/innovative_horizon.png"
+    },
+    "ideologies": {
+      "conservative": {
+        "name": "Conservative Beacon",
+        "logo_url": "assets/logos/conservative_beacon.png"
+      },
+      "liberal": {
+        "name": "Ideas in Motion",
+        "logo_url": "assets/logos/ideas_in_motion.png"
+      },
+      "progressive": {
+        "name": "Renewal Pulse",
+        "logo_url": "assets/logos/renewal_pulse.png"
+      }
+    },
+    "technology": {
+      "name": "Digital Nexus",
+      "logo_url": "assets/logos/digital_nexus.png"
+    },
+    "economy": {
+      "name": "Market Insight",
+      "logo_url": "assets/logos/market_insight.png"
+    },
+    "health": {
+      "name": "Vital Spectrum",
+      "logo_url": "assets/logos/vital_spectrum.png"
+    }
+  }
+}

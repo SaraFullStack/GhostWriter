@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Ghost</title>
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-sans h-full flex flex-col p-4">
+  <header class="mb-6">
+    <h1 id="nombreSitio" class="text-2xl font-bold mb-4">Mi Mini Ghost</h1>
+    <nav class="flex gap-4 mb-4">
+      <button id="btnLista" class="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">Artículos</button>
+      <button id="btnEditor" class="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">Crear artículo</button>
+      <button id="btnConfiguracion" class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">Configuración</button>
+    </nav>
+  </header>
+
+  <section id="lista" class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">Artículos publicados</h2>
+    <ul id="listaArticulos" class="list-disc list-inside space-y-2 text-blue-700"></ul>
+  </section>
+
+  <section id="editor" class="hidden mb-6">
+    <h2 class="text-xl font-semibold mb-3">Crear / Editar artículo</h2>
+    <input type="text" id="tituloArticulo" placeholder="Título" class="w-full border border-gray-300 rounded px-3 py-2 mb-3" />
+    <textarea id="contenidoArticulo" placeholder="Contenido" class="w-full border border-gray-300 rounded px-3 py-2 mb-3 h-36 resize-none"></textarea>
+    <button id="btnGuardarArticulo" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 mr-2">Guardar y publicar</button>
+    <button id="btnCancelarEdicion" class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400">Cancelar</button>
+  </section>
+
+  <section id="configuracion" class="hidden">
+    <h2 class="text-xl font-semibold mb-3">Configuración del sitio</h2>
+    <label class="block mb-1 font-semibold">Nombre del sitio</label>
+    <input type="text" id="inputNombreSitio" class="w-full border border-gray-300 rounded px-3 py-2 mb-3" />
+    <label class="block mb-1 font-semibold">Autor</label>
+    <input type="text" id="inputAutor" class="w-full border border-gray-300 rounded px-3 py-2 mb-3" />
+    <button id="btnGuardarConfig" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">Guardar configuración</button>
+    <button id="btnCancelarConfig" class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400">Cancelar</button>
+  </section>
+
+  <script src="ghost.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+        
+</body>
+
+</html>

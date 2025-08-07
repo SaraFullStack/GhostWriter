@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="title">GhostWriter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/images/fantasma.png" type="image/x-icon" />
+</head>
+
+<body>
+
+  <div id="videoContainer" class="fixed inset-0 z-50 bg-black flex items-center justify-center hidden">
+    <video id="videoPlayer" autoplay muted playsinline></video>
+  </div>
+
+  <div id="mainContent">
+
+    <div id="topbar" class="z-50 relative">
+      <div class="left">
+        <span title="Actividades"><i class="fa-solid fa-th"></i></span>
+        <span title="Terminal"><i class="fa-solid fa-terminal"></i></span>
+      </div>
+      <div class="center" id="topbar-date">21 abr · 22:04</div>
+      <div class="right">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+        <i id="btnApagar" class="fa-solid fa-power-off cursor-pointer" title="Apagar"></i>
+      </div>
+    </div>
+
+    <main>
+      <div class="icon cursor-pointer" onclick="abrirApp('Firefox')">
+        <i class="fa-brands fa-firefox-browser"></i>
+        <span data-i18n="firefox">Firefox</span>
+      </div>
+      <div class="icon cursor-pointer" onclick="abrirApp('Ghost')">
+        <i class="fa-solid fa-ghost"></i>
+        <span>Ghost</span>
+      </div>
+
+      <div class="icon cursor-pointer" onclick="abrirApp('CompartirArchivos')">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <span>Archivos compartidos</span>
+      </div>
+      <div class="icon cursor-pointer" onclick="abrirApp('Configuración')">
+        <i class="fa-solid fa-gear"></i>
+        <span data-i18n="settings">Configuración</span>
+      </div>
+      <div class="icon cursor-pointer" onclick="abrirApp('Correo')">
+        <i class="fa-solid fa-envelope"></i>
+        <span data-i18n="mail">Correo</span>
+      </div>
+    </main>
+
+    <div id="dock" class="z-40 relative">
+      <i class="fa-brands fa-firefox-browser cursor-pointer" title="Firefox" onclick="abrirApp('Firefox')"></i>
+      <i class="fa-solid fa-ghost cursor-pointer" title="Ghost" onclick="abrirApp('Ghost')"></i>
+      <i class="fa-solid fa-cloud-arrow-up cursor-pointer" title="Compartir archivos" onclick="abrirApp('CompartirArchivos')"></i>
+      <i class="fa-solid fa-gear cursor-pointer" title="Configuración" onclick="abrirApp('Configuración')"></i>
+      <i class="fa-solid fa-envelope cursor-pointer" title="Correo" onclick="abrirApp('Correo')"></i>
+    </div>
+
+  </div>
+
+<div id="modalGeneral" class="hidden fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 overflow-hidden">
+  <div class="w-full h-full relative">
+    <button id="btnCerrarModal"
+      class="absolute top-4 right-4 text-white text-4xl font-bold z-50 focus:outline-none select-none
+             shadow-lg bg-black bg-opacity-50 rounded-full px-2 py-0"
+      aria-label="Cerrar modal">×</button>
+    <iframe id="iframeModal" src="" frameborder="0" class="w-full h-full bg-black"></iframe>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

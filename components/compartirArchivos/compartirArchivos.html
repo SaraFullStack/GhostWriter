@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Archivos compartidos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans h-full flex flex-col p-4">
+  <h2 class="text-xl font-semibold mb-4">Archivos compartidos conmigo</h2>
+
+  <div id="carpetas" class="space-y-3"></div>
+
+  <div id="archivos" class="hidden mt-4">
+    <button id="btnVolver" class="mb-3 text-blue-600 hover:underline">← Volver a fechas</button>
+    <ul id="listaArchivos" class="list-disc list-inside text-gray-700"></ul>
+  </div>
+
+  <script src="compartirArchivos.js"></script>
+</body>
+</html>
