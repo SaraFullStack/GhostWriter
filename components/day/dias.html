@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Día</title>
+  <link rel="stylesheet" href="./dias.css" />
+  <link rel="stylesheet" href="../../font-family.css" />
+</head>
+<body>
+  <h1 id="diaTexto">Cargando...</h1>
+
+  <audio id="introSound" src="../../assets/audio/urban-morning-birds-4-am-soundscape-366500.mp3" preload="auto" muted autoplay></audio>
+
+  <script>
+    window.addEventListener("load", () => {
+      const sound = document.getElementById("introSound");
+      const diaElemento = document.getElementById("diaTexto");
+
+      const diaGuardado = localStorage.getItem("dia") || "Lunes"; 
+      diaElemento.textContent = diaGuardado;
+
+      setTimeout(() => {
+        sound.muted = false;
+      }, 100); 
+
+      setTimeout(() => {
+        window.location.replace("http://127.0.0.1:5500/");
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

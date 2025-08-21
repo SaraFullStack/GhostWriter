@@ -3,194 +3,34 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Portada Noticias Realista</title>
+  <title>Portada Noticias — Día de juego</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../font-family.css" />
 </head>
 
-<body class="bg-gray-900 text-gray-200 font-sans min-h-screen">
-
-  <!-- Barra superior -->
-  <header class="bg-gray-800 h-12 flex items-center px-4 shadow-md w-full sticky top-0 z-50">
-    <div class="flex space-x-3 items-center">
-      <button aria-label="Cerrar ventana" class="w-5 h-5 flex items-center justify-center hover:bg-gray-700 rounded">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-          class="w-4 h-4 text-red-600">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6 6m0-6l-6 6"></path>
-        </svg>
-      </button>
-      <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
-      <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-    </div>
-    <div class="flex-grow mx-4 bg-gray-700 rounded-md px-3 py-1 text-gray-300 font-mono text-sm select-none truncate">
-      https://noticiasrealistas.es
-    </div>
-    <button aria-label="Recargar página" class="text-gray-400 hover:text-gray-200 text-2xl font-bold">
-      &#x21bb;
-    </button>
-  </header>
+<body class="bg-gray-900 text-gray-200  min-h-screen">
 
   <main class="max-w-7xl mx-auto p-6 grid grid-cols-12 gap-6">
-
-    <!-- Noticias principales (col-span 8) -->
-    <section class="col-span-8 space-y-6">
-
-      <!-- Noticia destacada grande -->
-      <article
-        class="bg-gray-800 rounded-lg overflow-hidden shadow-md flex flex-col cursor-pointer hover:shadow-lg transition-shadow duration-300">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
-          alt="Noticia principal" class="w-full h-64 object-cover brightness-90">
-        <div class="p-5">
-          <div class="flex items-center space-x-2 text-xs text-gray-400 mb-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/El_Pa%C3%ADs_logo.svg/120px-El_Pa%C3%ADs_logo.svg.png"
-              alt="El País" class="h-4 object-contain" />
-            <span>El País · 2h</span>
-          </div>
-          <h1 class="text-3xl font-semibold text-white leading-tight">
-            Letizia y Felipe VI, vidas completamente separadas en Mallorca, no comparten ni techo
-          </h1>
-          <p class="text-gray-300 mt-3 max-w-prose">
-            La situación en el Palacio de Marivent continúa siendo objeto de especulación y debate en los medios.
-          </p>
-        </div>
-      </article>
-
-      <!-- Noticias secundarias en grid -->
-      <div class="grid grid-cols-2 gap-4">
-
-        <article
-          class="bg-gray-800 rounded-lg overflow-hidden shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 flex">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
-            alt="Navegación segura" class="w-40 object-cover brightness-90">
-          <div class="p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center space-x-2 text-xs text-gray-400 mb-1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo-elpais.png"
-                  alt="El País" class="h-3 object-contain" />
-                <span>El País · 5h</span>
-              </div>
-              <h2 class="text-lg font-semibold text-white leading-snug">
-                Netanyahu anuncia su intención de ocupar toda la Franja de Gaza
-              </h2>
-            </div>
-          </div>
-        </article>
-
-        <article
-          class="bg-gray-800 rounded-lg overflow-hidden shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 flex">
-          <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=400&q=80"
-            alt="Tecnología" class="w-40 object-cover brightness-90">
-          <div class="p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center space-x-2 text-xs text-gray-400 mb-1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/La_Razon_logo.svg"
-                  alt="La Razón" class="h-3 object-contain" />
-                <span>La Razón · 43m</span>
-              </div>
-              <h2 class="text-lg font-semibold text-white leading-snug">
-                El PP reafirma su sospecha de "financiación ilegal" en el PSOE
-              </h2>
-            </div>
-          </div>
-        </article>
-
-        <article
-          class="bg-gray-800 rounded-lg overflow-hidden shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 flex">
-          <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=400&q=80"
-            alt="Escándalo" class="w-40 object-cover brightness-90">
-          <div class="p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center space-x-2 text-xs text-gray-400 mb-1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/El_Mundo_logo.svg"
-                  alt="El Mundo" class="h-3 object-contain" />
-                <span>El Mundo · 1h</span>
-              </div>
-              <h2 class="text-lg font-semibold text-white leading-snug">
-                Escándalo político sacude a los líderes nacionales
-              </h2>
-            </div>
-          </div>
-        </article>
-
-        <article
-          class="bg-gray-800 rounded-lg overflow-hidden shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300 flex">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80"
-            alt="Tecnología" class="w-40 object-cover brightness-90">
-          <div class="p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center space-x-2 text-xs text-gray-400 mb-1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Logo_El_Pais.svg"
-                  alt="El País" class="h-3 object-contain" />
-                <span>El País · Ayer</span>
-              </div>
-              <h2 class="text-lg font-semibold text-white leading-snug">
-                Extensiones populares para Firefox aumentan productividad
-              </h2>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
+    <section id="portada" class="col-span-12 lg:col-span-8 space-y-6" aria-live="polite">
+      <div class="bg-gray-800 rounded-lg p-6 animate-pulse">Cargando portada…</div>
     </section>
 
-    <!-- Sidebar derecho: clima + noticias rápidas -->
-    <aside class="col-span-4 space-y-6 sticky top-16">
-
-      <!-- Widget clima -->
-      <div class="bg-gray-800 rounded-lg p-4 shadow-md">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="text-xl font-semibold text-white">Alcalá de Henares</h3>
-          <span
-            class="text-sm bg-orange-500 text-white px-2 py-1 rounded select-none cursor-pointer">36°C</span>
-        </div>
-        <div>
-          <p class="text-gray-300 mb-1">Advertencia de calor severo</p>
-          <button class="text-blue-400 text-sm hover:underline">Ver previsión completa</button>
-        </div>
+    <aside class="col-span-12 lg:col-span-4 space-y-6 sticky top-4 h-fit">
+      <div id="aside-meteo" class="bg-gray-800 rounded-lg p-4 shadow-md">
+        <div class="animate-pulse">Cargando meteo…</div>
       </div>
 
-      <!-- Noticias rápidas -->
-      <div class="bg-gray-800 rounded-lg p-4 shadow-md max-h-[500px] overflow-y-auto">
-        <h4 class="text-lg font-semibold mb-3 text-white">Historias principales</h4>
-        <ul class="space-y-3 text-gray-300 text-sm">
-          <li>
-            <a href="#" class="hover:text-white">
-              <strong>La Vanguardia</strong> · Netanyahu anuncia su intención de ocupar toda la Franja de Gaza
-            </a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-white">
-              <strong>La Razón</strong> · El PP reafirma su sospecha de "financiación ilegal" en el PSOE
-            </a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-white">
-              <strong>El País</strong> · Bolsonaro, acorralado por la justicia brasileña y Trump
-            </a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-white">
-              <strong>El Mundo</strong> · Nueva ley impacta en la industria automotriz
-            </a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-white">
-              <strong>El Español</strong> · Curioso nombre de la hija de Miki Nadal
-            </a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-white">
-              <strong>Reviewer.today</strong> · Calculadora muestra el valor de su casa al instante
-            </a>
-          </li>
-        </ul>
+      <div id="aside-historias" class="bg-gray-800 rounded-lg p-4 shadow-md max-h-[500px] overflow-y-auto">
+        <div class="animate-pulse">Cargando historias…</div>
       </div>
 
+      <div id="aside-ads" class="space-y-4"></div>
     </aside>
-
   </main>
-
+  <script type="module" src="./firefox.js"></script>
+  <audio id="clickSound" src="../../assets/audio/click-234708.mp3" preload="auto"></audio>
+  <script src="../../scripts/audio.js"></script>
 </body>
 
 </html>

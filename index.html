@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/images/fantasma.png" type="image/x-icon" />
+  <link rel="stylesheet" href="font-family.css" />
+  <link rel="icon" href="assets/images/fantasma2.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -21,65 +22,88 @@
 
     <div id="topbar" class="z-50 relative">
       <div class="left">
-        <span title="Actividades"><i class="fa-solid fa-th"></i></span>
-        <span title="Terminal"><i class="fa-solid fa-terminal"></i></span>
+        <i class="fa-solid fa-ghost cursor-not-allowed pointer-events-none"> Beta</i>
       </div>
       <div class="center" id="topbar-date">21 abr · 22:04</div>
       <div class="right">
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-volume-high"></i>
+        <i id="btnSonido" class="fa-solid fa-volume-high cursor-pointer" title="Sonido"></i>
         <i class="fa-solid fa-wifi"></i>
-        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-battery-full cursor-not-allowed pointer-events-none"></i>
         <i id="btnApagar" class="fa-solid fa-power-off cursor-pointer" title="Apagar"></i>
+        <button id="btnCerrarModal"
+          class="ml-3 p-1 rounded hover:bg-gray-700 cursor-pointer text-white text-xl font-bold" style="display:none;"
+          title="Cerrar ventana">×</button>
       </div>
     </div>
 
+
     <main>
+       <div class="icon cursor-pointer inline-flex flex-col items-center gap-1" onclick="abrirApp('Correo')">
+        <div class="relative inline-block leading-none">
+          <i class="fa-solid fa-envelope text-3xl block"></i>
+          <span class="badge-ayuda" style="display: flex;color:white;">
+            ?
+          </span>
+        </div>
+        <span data-i18n="mail">Mail-Coach</span>
+      </div>
       <div class="icon cursor-pointer" onclick="abrirApp('Firefox')">
         <i class="fa-brands fa-firefox-browser"></i>
         <span data-i18n="firefox">Firefox</span>
       </div>
-      <div class="icon cursor-pointer" onclick="abrirApp('Ghost')">
-        <i class="fa-solid fa-ghost"></i>
-        <span>Ghost</span>
-      </div>
-
       <div class="icon cursor-pointer" onclick="abrirApp('CompartirArchivos')">
         <i class="fa-solid fa-cloud-arrow-up"></i>
         <span>Archivos compartidos</span>
+      </div>
+      <div class="icon cursor-pointer" onclick="abrirApp('Ghost')">
+        <i class="fa-solid fa-file-alt"></i>
+        <span>FocusWriter</span>
       </div>
       <div class="icon cursor-pointer" onclick="abrirApp('Configuración')">
         <i class="fa-solid fa-gear"></i>
         <span data-i18n="settings">Configuración</span>
       </div>
-      <div class="icon cursor-pointer" onclick="abrirApp('Correo')">
-        <i class="fa-solid fa-envelope"></i>
-        <span data-i18n="mail">Correo</span>
-      </div>
+     
     </main>
 
     <div id="dock" class="z-40 relative">
+      <i class="fa-solid fa-envelope cursor-pointer" title="Mail-Coach" onclick="abrirApp('Correo')"></i>
       <i class="fa-brands fa-firefox-browser cursor-pointer" title="Firefox" onclick="abrirApp('Firefox')"></i>
-      <i class="fa-solid fa-ghost cursor-pointer" title="Ghost" onclick="abrirApp('Ghost')"></i>
       <i class="fa-solid fa-cloud-arrow-up cursor-pointer" title="Compartir archivos" onclick="abrirApp('CompartirArchivos')"></i>
+      <i class="fa-solid fa-file-alt" title="Ghost" onclick="abrirApp('Ghost')"></i>
       <i class="fa-solid fa-gear cursor-pointer" title="Configuración" onclick="abrirApp('Configuración')"></i>
-      <i class="fa-solid fa-envelope cursor-pointer" title="Correo" onclick="abrirApp('Correo')"></i>
     </div>
 
+
   </div>
 
-<div id="modalGeneral" class="hidden fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 overflow-hidden">
-  <div class="w-full h-full relative">
-    <button id="btnCerrarModal"
-      class="absolute top-4 right-4 text-white text-4xl font-bold z-50 focus:outline-none select-none
-             shadow-lg bg-black bg-opacity-50 rounded-full px-2 py-0"
-      aria-label="Cerrar modal">×</button>
-    <iframe id="iframeModal" src="" frameborder="0" class="w-full h-full bg-black"></iframe>
+  <div id="modalGeneral"
+    class="hidden fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 overflow-hidden">
+    <div class="w-full h-full relative flex flex-col">
+      <iframe id="iframeModal" src="" frameborder="0" class="w-full h-full bg-black pt-8"></iframe>
+    </div>
   </div>
-</div>
 
 
-  <script src="script.js"></script>
+  <div id="modalSalir" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-60">
+    <div class="bg-gray-900 p-6 rounded-lg max-w-sm text-center text-white">
+      <p class="mb-4 text-lg">¿Está seguro que quiere salir? Si lo hace perderá la partida.</p>
+      <div class="flex justify-around">
+        <button id="confirmarSalir" class="px-4 py-2 bg-red-600 rounded hover:bg-red-700">Salir</button>
+        <button id="cancelarSalir" class="px-4 py-2 bg-gray-700 rounded hover:bg-gray-600">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <audio id="ambientSound" src="./assets/audio/mistery-ghost-house-instrumental-223586.mp3" preload="auto" loop
+    muted></audio> -->
+
+  <audio id="clickSound" src="./assets/audio/click-234708.mp3" preload="auto"></audio>
+
+  <script type="module" src="./scripts/main.js"></script>
+<script src="./scripts/i18n.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,4 @@
+find . -type f \( -name "*.css" -o -name "*.js" -o -name "*.html" \) \
+  ! -path "*/.git/*" \
+  ! -path "*/COSAS/*" \
+  -exec cat {} + > todo.txt

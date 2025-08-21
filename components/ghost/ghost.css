@@ -1,0 +1,158 @@
+    body {
+        background-image: url('../../assets/images/scrabble-tiles-5981982.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #toolbar {
+        display: flex;
+        align-items: center;
+        background-color: #222222;
+        padding: 0.25rem 0.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        user-select: none;
+        flex-shrink: 0;
+    }
+
+    #toolbar button {
+        background: none;
+        border: none;
+        padding: 0.5rem 0.7rem;
+        cursor: pointer;
+        color: #cfcfcf;
+        transition: background-color 0.25s, color 0.25s;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    #toolbar button:hover {
+        background-color: #444444;
+        color: #ffffff;
+    }
+
+    #toolbar button:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: -1.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333333;
+        padding: 2px 6px;
+        font-size: 0.75rem;
+        border-radius: 3px;
+        white-space: nowrap;
+        pointer-events: none;
+        color: #eee;
+    }
+
+    #container {
+        flex-grow: 1;
+        max-width: 900px;
+        margin: 2rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        user-select: text;
+        position: relative;
+    }
+
+    #writing-area {
+        background-color: #121212;
+        border: 1px solid #333;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        padding: 3rem 4rem 4rem 4rem;
+        color: #eee;
+        font-size: 1.3rem;
+        line-height: 1.8;
+        min-height: 600px;
+        position: relative;
+        user-select: text;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .palabra {
+        background: #2e2e2e;
+        color: #bbb;
+        padding: 0.9rem 1.8rem;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, color 0.3s;
+        user-select: none;
+        margin: 0.5rem 0.7rem;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .palabra:hover {
+        background: #444;
+        color: #ddd;
+    }
+
+    .palabra.selected {
+        background: #ff6600;
+        color: #fff;
+        box-shadow: 0 0 8px #f5873e;
+    }
+
+    #palabras {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    #vistaPrevia {
+        background: transparent;
+        border: none;
+        color: #eee;
+        font-size: 1.3rem;
+        line-height: 1.8;
+        resize: none;
+        outline: none;
+        flex-grow: 1;
+        user-select: text;
+        width: 100%;
+        padding: 0;
+        overflow-y: auto;
+    }
+
+    #vistaPrevia::selection {
+        background: #444;
+        color: #eee;
+    }
+
+    #toolbar button {
+        background: transparent;
+        border: none;
+        padding: 0.3rem 0.5rem;
+        cursor: pointer;
+        color: #bbb;
+        transition: color 0.3s;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    #toolbar button:hover {
+        color: #eee;
+        background: transparent;
+    }
+
+    .palabra.disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    #writing-area {
+        align-items: center;
+        text-align: center;
+    }

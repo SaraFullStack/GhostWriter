@@ -1,127 +1,139 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let articulos = JSON.parse(localStorage.getItem('miniGhostArticulos') || '[]');
-  let config = JSON.parse(localStorage.getItem('miniGhostConfig') || '{"nombreSitio":"Mi Mini Ghost","autor":""}');
-  let articuloActualId = null;
+import { GHOST } from '../../const/es/ghost.js';
 
-  const nombreSitio = document.getElementById('nombreSitio');
-  const lista = document.getElementById('lista');
-  const editor = document.getElementById('editor');
-  const configuracion = document.getElementById('configuracion');
+localStorage.setItem('diaSeleccionado', 'lunes');
 
-  const btnLista = document.getElementById('btnLista');
-  const btnEditor = document.getElementById('btnEditor');
-  const btnConfiguracion = document.getElementById('btnConfiguracion');
+let palabrasDisponibles = [];
+let textos = [];
+let seleccionadas = [];
+let timeoutEscribiendo = null;
 
-  const btnGuardarArticulo = document.getElementById('btnGuardarArticulo');
-  const btnCancelarEdicion = document.getElementById('btnCancelarEdicion');
+const palabrasDiv = document.getElementById('palabras');
+const vistaPrevia = document.getElementById('vistaPrevia');
+const mensaje = document.getElementById('mensaje');
 
-  const btnGuardarConfig = document.getElementById('btnGuardarConfig');
-  const btnCancelarConfig = document.getElementById('btnCancelarConfig');
+const KEY_LOCALSTORAGE = 'articulosDelDia';
+const btnEnviar = document.getElementById('btnEnviar');
+const modal = document.getElementById('confirmModal');
+const btnNo = document.getElementById('btnNo');
+const btnSi = document.getElementById('btnSi');
 
-  const tituloInput = document.getElementById('tituloArticulo');
-  const contenidoInput = document.getElementById('contenidoArticulo');
-  const inputNombreSitio = document.getElementById('inputNombreSitio');
-  const inputAutor = document.getElementById('inputAutor');
-  const listaArticulos = document.getElementById('listaArticulos');
+function cargarDatos() {
+  const dia = localStorage.getItem('diaSeleccionado') || 'lunes';
 
-  function actualizarHeader() {
-    nombreSitio.textContent = config.nombreSitio;
+  if (GHOST[dia]) {
+    palabrasDisponibles = GHOST[dia].palabrasDisponibles;
+    textos = GHOST[dia].textos;
   }
 
-  function renderListaArticulos() {
-    listaArticulos.innerHTML = '';
-    if (articulos.length === 0) {
-      listaArticulos.innerHTML = '<li>No hay artículos publicados.</li>';
+  renderPalabras();
+  actualizarEstado();
+}
+
+function renderPalabras() {
+  palabrasDiv.innerHTML = '';
+  palabrasDisponibles.forEach(palabra => {
+    const span = document.createElement('span');
+    span.textContent = palabra;
+    span.className = 'palabra';
+    if (seleccionadas.includes(palabra)) span.classList.add('selected');
+    span.onclick = () => toggleSeleccion(palabra, span);
+    palabrasDiv.appendChild(span);
+  });
+}
+
+function toggleSeleccion(palabra, element) {
+  if (seleccionadas.includes(palabra)) {
+    seleccionadas = seleccionadas.filter(p => p !== palabra);
+    element.classList.remove('selected');
+  } else {
+    if (seleccionadas.length < 3) {
+      seleccionadas.push(palabra);
+      element.classList.add('selected');
+    } else {
       return;
     }
-    articulos.forEach(art => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.textContent = art.titulo;
-      a.href = '#';
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        mostrarEditor(art.id);
-      });
-      li.appendChild(a);
-      listaArticulos.appendChild(li);
-    });
+  }
+  actualizarEstado();
+}
+
+function buscarTextoPorPalabras(textos, palabrasSeleccionadas) {
+  return textos.find(texto =>
+    palabrasSeleccionadas.every(palabra =>
+      texto.toLowerCase().includes(palabra.toLowerCase())
+    )
+  ) || null;
+}
+
+function actualizarEstado() {
+  if (timeoutEscribiendo) {
+    clearTimeout(timeoutEscribiendo);
+    timeoutEscribiendo = null;
   }
 
-  function mostrarLista() {
-    lista.style.display = 'block';
-    editor.style.display = 'none';
-    configuracion.style.display = 'none';
-    renderListaArticulos();
-    actualizarHeader();
+  if (seleccionadas.length < 3) {
+    mensaje.textContent = `Palabras seleccionadas (${seleccionadas.length}/3): ${seleccionadas.join(', ')}`;
+    vistaPrevia.value = seleccionadas.join(' ');
+    return;
   }
 
-  function mostrarEditor(id = null) {
-    articuloActualId = id;
-    lista.style.display = 'none';
-    editor.style.display = 'block';
-    configuracion.style.display = 'none';
+  mensaje.textContent = "Escribiendo...";
+  vistaPrevia.value = "";
 
-    if (id !== null) {
-      const art = articulos.find(a => a.id === id);
-      if (art) {
-        tituloInput.value = art.titulo;
-        contenidoInput.value = art.contenido;
-      }
+  timeoutEscribiendo = setTimeout(() => {
+    const textoEncontrado = buscarTextoPorPalabras(textos, seleccionadas);
+    if (textoEncontrado) {
+      vistaPrevia.value = textoEncontrado;
+      mensaje.textContent = `Texto generado para las palabras seleccionadas.`;
     } else {
-      tituloInput.value = '';
-      contenidoInput.value = '';
+      vistaPrevia.value = "No se encontró un texto que contenga todas las palabras seleccionadas.";
+      mensaje.textContent = "Sin texto para la selección.";
     }
-  }
+    timeoutEscribiendo = null;
+  }, 1000);
+}
 
-  function mostrarConfiguracion() {
-    lista.style.display = 'none';
-    editor.style.display = 'none';
-    configuracion.style.display = 'block';
+function abrirModal() {
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+}
+function cerrarModal() {
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+}
 
-    inputNombreSitio.value = config.nombreSitio;
-    inputAutor.value = config.autor;
-  }
-
-  function guardarArticulo() {
-    const titulo = tituloInput.value.trim();
-    const contenido = contenidoInput.value.trim();
-    if (!titulo || !contenido) {
-      alert('Título y contenido son obligatorios');
-      return;
-    }
-
-    if (articuloActualId !== null) {
-      const art = articulos.find(a => a.id === articuloActualId);
-      if (art) {
-        art.titulo = titulo;
-        art.contenido = contenido;
-      }
-    } else {
-      const id = Date.now();
-      articulos.push({ id, titulo, contenido });
-    }
-    localStorage.setItem('miniGhostArticulos', JSON.stringify(articulos));
-    mostrarLista();
-  }
-
-  function guardarConfiguracion() {
-    config.nombreSitio = inputNombreSitio.value.trim() || 'Mi Mini Ghost';
-    config.autor = inputAutor.value.trim();
-    localStorage.setItem('miniGhostConfig', JSON.stringify(config));
-    actualizarHeader();
-    mostrarLista();
-  }
-
-  btnLista.addEventListener('click', mostrarLista);
-  btnEditor.addEventListener('click', () => mostrarEditor(null));
-  btnConfiguracion.addEventListener('click', mostrarConfiguracion);
-
-  btnGuardarArticulo.addEventListener('click', guardarArticulo);
-  btnCancelarEdicion.addEventListener('click', mostrarLista);
-
-  btnGuardarConfig.addEventListener('click', guardarConfiguracion);
-  btnCancelarConfig.addEventListener('click', mostrarLista);
-
-  mostrarLista();
+btnEnviar.addEventListener('click', () => {
+  const texto = (vistaPrevia.value || '').trim();
+  if (!texto) return;
+  abrirModal();
 });
+
+btnNo.addEventListener('click', cerrarModal);
+
+btnSi.addEventListener('click', () => {
+  const texto = (vistaPrevia.value || '').trim();
+  try {
+    const existente = JSON.parse(localStorage.getItem(KEY_LOCALSTORAGE)) || [];
+    if (!existente.includes(texto)) {
+      existente.push(texto);
+    }
+    localStorage.setItem(KEY_LOCALSTORAGE, JSON.stringify(existente));
+  } catch (e) {
+    localStorage.setItem(KEY_LOCALSTORAGE, JSON.stringify([texto]));
+  }
+
+  window.location.href = 'dias.html';
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) cerrarModal();
+});
+
+function computeDiasPath() {
+  const path = window.location.pathname;
+  if (path.includes('/components/')) {
+    return path.replace(/\/components\/[^\/]+\/[^\/]*$/, '/components/dias/dias.html');
+  }
+  return '/components/dias/dias.html';
+}
+
+cargarDatos();

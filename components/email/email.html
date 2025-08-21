@@ -1,79 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Bandeja de Correo - Modal</title>
+  <title>Correo — Lectura (oscuro, simple)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    #emailList {
-      max-height: 80vh;
-    }
-  </style>
+  <link rel="stylesheet" href="../../font-family.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body class="bg-gray-900 text-gray-200 font-sans h-full flex flex-col p-4">
-  <!-- Botón cerrar fijo arriba derecha -->
-  <button
-    onclick="window.parent.postMessage('cerrarCorreo', '*')"
-    class="fixed top-4 right-4 bg-red-700 hover:bg-red-800 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-50"
-    aria-label="Cerrar modal"
-  >
-    &times;
-  </button>
 
-  <header class="mb-4">
-    <h1 class="text-2xl font-bold text-center">Bandeja de Entrada</h1>
+<body class="h-screen bg-gray-900 text-gray-200">
+
+  <header class="h-12 bg-gray-800 border-b border-gray-800 flex items-center gap-3 px-4">
+    <div class="flex-1 relative">
+      <input id="search" type="search" placeholder="Buscar por asunto o remitente"
+        class="w-full bg-gray-700 border border-gray-600 rounded-md pl-9 pr-3 py-1.5 text-sm placeholder-gray-400 outline-none focus:ring-2 focus:ring-blue-500">
+      <svg class="w-4 h-4 absolute left-3 top-2.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <circle cx="11" cy="11" r="7" stroke-width="2"></circle>
+        <path d="m20 20-3.5-3.5" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+    <div class="w-7 h-7 rounded-full bg-gray-600 grid place-items-center text-sm">G</div>
   </header>
 
-  <div class="flex flex-1 border rounded shadow bg-gray-800 overflow-hidden" style="height: 85vh;">
+  <main class="h-[calc(100vh-3rem)] flex flex-col md:flex-row">
+    <aside class="md:w-1/3 border-r border-gray-800">
+      <ul id="emailList" class="h-full overflow-y-auto divide-y divide-gray-800 text-sm"></ul>
+    </aside>
 
- <nav id="emailList" class="w-1/3 border-r border-gray-700 overflow-y-auto">
-    <ul>
-      <li class="cursor-pointer px-4 py-3 border-b border-gray-700 hover:bg-gray-700 flex justify-between items-center" onclick="mostrarCorreo(0)">
-        <div>
-          <p class="font-semibold">Soporte Técnico</p>
-          <p class="text-sm text-gray-400 truncate">Bienvenido a la plataforma</p>
-        </div>
-        <span class="text-xs text-gray-500">10:30</span>
-      </li>
-      <li class="cursor-pointer px-4 py-3 border-b border-gray-700 hover:bg-gray-700 flex justify-between items-center" onclick="mostrarCorreo(1)">
-        <div>
-          <p class="font-semibold">Notificaciones</p>
-          <p class="text-sm text-gray-400 truncate">Tu cuenta ha sido actualizada</p>
-        </div>
-        <span class="text-xs text-gray-500">09:15</span>
-      </li>
-      <li class="cursor-pointer px-4 py-3 border-b border-gray-700 hover:bg-gray-700 flex justify-between items-center" onclick="mostrarCorreo(2)">
-        <div>
-          <p class="font-semibold">Equipo de Ventas</p>
-          <p class="text-sm text-gray-400 truncate">Oferta especial para ti</p>
-        </div>
-        <span class="text-xs text-gray-500">08:50</span>
-      </li>
-    </ul>
-  </nav>
+    <section class="flex-1 min-h-0 overflow-y-auto flex flex-col">
+      <div id="actionBar" class="hidden bg-gray-800 border-b border-gray-700 p-2 flex gap-4">
+        <button id="deleteBtn" class="flex items-center gap-1 text-red-400 hover:text-red-300" disabled>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 
+              01-1.995-1.858L5 7m5 4v6m4-6v6M9 7V4a1 
+              1 0 011-1h4a1 1 0 011 1v3m-9 0h10" />
+          </svg>
+          Borrar
+        </button>
+      </div>
 
-  <section id="emailPreview" class="flex-1 p-6 overflow-y-auto">
-    <h2 id="emailSubject" class="text-xl font-bold mb-2">Selecciona un correo</h2>
-    <p id="emailFrom" class="text-gray-400 mb-4"></p>
-    <div id="emailBody" class="prose max-w-none text-gray-300">
-      <p>Elige un correo de la lista para ver su contenido aquí.</p>
-    </div>
-  </section>
+      <div class="p-6 overflow-y-auto flex-1">
+        <h2 id="emailSubject" class="text-xl font-semibold mb-1">Selecciona un correo</h2>
+        <p id="emailFrom" class="text-gray-400 mb-4"></p>
+        <article id="emailBody" class="prose prose-invert prose-sm max-w-none">
+          <p>Elige un correo de la lista para ver su contenido.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-  <!-- Scripts al final -->
-  <script src="email.js"></script>
-  <script>
-    function mostrarCorreo(index) {
-      const correo = correos[index];
-      document.getElementById('emailSubject').textContent = correo.subject;
-      document.getElementById('emailFrom').textContent = `De: ${correo.from}`;
-      document.getElementById('emailBody').innerHTML = correo.body;
-
-      // Resaltar correo seleccionado
-      const items = document.querySelectorAll('#emailList li');
-      items.forEach((item, i) => {
-        item.classList.toggle('bg-gray-700', i === index);
-      });
-    }
-  </script>
+  <script src="../../scripts/audio.js"></script>
+  <audio id="clickSound" src="../../assets/audio/click-234708.mp3" preload="auto"></audio>
+  <script type="module" src="./email.js"></script>
 </body>
+
+</html>

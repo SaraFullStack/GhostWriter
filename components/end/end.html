@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resultado — Efecto TV antigua</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../font-family.css" />
+  <style>
+    .tv-noise{
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.0' numOctaves='2' seed='7' stitchTiles='stitch'/><feComponentTransfer><feFuncR type='discrete' tableValues='0 1'/><feFuncG type='discrete' tableValues='0 1'/><feFuncB type='discrete' tableValues='0 1'/></feComponentTransfer></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+      background-repeat: repeat;
+      background-size: 220px 220px;
+      background-position: 0 0;
+      opacity: 0.22;
+      animation: noiseShift 0.9s steps(2) infinite;
+    }
+    @keyframes noiseShift{
+      0%   { background-position:   0%   0%; }
+      20%  { background-position: -18% -12%; }
+      40%  { background-position: -32%  15%; }
+      60%  { background-position:  14%  28%; }
+      80%  { background-position:  26% -18%; }
+      100% { background-position:   0%   0%; }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center relative overflow-hidden text-gray-100 bg-gray-800" data-home="./index.html">
+  <div class="tv-noise" aria-hidden="true"></div>
+
+  <main class="relative z-10 w-full max-w-6xl p-6">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <figure class="flex justify-center items-center order-1">
+        <div class="w-full max-w-md">
+          <img id="result-img"
+               src="./assets/images/ends/inaceptable.png"
+               alt="Visual del resultado"
+               class="w-full h-auto drop-shadow-[0_28px_50px_rgba(0,0,0,0.7)]"/>
+        </div>
+      </figure>
+
+      <article class="order-2 bg-gray-900/70 backdrop-blur border border-gray-700 rounded-2xl shadow-2xl p-6">
+        <span id="result-badge"
+              class="inline-block uppercase tracking-widest text-sm font-bold px-3 py-1 rounded-full mb-3 border bg-rose-900/40 border-rose-700 text-rose-300">
+          No vales para esto...
+        </span>
+        <h1 id="result-title" class="text-3xl md:text-4xl font-extrabold text-cyan-300 mb-3">
+          Título del Resultado
+        </h1>
+        <p id="result-summary" class="text-lg leading-relaxed text-gray-300">
+          Aquí va el resumen del resultado con el efecto TV antigua de fondo.
+        </p>
+        <button id="retry"
+                class="inline-flex mt-5 items-center gap-2 font-semibold px-4 py-2 rounded-xl border border-cyan-700 bg-cyan-900/40 text-cyan-300 hover:bg-cyan-800/60 active:scale-95 transition">
+          ⟲ Volver a jugar
+        </button>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="./end.js"></script>
+
+</body>
+</html>
