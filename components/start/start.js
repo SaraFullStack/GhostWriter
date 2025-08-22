@@ -1,14 +1,12 @@
+const lang = localStorage.getItem("preferredLang") || "en";
+const { LINES } = await import(`../../const/${lang}/start.js`);
+
 const terminal = document.getElementById('terminal');
 const terminalBody = document.getElementById('terminal-body');
 const inputLine = document.getElementById('inputLine');
 const input = document.getElementById('inputLogin');
 const form = document.getElementById('form');
 const errorMsg = document.getElementById('errorMsg');
-
-const lines = [
-    'Recomendamos jugar con pantalla completa "F11" para mejorar la experiencia',
-    'Si está listo para jugar, escriba GhostWriter en la terminal'
-];
 
 let currentLine = 0;
 let currentChar = 0;
@@ -42,19 +40,21 @@ function escribirLinea(text, callback) {
 }
 
 function escribirLineas() {
-    if (currentLine < lines.length) {
-        escribirLinea(lines[currentLine], () => {
+    if (currentLine < LINES.length) {
+        escribirLinea(LINES[currentLine], () => {
             currentLine++;
             escribirLineas();
         });
     } else {
         const asciiGhost = document.createElement('pre');
         asciiGhost.id = 'asciiGhost';
-        asciiGhost.textContent = ` .-.
-(o o) boo!
-| O \\
- \\   \\
-  \`~~~'`;
+        asciiGhost.textContent = `⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣦⠀
+⠀⠀⠀⠀⣰⣿⡟⢻⣿⡟⢻⣧
+⠀⠀⠀⣰⣿⣿⣇⣸⣿⣇⣸⣿
+⠀⠀⣴⣿⣿⣿⣿⠟⢻⣿⣿⣿
+⣠⣾⣿⣿⣿⣿⣿⣤⣼⣿⣿⠇
+⢿⡿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀
+⠀⠀⠈⠿⠿⠋⠙⢿⣿⡿⠁⠀`;
         terminalBody.appendChild(asciiGhost);
         scrollTerminal();
 
@@ -76,11 +76,12 @@ form.addEventListener('submit', e => {
         bye.style.color = '#4ae54a';
         bye.style.fontWeight = '600';
         bye.style.margin = '0.1rem 0';
-        bye.textContent = 'Accediendo...';
+        bye.textContent = 'Login successful. Redirecting...';
         terminalBody.appendChild(bye);
         scrollTerminal();
         setTimeout(() => {
-            window.location.href = 'index.html';
+            localStorage.setItem("session", "ghostwriter_session_active");
+            window.location.href = '../day/day.html';
         }, 800);
     } else {
         errorMsg.textContent = 'Comando incorrecto. Por favor, escriba "GhostWriter".';
@@ -95,4 +96,8 @@ form.addEventListener('submit', e => {
         input.value = nuevoTexto;
         input.setSelectionRange(nuevoTexto.length, nuevoTexto.length);
     }
+});
+
+input.addEventListener('blur', () => {
+  input.focus();
 });

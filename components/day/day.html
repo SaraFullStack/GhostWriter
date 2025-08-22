@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GhostWriter</title>
+  <link rel="icon" href="assets/images/fantasma2.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link href="./day.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="diaTexto">...</h1>
+  </div>
+  <audio id="introSound" src="../../assets/audio/nigth.mp3" preload="auto" muted autoplay></audio>
+
+  <script type="module">
+    import { DAYS as DAYS_ES } from "../../const/es/days.js";
+    import { DAYS as DAYS_EN } from "../../const/en/days.js";
+    import { DAYS as DAYS_FR } from "../../const/fr/days.js";
+    import { DAYS as DAYS_PT } from "../../const/pt/days.js";
+    import { DAYS as DAYS_ZH } from "../../const/zh/days.js";
+    import { DAYS as DAYS_KO } from "../../const/ko/days.js";
+    import { DAYS as DAYS_DE } from "../../const/de/days.js";
+    import { DAYS as DAYS_JA } from "../../const/ja/days.js";
+
+    const lang = localStorage.getItem("preferredLang") || "en";
+
+    const LOCALES = {
+      es: DAYS_ES,
+      en: DAYS_EN,
+      fr: DAYS_FR,
+      pt: DAYS_PT,
+      zh: DAYS_ZH,
+      ko: DAYS_KO,
+      de: DAYS_DE,
+      ja: DAYS_JA,
+    };
+
+    const DAYS = LOCALES[lang] || DAYS_EN;
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const sound = document.getElementById("introSound");
+      const diaElemento = document.getElementById("diaTexto");
+
+      const diaGuardado = localStorage.getItem("dayGame") || "0";
+
+      if (diaElemento) {
+        diaElemento.textContent = DAYS[diaGuardado] || "Lunes";
+      }
+
+      if (sound) {
+        setTimeout(() => {
+          sound.muted = false;
+          window.location.href = '../../index.html';
+        }, 1000);
+      }
+
+      setTimeout(() => {
+
+      }, 2000);
+    });
+  </script>
+</body>
+
+</html>

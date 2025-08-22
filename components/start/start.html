@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>GhostWriter</title>
-  <link rel="icon" href="assets/images/fantasma2.png" type="image/x-icon" />
+  <link rel="icon" href="../../assets/images/fantasma2.png" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="inicio.css" />
+  <link rel="stylesheet" href="start.css" />
   <link rel="stylesheet" href="../../font-family.css" />
 </head>
 
@@ -16,16 +16,15 @@
     <form id="form" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" novalidate
       style="padding-top: 1rem;">
       <div class="input-line" style="display:none;" id="inputLine">
-        <span class="prompt" aria-label="Prompt de terminal">curro@GhostWriter:~$</span>
+        <span class="prompt" aria-label="Prompt de terminal">sara@GhostWriter:~$</span>
         <input type="text" id="inputLogin" aria-label="Entrada de comando" autocomplete="off" autocorrect="off"
-          autocapitalize="none" spellcheck="false" placeholder="Escriba GhostWriter si está listo para jugar" disabled
-          spellcheck="false" />
+          autocapitalize="none" spellcheck="false" disabled spellcheck="false" />
         <div class="cursor" aria-hidden="true"></div>
       </div>
       <div id="errorMsg" aria-live="assertive" role="alert"></div>
     </form>
   </div>
-  <script src="./inicio.js"></script>
+  <script type="module" src="./start.js"></script>
 </body>
 
 </html>

@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "The collator", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "News Storm", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "The Magnifying glass", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "The Lighthouse", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "Government press", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "The Change That Works for the Future", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "Executive Channel", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "The Digital Plaza", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "Subverse Margin", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "The Global Parody", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { nombre: "O Colador", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { nombre: "Tempestade de Notícias", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { nombre: "A Lupa", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { nombre: "O Farol", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { nombre: "Imprensa Governamental", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { nombre: "A Mudança Que Funciona para o Futuro", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { nombre: "Canal Executivo", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { nombre: "A Praça Digital", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { nombre: "Margem Subversa", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
+    { nombre: "A Paródia Global", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
 ];

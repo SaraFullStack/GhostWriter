@@ -1,4 +1,5 @@
-import { RESULT_CONFIG } from '../../const/es/end.js';
+const lang = localStorage.getItem("preferredLang") || "en";
+const { RESULT_CONFIG } = await import(`../../const/${lang}/end.js`);
 
 function leerResultadoLS() {
     const posiblesClaves = ['resultado', 'resultadoJuego', 'end', 'fin'];
@@ -50,20 +51,11 @@ badge.textContent = cfg.badge;
 document.getElementById('result-title').textContent = cfg.title;
 document.getElementById('result-summary').textContent = cfg.summary;
 
-document.getElementById('retry').addEventListener('click', () => {
-    ['resultado', 'resultadoJuego', 'end', 'fin'].forEach(k => localStorage.removeItem(k));
 
-    const target = document.body.dataset.home || './index.html';
-    if (history.length > 1) history.back();
-    else window.location.href = target;
-});
 
 document.getElementById('retry').addEventListener('click', () => {
     localStorage.clear();
-
-    const target = document.body.dataset.home || './index.html';
-    if (history.length > 1) history.back();
-    else window.location.href = target;
+    window.location.href = '../../index.html';
 });
 
 

@@ -1,6 +1,6 @@
-import { GHOST } from '../../const/es/ghost.js';
+const lang = localStorage.getItem("preferredLang") || "en";
+const { GHOST, WORDS, TEXTS, WRITE } = await import(`../../const/${lang}/ghost.js`);
 
-localStorage.setItem('diaSeleccionado', 'lunes');
 
 let palabrasDisponibles = [];
 let textos = [];
@@ -18,8 +18,7 @@ const btnNo = document.getElementById('btnNo');
 const btnSi = document.getElementById('btnSi');
 
 function cargarDatos() {
-  const dia = localStorage.getItem('diaSeleccionado') || 'lunes';
-
+  const dia = localStorage.getItem('dayGame') || '0';
   if (GHOST[dia]) {
     palabrasDisponibles = GHOST[dia].palabrasDisponibles;
     textos = GHOST[dia].textos;
@@ -71,22 +70,22 @@ function actualizarEstado() {
   }
 
   if (seleccionadas.length < 3) {
-    mensaje.textContent = `Palabras seleccionadas (${seleccionadas.length}/3): ${seleccionadas.join(', ')}`;
+    mensaje.textContent = `${WORDS} (${seleccionadas.length}/3): ${seleccionadas.join(', ')}`;
     vistaPrevia.value = seleccionadas.join(' ');
     return;
   }
 
-  mensaje.textContent = "Escribiendo...";
+  mensaje.textContent = WRITE;
   vistaPrevia.value = "";
 
   timeoutEscribiendo = setTimeout(() => {
     const textoEncontrado = buscarTextoPorPalabras(textos, seleccionadas);
     if (textoEncontrado) {
       vistaPrevia.value = textoEncontrado;
-      mensaje.textContent = `Texto generado para las palabras seleccionadas.`;
+      mensaje.textContent = TEXTS;
     } else {
-      vistaPrevia.value = "No se encontró un texto que contenga todas las palabras seleccionadas.";
-      mensaje.textContent = "Sin texto para la selección.";
+      vistaPrevia.value = "ERROR";
+      mensaje.textContent = "ERROR";
     }
     timeoutEscribiendo = null;
   }, 1000);
@@ -120,20 +119,18 @@ btnSi.addEventListener('click', () => {
   } catch (e) {
     localStorage.setItem(KEY_LOCALSTORAGE, JSON.stringify([texto]));
   }
+  const day = Number(localStorage.getItem('dayGame')) || 0;
+  localStorage.setItem('dayGame', day + 1);
 
-  window.location.href = 'dias.html';
+  if (window.parent) {
+    window.parent.postMessage({ type: "goto:day" }, "*");
+  }
 });
+
 
 modal.addEventListener('click', (e) => {
   if (e.target === modal) cerrarModal();
 });
 
-function computeDiasPath() {
-  const path = window.location.pathname;
-  if (path.includes('/components/')) {
-    return path.replace(/\/components\/[^\/]+\/[^\/]*$/, '/components/dias/dias.html');
-  }
-  return '/components/dias/dias.html';
-}
 
 cargarDatos();

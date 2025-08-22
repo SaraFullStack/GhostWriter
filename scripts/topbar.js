@@ -1,21 +1,21 @@
 const topbar = document.getElementById('topbar');
-const btnCerrarModal = document.getElementById('btnCerrarModal');
 
 const topbarOriginalHTML = topbar.innerHTML;
 
 const topbarFirefoxHTML = `
 <header class="bg-gray-900 h-12 flex items-center px-4 shadow-md w-full" style="background-color: #2e323a;">
   <div class="flex space-x-3 items-center text-white">
-    <button aria-label="Recargar página" id="btnRecargar"
+    <button aria-label="" i18n="firefox.reload" id="btnRecargar"
       class="text-gray-400 hover:text-white text-2xl font-bold cursor-pointer select-none">⟳</button>
   </div>
   <div class="flex-grow mx-4 bg-gray-800 rounded-md px-3 py-1 text-gray-300 font-mono text-sm select-none truncate pointer-events-none cursor-not-allowed">
-    https://resumen-diario.es
+    daily-summary.es
   </div>
-  <button id="btnCerrarModal" aria-label="Cerrar ventana"
+  <button id="btnCerrarModal" aria-label="" i18n="firefox.close"
     class="text-gray-400 hover:text-white text-2xl font-bold cursor-pointer select-none">×</button>
 </header>
 `;
+
 
 function mostrarTopbarFirefox() {
   topbar.classList.add('app');          
@@ -114,14 +114,14 @@ function mostrarTopbarGhost() {
 const topbarCompartirHTML = `
 <div class="bg-gray-800 px-4 py-1 flex justify-between items-center text-sm select-none text-gray-300">
   <div class="flex space-x-4">
-    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Archivo</span>
-    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Editar</span>
-    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Ver</span>
-    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Ir</span>
-    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Marcadores</span>
-    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Ayuda</span>
+    <span class="hover:bg-gray-700 px-2 rounded cursor-none">File</span>
+    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Edit</span>
+    <span class="hover:bg-gray-700 px-2 rounded cursor-none">View</span>
+    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Go</span>
+    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Bookmarks</span>
+    <span class="hover:bg-gray-700 px-2 rounded cursor-none">Help</span>
   </div>
-  <button id="btnCerrarCompartir" class="text-gray-300 hover:text-white text-xl font-bold px-2" title="Cerrar">×</button>
+  <button id="btnCerrarCompartir" class="text-gray-300 hover:text-white text-xl font-bold px-2" title="Close">×</button>
 </div>
 `;
 
@@ -143,7 +143,7 @@ function mostrarTopbarCompartir() {
   if (btnCerrar) btnCerrar.onclick = () => window.cerrarModalApp();
 }
 
-const topbarConfiguracionHTML = `
+const topbarSettingsHTML = `
 <div class="bg-gray-800 px-4 py-1.5 flex items-center justify-between text-sm select-none text-gray-300 border-b border-gray-700">
   <div class="flex items-center">
     <svg class="w-4 h-4 text-gray-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -153,7 +153,7 @@ const topbarConfiguracionHTML = `
   </div>
 
   <div class="absolute left-1/2 transform -translate-x-1/2 text-gray-200 font-semibold">
-    Configuración
+    Settings
   </div>
 
   <div>
@@ -164,9 +164,9 @@ const topbarConfiguracionHTML = `
 
 
 
-function mostrarTopbarConfiguracion() {
+function mostrarTopbarSettings() {
   topbar.classList.add('app');
-  topbar.innerHTML = topbarConfiguracionHTML;
+  topbar.innerHTML = topbarSettingsHTML;
 
   const btnCerrar = document.getElementById('btnCerrarConfig');
   if (btnCerrar) {
@@ -178,6 +178,6 @@ export {
   mostrarTopbarFirefox,
   mostrarTopbarGhost,
   mostrarTopbarCompartir,
-  mostrarTopbarConfiguracion,
+  mostrarTopbarSettings,
   mostrarTopbarOriginal
 };

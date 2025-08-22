@@ -1,4 +1,4 @@
-export const correos = [
+export const EMAILS = [
   {
     from: 'suporte@ghost-writer.com',
     subject: 'Introdução — Bem-vindo',

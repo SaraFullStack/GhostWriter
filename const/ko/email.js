@@ -1,4 +1,4 @@
-export const emails = [
+export const EMAILS = [
   {
     from: 'support@ghost-writer.com',
     subject: '소개 — 환영합니다',

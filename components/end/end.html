@@ -29,6 +29,12 @@
       100% { background-position:   0%   0%; }
     }
   </style>
+  <script>
+     const dayGame = Number(localStorage.getItem("dayGame"));
+    if (!dayGame || dayGame != 6) {
+      window.location.replace("../../index.html");
+    }
+  </script>
 </head>
 
 <body class="min-h-screen flex items-center justify-center relative overflow-hidden text-gray-100 bg-gray-800" data-home="./index.html">

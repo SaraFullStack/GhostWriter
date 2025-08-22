@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="settings.titulo_pagina">Configuración</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="../../font-family.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./settings.css" />
+</head>
+
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+  <div class="max-w-7xl mx-auto px-6 py-8">
+    <div class="md:grid md:grid-cols-[18rem_1fr] md:gap-8">
+
+      <aside class="space-y-6 md:sticky md:top-8 md:self-start">
+
+        <article class="bg-gray-900/70 backdrop-blur rounded-2xl border border-gray-800 shadow-lg p-6">
+          <h2 class="text-xl font-bold mb-2" data-i18n="settings.version">Versión</h2>
+          <p id="versionText" class="text-4xl font-extrabold text-green-400">v1.0.0</p>
+          <div class="mt-4 text-sm text-gray-300 space-y-2">
+            <p>
+              <span data-i18n="settings.ultima_comprobacion">Última comprobación</span>:
+              <span id="lastCheck" class="text-gray-400">— 31/08/25</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="bg-gray-900/70 backdrop-blur rounded-2xl border border-gray-800 shadow-lg overflow-hidden">
+          <div class="p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold mb-4" data-i18n="settings.acerca_de">Acerca de</h2>
+              <p class="text-gray-300 mt-2 leading-relaxed" data-i18n="settings.acerca_de_texto">
+                Hola, soy Sara, desarrolladora de este juego. En primer lugar quiero agradecerte por jugarlo.
+                Este es un juego cómico-narrativo realizado para la competición de la UNIJAM 08/2025.
+                Si te ha gustado y quieres apoyarme, puedes seguirme en mis redes sociales.
+                Espero que disfrutes de la experiencia y te diviertas jugando.
+              </p>
+              <p class="text-gray-400 italic mt-4" data-i18n="settings.dedicado">
+                Dedico este juego a Curro 🐾
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </aside>
+
+      <main class="mt-8 md:mt-0 space-y-6">
+
+        <article class="bg-gray-900/70 backdrop-blur rounded-2xl border border-gray-800 shadow-lg p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold" data-i18n="settings.seleccionar_idioma">Seleccionar idioma</h2>
+            <button id="btnGuardarIdioma"
+              class="btn px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm disabled:opacity-50"
+              disabled data-i18n="settings.guardar">
+              Guardar
+            </button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <button data-lang="es"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-es flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.es">Español (Verificado)</span>
+            </button>
+            <button data-lang="en"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-gb flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.en">English</span>
+            </button>
+            <button data-lang="pt"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-pt flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.pt">Português</span>
+            </button>
+            <button data-lang="zh"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-cn flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.zh">中文</span>
+            </button>
+            <button data-lang="ja"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-jp flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.ja">日本語</span>
+            </button>
+            <button data-lang="ko"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-kr flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.ko">한국어</span>
+            </button>
+            <button data-lang="de"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-de flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.de">Deutsch</span>
+            </button>
+            <button data-lang="fr"
+              class="language-btn flex flex-col items-center p-3 rounded-xl bg-gray-800/60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="fi fi-fr flag-size text-5xl"></span>
+              <span class="mt-1 text-sm" data-i18n="settings.idiomas.fr">Français</span>
+            </button>
+          </div>
+
+          <p class="mt-4 text-xs text-gray-400 text-center" data-i18n="settings.aclaracion">
+            ⚠️ Solo el Español está verificado.
+            Disculpen si hay errores en otros idiomas.
+            Agradezco tus sugerencias de nuevos idiomas o correcciones; se evaluarán e intentarán aplicar en futuras
+            actualizaciones.
+          </p>
+          <br />
+          <div class="flex justify-center items-center gap-6 mt-4 text-2xl">
+            <a href="https://www.linkedin.com/in/sara-cubero-garcía-conde-471143165" target="_blank"
+              class="text-blue-500 hover:text-blue-400">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/@saracubero8186" target="_blank"
+              class="text-red-500 hover:text-orange-400">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://sarafullstack.github.io/" target="_blank" class="text-gray-300 hover:text-white">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:sara.estudios.2017@gmail.com" target="_blank" class="text-red-500 hover:text-orange-400">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script src="settings.js"></script>
+  <script src="../../scripts/i18n.js"></script>
+</body>
+
+</html>

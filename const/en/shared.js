@@ -24,15 +24,16 @@ export const COMPARTIR_ARCHIVOS = {
         { nombre: "Headline", tipo: "texto", contenido: "New patch for the GhostWriter video game adds 'boomer slang mode' for boomers trying to understand what the game is about" }
     ]
 };
+
 export const PRENSA = [
-    { nombre: "The collator", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "News Storm", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "The Magnifying glass", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "The Lighthouse", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "Government press", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "The Change That Works for the Future", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "Executive Channel", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "The Digital Plaza", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "Subverse Margin", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "The Global Parody", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { nombre: "Fact Check", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { nombre: "Sensationalist Press", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { nombre: "Independent-Alternative", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { nombre: "Serious-Traditional", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { nombre: "Government-Official", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { nombre: "Ideological-Partisan", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { nombre: "Economic-Corporate", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { nombre: "Local-Community", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { nombre: "Underground-Countercultural", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
+    { nombre: "Humorous-Satirical", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
 ];

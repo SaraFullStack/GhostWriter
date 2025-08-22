@@ -1,4 +1,5 @@
-import { COMPARTIR_ARCHIVOS, PRENSA } from "../../const/es/shared.js";
+const lang = localStorage.getItem("preferredLang") || "en";
+const { COMPARTIR_ARCHIVOS, PRENSA } = await import(`../../const/${lang}/shared.js`);
 
 const contenedorCarpetas = document.getElementById("carpetas");
 const contenedorArchivos = document.getElementById("archivos");

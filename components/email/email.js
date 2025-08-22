@@ -1,4 +1,5 @@
-import { correos } from '../../const/es/email.js';
+const lang = localStorage.getItem("preferredLang") || "en";
+const { EMAILS } = await import(`../../const/${lang}/email.js`);
 
 const listEl = document.getElementById('emailList');
 const subjectEl = document.getElementById('emailSubject');
@@ -10,7 +11,7 @@ const actionBar = document.getElementById('actionBar');
 let seleccionado = null;
 let seleccionadoIndex = null;
 
-function renderList(items = correos) {
+function renderList(items = EMAILS) {
   listEl.innerHTML = '';
   items.forEach((c, i) => {
     const li = document.createElement('li');
@@ -52,7 +53,7 @@ function selectMail(c, li, index) {
 
 searchEl.addEventListener('input', (e) => {
   const q = e.target.value.toLowerCase();
-  const filtered = correos.filter(c =>
+  const filtered = EMAILS.filter(c =>
     c.subject.toLowerCase().includes(q) || c.from.toLowerCase().includes(q)
   );
   renderList(filtered);
@@ -61,5 +62,5 @@ searchEl.addEventListener('input', (e) => {
 renderList();
 const firstLi = listEl.querySelector("li");
 if (firstLi) {
-  selectMail(correos[0], firstLi, 0);
+  selectMail(EMAILS[0], firstLi, 0);
 }

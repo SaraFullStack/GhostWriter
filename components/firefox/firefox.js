@@ -1,10 +1,37 @@
-import { NOTICIAS } from "../../const/es/news.js";
+import { NEWS as NEWS_ES } from "../../const/es/news.js";
+import { NEWS as NEWS_EN } from "../../const/en/news.js";
+import { NEWS as NEWS_FR } from "../../const/fr/news.js"; 
+import { NEWS as NEWS_PT } from "../../const/pt/news.js";
+import { NEWS as NEWS_ZH } from "../../const/zh/news.js";
+import { NEWS as NEWS_KO } from "../../const/ko/news.js";
+import { NEWS as NEWS_DE } from "../../const/de/news.js";
+import { NEWS as NEWS_JA } from "../../const/ja/news.js";
 
-localStorage.setItem('diaJuego', 'lunes'); 
+const lang = localStorage.getItem("preferredLang") || "en";
+
+const LOCALES = {
+  es: NEWS_ES,
+  en: NEWS_EN,
+  fr: NEWS_FR,
+  pt: NEWS_PT,
+  zh: NEWS_ZH,
+  ko: NEWS_KO,
+  de: NEWS_DE,
+  ja: NEWS_JA,
+};
+
+const NEWS = LOCALES[lang] || NEWS_EN;
+console.log("[firefox] Loaded NEWS for:", Object.keys(NEWS || {}).join(", ") || "none");
+
+localStorage.setItem('dayGame', 'lunes'); 
 
 const diasJuego = ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"];
-if (!localStorage.getItem("diaJuego")) localStorage.setItem("diaJuego", 0);
-function getDiaJuego(){ const i = parseInt(localStorage.getItem("diaJuego"),10); return diasJuego[i] ?? "lunes"; }
+if (!localStorage.getItem("dayGame")) localStorage.setItem("dayGame", 0);
+
+function getdayGame(){ 
+  const i = parseInt(localStorage.getItem("dayGame"),10); 
+  return diasJuego[i] ?? "lunes"; 
+}
 
 const portadaEl = document.getElementById("portada");
 const meteoEl = document.getElementById("aside-meteo");
@@ -12,7 +39,15 @@ const historiasEl = document.getElementById("aside-historias");
 const asideAdsEl = document.getElementById("aside-ads");
 const diaBadge = document.getElementById("diaLabel");
 
-function escapeHtml(str=""){return String(str).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");}
+function escapeHtml(str=""){
+  return String(str)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#39;");
+}
+
 
 function crearPrincipal(n){
   const art = document.createElement("article");
@@ -49,25 +84,26 @@ function crearSecundaria(s){
   return art;
 }
 
+
 function crearAdBanner(ad){
   const a = document.createElement("a");
-  a.setAttribute("aria-label","Publicidad");
+  a.setAttribute("aria-label","Advertising");
   a.className = "block rounded-lg overflow-hidden bg-gray-800 shadow-md hover:shadow-lg transition-shadow";
   a.innerHTML = `
-    <div class="text-[10px] text-gray-400 pl-2 pt-1">${escapeHtml(ad.alt || "Publicidad")}</div>
-    <img src="${ad.img}" alt="${escapeHtml(ad.alt || "Publicidad")}" class="w-full h-28 sm:h-36 md:h-40 object-cover">
+    <div class="text-[10px] text-gray-400 pl-2 pt-1" data-i18n="firefox.advertising">${escapeHtml(ad.alt || "Advertising")}</div>
+    <img src="${ad.img}" alt="${escapeHtml(ad.alt || "Advertising")}" class="w-full h-28 sm:h-36 md:h-40 object-cover">
   `;
   return a;
 }
 
 function crearAdCard(ad){
   const a = document.createElement("a");
-  a.setAttribute("aria-label","Publicidad");
+  a.setAttribute("aria-label","Advertising");
   a.className = "bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex";
   a.innerHTML = `
-    <img src="${ad.img}" alt="${escapeHtml(ad.alt || "Publicidad")}" class="w-40 object-cover brightness-90">
+    <img src="${ad.img}" alt="${escapeHtml(ad.alt || "Advertising")}" class="w-40 object-cover brightness-90">
     <div class="p-4 flex items-center justify-center">
-      <span class="text-gray-300 font-medium">${escapeHtml(ad.alt || "Publicidad")}</span>
+      <span class="text-gray-300 font-medium" data-i18n="firefox.advertising">${escapeHtml(ad.alt || "Advertising")}</span>
     </div>
   `;
   return a;
@@ -75,18 +111,19 @@ function crearAdCard(ad){
 
 function crearAdAside(ad){
   const a = document.createElement("a");
-  a.setAttribute("aria-label","Publicidad");
+  a.setAttribute("aria-label","Advertising");
   a.className = "block bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow";
   a.innerHTML = `
-    <img src="${ad.img}" alt="${escapeHtml(ad.title || "Publicidad")}" class="w-full h-32 object-cover">
+    <img src="${ad.img}" alt="${escapeHtml(ad.title || "Advertising")}" class="w-full h-32 object-cover">
     <div class="p-3">
-      <div class="text-[10px] text-gray-400">Publicidad</div>
-      <h5 class="text-sm font-semibold">${escapeHtml(ad.alt || "Publicidad")}</h5>
+      <div class="text-[10px] text-gray-400" data-i18n="firefox.advertising">Advertising</div>
+      <h5 class="text-sm font-semibold">${escapeHtml(ad.alt || "Advertising")}</h5>
       <p class="text-xs text-gray-400">${escapeHtml(ad.text || "")}</p>
     </div>
   `;
   return a;
 }
+
 
 function renderPortada(data){
   portadaEl.innerHTML = "";
@@ -123,7 +160,7 @@ function renderPortada(data){
 function renderAside(a, adsAside){
   meteoEl.innerHTML = `
     <div class="flex items-center justify-between mb-3">
-      <h3 class="text-xl font-semibold text-white">El tiempo</h3>
+      <h3 class="text-xl font-semibold text-white" data-i18n="firefox.weather">The Weather</h3>
       <span class="text-sm bg-orange-500 text-white px-2 py-1 rounded select-none cursor-default">
         ${escapeHtml(a.temperatura ?? "—")}
       </span>
@@ -135,7 +172,7 @@ function renderAside(a, adsAside){
 
   const historias = a?.historias ?? [];
   historiasEl.innerHTML = `
-    <h4 class="text-lg font-semibold mb-3 text-white">Noticias del día</h4>
+    <h4 class="text-lg font-semibold mb-3 text-white" data-i18n="firefox.news">News of the day</h4>
     <ul class="space-y-3 text-gray-300 text-sm">
       ${historias.map(h => `
         <li>
@@ -152,13 +189,13 @@ function renderAside(a, adsAside){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const dia = getDiaJuego();
+  const dia = getdayGame();
   if (diaBadge) diaBadge.textContent = dia;
 
-  const dataDia = NOTICIAS?.[dia] ?? NOTICIAS?.["lunes"];
+  const dataDia = NEWS?.[dia] ?? NEWS?.["lunes"];
   if (!dataDia) {
     portadaEl.innerHTML = `<div class="bg-red-900/40 border border-red-800 rounded-lg p-4">
-      <p class="text-red-200">No hay noticias definidas para “${escapeHtml(dia)}”.</p>
+      <p class="text-red-200">No hay NEWS definidas para “${escapeHtml(dia)}”.</p>
     </div>`;
     return;
   }

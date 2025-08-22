@@ -1,4 +1,4 @@
-export const NOTICIAS = {
+export const NEWS = {
   "lunes": {
     "principal": {
       "medioLogo": "../../assets/images/companies/observador.png",

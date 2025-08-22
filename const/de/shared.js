@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "The collator", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "News Storm", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "The Magnifying glass", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "The Lighthouse", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "Government press", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "The Change That Works for the Future", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "Executive Channel", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "The Digital Plaza", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "Subverse Margin", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "The Global Parody", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { nombre: "Faktencheck", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { nombre: "Sensationspresse", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { nombre: "Unabhängig-Alternativ", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { nombre: "Seriös-Traditionell", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { nombre: "Regierungsnah-Offiziell", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { nombre: "Ideologisch-Parteiisch", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { nombre: "Wirtschaftlich-Korporativ", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { nombre: "Lokal-Gemeinschaftlich", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { nombre: "Underground-Kontrapulturell", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
+    { nombre: "Humoristisch-Satirisch", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
 ];

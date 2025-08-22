@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Portada Noticias — Día de juego</title>
+  <title i18n="firefox.title">News Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../../font-family.css" />
@@ -13,16 +13,16 @@
 
   <main class="max-w-7xl mx-auto p-6 grid grid-cols-12 gap-6">
     <section id="portada" class="col-span-12 lg:col-span-8 space-y-6" aria-live="polite">
-      <div class="bg-gray-800 rounded-lg p-6 animate-pulse">Cargando portada…</div>
+      <div class="bg-gray-800 rounded-lg p-6 animate-pulse" data-i18n="firefox.load">Loading...</div>
     </section>
 
     <aside class="col-span-12 lg:col-span-4 space-y-6 sticky top-4 h-fit">
       <div id="aside-meteo" class="bg-gray-800 rounded-lg p-4 shadow-md">
-        <div class="animate-pulse">Cargando meteo…</div>
+        <div class="animate-pulse" data-i18n="firefox.load">Loading...</div>
       </div>
 
       <div id="aside-historias" class="bg-gray-800 rounded-lg p-4 shadow-md max-h-[500px] overflow-y-auto">
-        <div class="animate-pulse">Cargando historias…</div>
+        <div class="animate-pulse" data-i18n="firefox.load">Loading...</div>
       </div>
 
       <div id="aside-ads" class="space-y-4"></div>
@@ -31,6 +31,8 @@
   <script type="module" src="./firefox.js"></script>
   <audio id="clickSound" src="../../assets/audio/click-234708.mp3" preload="auto"></audio>
   <script src="../../scripts/audio.js"></script>
+  <script src="../../scripts/i18n.js"></script>
+
 </body>
 
 </html>
