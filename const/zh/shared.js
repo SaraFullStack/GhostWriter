@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "整理者", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "新闻风暴", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "放大镜", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "灯塔", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "政府新闻", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "为未来而变", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "执行频道", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "数字广场", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "边缘颠覆", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "全球讽刺", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:1, nombre: "灯塔", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { id:2, nombre: "新闻风暴", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { id:3, nombre: "放大镜", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { id:4, nombre: "全球讽刺", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:5, nombre: "政府新闻", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { id:6, nombre: "整理者", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { id:7, nombre: "执行频道", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { id:8, nombre: "数字广场", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { id:9, nombre: "为未来而变", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { id:10, nombre: "边缘颠覆", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
 ];

@@ -1,5 +1,5 @@
 export const NEWS = {
-  "lunes": {
+  "0": {
     "principal": {
       "medioLogo": "../../assets/images/companies/observador.png",
       "medio": "观察者 · 2小时",
@@ -64,7 +64,7 @@ export const NEWS = {
       ]
     }
   },
-  "martes": {
+  "1": {
     "principal": {
       "titulo": "超市推出带GPS的购物车",
       "imagen": "../../assets/images/adds/primary/gps.png"
@@ -126,10 +126,10 @@ export const NEWS = {
       ]
     }
   },
-  "miércoles": {
+  "2": {
     "principal": {
       "titulo": "女子被困家中因‘智能锁’未识别其面容",
-      "imagen": "../../assets/images/adds/vecina.png"
+      "imagen": "../../assets/images/adds/primary/vecina.png"
     },
     "secundarias": [
       {
@@ -188,10 +188,10 @@ export const NEWS = {
       ]
     }
   },
-  "jueves": {
+  "3": {
     "principal": {
       "titulo": "新的VIP痴迷：为什么名人都在雇佣克隆人",
-      "imagen": "../../assets/images/adds/clones.png"
+      "imagen": "../../assets/images/adds/primary/clones.png"
     },
     "secundarias": [
       {
@@ -250,10 +250,10 @@ export const NEWS = {
       ]
     }
   },
-  "viernes": {
+  "4": {
     "principal": {
       "titulo": "市场开发新型经济住房，按揭可与另一对夫妇共享",
-      "imagen": "../../assets/images/adds/piso.png"
+      "imagen": "../../assets/images/adds/primary/piso.png"
     },
     "secundarias": [
       {
@@ -312,10 +312,10 @@ export const NEWS = {
       ]
     }
   },
-  "sábado": {
+  "5": {
     "principal": {
       "titulo": "博彩公司崩盘‘阿基米德FC’总能猜对π的下一个小数点",
-      "imagen": "../../assets/images/adds/arquimedes.png"
+      "imagen": "../../assets/images/adds/primary/arquimedes.png"
     },
     "secundarias": [
       {
@@ -374,10 +374,10 @@ export const NEWS = {
       ]
     }
   },
-  "domingo": {
+  "6": {
     "principal": {
       "titulo": "GhostWriter游戏新补丁加入‘老年俚语模式’，让长辈试图理解游戏内容",
-      "imagen": "../../assets/images/adds/ghost.png"
+      "imagen": "../../assets/images/adds/primary/ghost.png"
     },
     "secundarias": [
       {

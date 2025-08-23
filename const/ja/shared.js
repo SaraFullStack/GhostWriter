@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "ファクトチェック", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "センセーショナルな報道", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "独立系・オルタナティブ", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "真面目・伝統的", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "政府・公式", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "イデオロギー・党派", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "経済・企業", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "地域・コミュニティ", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "アンダーグラウンド・カウンターカルチャー", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "ユーモア・風刺", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:1, nombre: "真面目・伝統的", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { id:2, nombre: "センセーショナルな報道", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { id:3, nombre: "独立系・オルタナティブ", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { id:4, nombre: "ユーモア・風刺", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:5, nombre: "政府・公式", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { id:6, nombre: "ファクトチェック", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { id:7, nombre: "経済・企業", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { id:8, nombre: "地域・コミュニティ", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { id:9, nombre: "イデオロギー・党派", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { id:10, nombre: "アンダーグラウンド・カウンターカルチャー", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
 ];

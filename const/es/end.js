@@ -4,7 +4,7 @@ export const RESULT_CONFIG = {
         badge: 'Puntuación máxima',
         badgeColor: { bg: 'bg-emerald-900/40', border: 'border-emerald-700', text: 'text-emerald-300' },
         title: 'El Profeta Anónimo',
-        summary: 'Eres la voz que todo el mundo escucha y cuyas profecías se cumplen, pero nadie conoce tu identidad. Haces leyenda y tu influencia es inmensa.'
+        summary: 'Eres la voice que todo el mundo escucha y cuyas profecías se cumplen, pero nadie conoce tu identidad. Haces leyenda y tu influencia es inmensa.'
     },
     bien: {
         image: '../../assets/images/ends/bueno.png',

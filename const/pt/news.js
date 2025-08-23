@@ -1,5 +1,5 @@
 export const NEWS = {
-  "lunes": {
+  "0": {
     "principal": {
       "medioLogo": "../../assets/images/companies/observador.png",
       "medio": "El Observador · 2h",
@@ -64,7 +64,7 @@ export const NEWS = {
       ]
     }
   },
-  "martes": {
+  "1": {
     "principal": {
       "titulo": "Rede de supermercados lança carrinho com GPS",
       "imagen": "../../assets/images/adds/primary/gps.png"
@@ -126,10 +126,10 @@ export const NEWS = {
       ]
     }
   },
-  "miércoles": {
+  "2": {
     "principal": {
       "titulo": "Mulher presa em casa porque a fechadura 'inteligente' não reconheceu seu rosto",
-      "imagen": "../../assets/images/adds/vecina.png"
+      "imagen": "../../assets/images/adds/primary/vecina.png"
     },
     "secundarias": [
       {
@@ -188,10 +188,10 @@ export const NEWS = {
       ]
     }
   },
-  "jueves": {
+  "3": {
     "principal": {
       "titulo": "A nova obsessão VIP: Por que os famosos estão contratando clones",
-      "imagen": "../../assets/images/adds/clones.png"
+      "imagen": "../../assets/images/adds/primary/clones.png"
     },
     "secundarias": [
       {
@@ -250,10 +250,10 @@ export const NEWS = {
       ]
     }
   },
-  "viernes": {
+  "4": {
     "principal": {
       "titulo": "O mercado desenvolve um novo tipo de moradia econômica com hipoteca compartilhada com outro casal",
-      "imagen": "../../assets/images/adds/piso.png"
+      "imagen": "../../assets/images/adds/primary/piso.png"
     },
     "secundarias": [
       {
@@ -312,10 +312,10 @@ export const NEWS = {
       ]
     }
   },
-  "sábado": {
+  "5": {
     "principal": {
       "titulo": "Queda nas casas de apostas 'Arquímedes FC' sempre marca o próximo decimal de π",
-      "imagen": "../../assets/images/adds/arquimedes.png"
+      "imagen": "../../assets/images/adds/primary/arquimedes.png"
     },
     "secundarias": [
       {
@@ -374,10 +374,10 @@ export const NEWS = {
       ]
     }
   },
-  "domingo": {
+  "6": {
     "principal": {
       "titulo": "Novo patch do videogame GhostWriter adiciona 'modo gíria para boomers' que tentam entender do que se trata o jogo",
-      "imagen": "../../assets/images/adds/ghost.png"
+      "imagen": "../../assets/images/adds/primary/ghost.png"
     },
     "secundarias": [
       {

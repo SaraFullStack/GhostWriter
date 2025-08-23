@@ -28,7 +28,7 @@ function actualizarFecha() {
   const fecha = formatterFecha.format(ahora);
   const hora  = formatterHora.format(ahora);
 
-  topbarDate.textContent = `${fecha} · ${hora}`;
+  topbarDate?.textContent = `${fecha} · ${hora}`;
 }
 
 setInterval(actualizarFecha, 1000);

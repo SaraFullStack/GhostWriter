@@ -1,5 +1,5 @@
 export const NEWS = {
-  "lunes": {
+  "0": {
     "principal": {
       "medioLogo": "../../assets/images/companies/observador.png",
       "medio": "エル・オブセルバドール · 2時間前",
@@ -64,7 +64,7 @@ export const NEWS = {
       ]
     }
   },
-  "martes": {
+  "1": {
     "principal": {
       "titulo": "スーパーマーケットチェーンがGPS付きカートを発売",
       "imagen": "../../assets/images/adds/primary/gps.png"
@@ -126,10 +126,10 @@ export const NEWS = {
       ]
     }
   },
-  "miércoles": {
+  "2": {
     "principal": {
       "titulo": "女性が自宅に閉じ込められる、スマートロックが顔を認識しなかったため",
-      "imagen": "../../assets/images/adds/vecina.png"
+      "imagen": "../../assets/images/adds/primary/vecina.png"
     },
     "secundarias": [
       {
@@ -188,10 +188,10 @@ export const NEWS = {
       ]
     }
   },
-  "jueves": {
+  "3": {
     "principal": {
       "titulo": "新しいVIPの執着：なぜ有名人はクローンを雇っているのか",
-      "imagen": "../../assets/images/adds/clones.png"
+      "imagen": "../../assets/images/adds/primary/clones.png"
     },
     "secundarias": [
       {
@@ -250,10 +250,10 @@ export const NEWS = {
       ]
     }
   },
-  "viernes": {
+  "4": {
     "principal": {
       "titulo": "市場が新しい経済的住宅タイプを開発、他のカップルと共同ローン",
-      "imagen": "../../assets/images/adds/piso.png"
+      "imagen": "../../assets/images/adds/primary/piso.png"
     },
     "secundarias": [
       {
@@ -312,10 +312,10 @@ export const NEWS = {
       ]
     }
   },
-  "sábado": {
+  "5": {
     "principal": {
       "titulo": "ブックメーカーで暴落、『アルキメデスFC』は常にπの次の小数点を記録",
-      "imagen": "../../assets/images/adds/arquimedes.png"
+      "imagen": "../../assets/images/adds/primary/arquimedes.png"
     },
     "secundarias": [
       {
@@ -374,10 +374,10 @@ export const NEWS = {
       ]
     }
   },
-  "domingo": {
+  "6": {
     "principal": {
       "titulo": "GhostWriterゲームの新パッチが『ブーマー向けスラングモード』追加、ゲーム内容を理解しようとする人向け",
-      "imagen": "../../assets/images/adds/ghost.png"
+      "imagen": "../../assets/images/adds/primary/ghost.png"
     },
     "secundarias": [
       {

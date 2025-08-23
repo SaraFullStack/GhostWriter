@@ -1,5 +1,5 @@
 export const NEWS = {
-  "lunes": {
+  "0": {
     "principal": {
       "medioLogo": "../../assets/images/companies/observador.png",
       "medio": "El Observador · 2h",
@@ -64,7 +64,7 @@ export const NEWS = {
       ]
     }
   },
-  "martes": {
+  "1": {
     "principal": {
       "titulo": "Supermarket chain launches shopping cart with GPS",
       "imagen": "../../assets/images/adds/primary/gps.png"
@@ -126,10 +126,10 @@ export const NEWS = {
       ]
     }
   },
-  "miércoles": {
+  "2": {
     "principal": {
       "titulo": "Woman locked in her own house because the 'smart lock' didn’t recognize her face",
-      "imagen": "../../assets/images/adds/vecina.png"
+      "imagen": "../../assets/images/adds/primary/vecina.png"
     },
     "secundarias": [
       {
@@ -188,10 +188,10 @@ export const NEWS = {
       ]
     }
   },
-  "jueves": {
+  "3": {
     "principal": {
       "titulo": "The new VIP obsession: Why are celebrities hiring clones",
-      "imagen": "../../assets/images/adds/clones.png"
+      "imagen": "../../assets/images/adds/primary/clones.png"
     },
     "secundarias": [
       {
@@ -250,10 +250,10 @@ export const NEWS = {
       ]
     }
   },
-  "viernes": {
+  "4": {
     "principal": {
       "titulo": "The market develops a new type of affordable housing with a mortgage to share with another couple",
-      "imagen": "../../assets/images/adds/piso.png"
+      "imagen": "../../assets/images/adds/primary/piso.png"
     },
     "secundarias": [
       {
@@ -312,10 +312,10 @@ export const NEWS = {
       ]
     }
   },
-  "sábado": {
+  "5": {
     "principal": {
       "titulo": "Collapse in betting houses 'Archimedes FC' always scores the next decimal of π",
-      "imagen": "../../assets/images/adds/arquimedes.png"
+      "imagen": "../../assets/images/adds/primary/arquimedes.png"
     },
     "secundarias": [
       {
@@ -374,10 +374,10 @@ export const NEWS = {
       ]
     }
   },
-  "domingo": {
+  "6": {
     "principal": {
       "titulo": "New GhostWriter video game patch adds 'boomer slang mode' for those trying to understand what the game is about",
-      "imagen": "../../assets/images/adds/ghost.png"
+      "imagen": "../../assets/images/adds/primary/ghost.png"
     },
     "secundarias": [
       {

@@ -4,7 +4,7 @@ export const RESULT_CONFIG = {
         badge: 'Pontuação máxima',
         badgeColor: { bg: 'bg-emerald-900/40', border: 'border-emerald-700', text: 'text-emerald-300' },
         title: 'Profeta Anônimo',
-        summary: 'Você é a voz que todos ouvem, suas previsões sempre se realizam, mas ninguém conhece sua identidade. Você cria lendas e deixa um impacto duradouro.'
+        summary: 'Você é a voice que todos ouvem, suas previsões sempre se realizam, mas ninguém conhece sua identidade. Você cria lendas e deixa um impacto duradouro.'
     },
     bien: {
         image: '../../assets/images/ends/bueno.png',

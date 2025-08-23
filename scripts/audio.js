@@ -1,18 +1,39 @@
-// ===== CLICK SOUND =====
+// ================= CLICK SOUND =================
 const clickSound = document.getElementById('clickSound');
-document.addEventListener('click', () => {
-  // Solo reproducir si está activado en localStorage
-  if (localStorage.getItem('clickEnabled') !== 'false') {
-    clickSound.currentTime = 0;
-    clickSound.play();
-  }
+
+// Función para activar sonido de clic en un documento cualquiera
+function activarClickSound(doc) {
+  if (!doc) return;
+  doc.addEventListener('pointerdown', () => {
+    if (localStorage.getItem('clickEnabled') !== 'false') {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    }
+  });
+}
+
+// Activar en el documento principal
+activarClickSound(document);
+
+// Activar también en iframes (del mismo dominio) cuando carguen
+window.addEventListener('load', () => {
+  document.querySelectorAll('iframe').forEach(iframe => {
+    iframe.addEventListener('load', () => {
+      try {
+        activarClickSound(iframe.contentDocument);
+      } catch (e) {
+        console.warn("No se pudo enganchar el click dentro del iframe:", e);
+      }
+    });
+  });
 });
 
-// ===== AMBIENT SOUND =====
+
+// ================= AMBIENT SOUND =================
 const ambientSound = document.getElementById('ambientSound');
 const btnSonido = document.getElementById('btnSonido');
 
-// Cargar configuración inicial desde localStorage
+// Configuración inicial desde localStorage
 window.addEventListener('load', () => {
   const muted = localStorage.getItem('ambientMuted') === 'true';
   const volume = localStorage.getItem('ambientVolume') || 1;
@@ -20,42 +41,30 @@ window.addEventListener('load', () => {
   ambientSound.muted = muted;
   ambientSound.volume = volume;
 
-  // Ajustar icono al estado guardado
-  if (muted) {
-    btnSonido.classList.remove('fa-volume-high');
-    btnSonido.classList.add('fa-volume-xmark');
-  } else {
-    btnSonido.classList.remove('fa-volume-xmark');
-    btnSonido.classList.add('fa-volume-high');
-  }
+  btnSonido.classList.toggle('fa-volume-high', !muted);
+  btnSonido.classList.toggle('fa-volume-xmark', muted);
 
-  // Intentar reproducir (con autoplay policy en browsers)
+  // Intentar reproducir (autoplay policy)
   ambientSound.play().catch(() => {
     const activarAudio = () => {
       ambientSound.muted = muted;
       ambientSound.play();
-      document.removeEventListener('click', activarAudio);
+      document.removeEventListener('pointerdown', activarAudio);
     };
-    document.addEventListener('click', activarAudio);
+    document.addEventListener('pointerdown', activarAudio);
   });
 });
 
-// Botón para activar/desactivar sonido ambiente
+// Botón activar/desactivar sonido ambiente
 btnSonido.addEventListener('click', () => {
   ambientSound.muted = !ambientSound.muted;
   localStorage.setItem('ambientMuted', ambientSound.muted);
 
-  if (ambientSound.muted) {
-    btnSonido.classList.remove('fa-volume-high');
-    btnSonido.classList.add('fa-volume-xmark');
-  } else {
-    btnSonido.classList.remove('fa-volume-xmark');
-    btnSonido.classList.add('fa-volume-high');
-  }
+  btnSonido.classList.toggle('fa-volume-high', !ambientSound.muted);
+  btnSonido.classList.toggle('fa-volume-xmark', ambientSound.muted);
 });
 
-// ===== OPCIONAL: CONTROL DE VOLUMEN =====
-// Si tienes un input range para el volumen:
+// ================= CONTROL DE VOLUMEN (opcional) =================
 const slider = document.getElementById('volumenSlider');
 if (slider) {
   slider.addEventListener('input', () => {
@@ -63,7 +72,6 @@ if (slider) {
     localStorage.setItem('ambientVolume', slider.value);
   });
 
-  // Al cargar, aplicar valor guardado
   const savedVol = localStorage.getItem('ambientVolume');
   if (savedVol !== null) {
     slider.value = savedVol;

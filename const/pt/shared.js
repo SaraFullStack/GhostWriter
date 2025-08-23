@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "O Colador", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "Tempestade de Notícias", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "A Lupa", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "O Farol", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "Imprensa Governamental", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "A Mudança Que Funciona para o Futuro", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "Canal Executivo", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "A Praça Digital", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "Margem Subversa", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "A Paródia Global", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:1, nombre: "O Farol", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { id:2, nombre: "Tempestade de Notícias", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { id:3, nombre: "A Lupa", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { id:4, nombre: "A Paródia Global", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:5, nombre: "Imprensa Governamental", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { id:6, nombre: "O Colador", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { id:7, nombre: "Canal Executivo", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { id:8, nombre: "A Praça Digital", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { id:9, nombre: "A Mudança Que Funciona para o Futuro", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { id:10, nombre: "Margem Subversa", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
 ];

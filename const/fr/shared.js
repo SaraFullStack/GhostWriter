@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "Vérification des faits", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "Presse sensationnaliste", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "Indépendant-Alternatif", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "Sérieux-Traditionnel", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "Gouvernement-Officiel", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "Idéologique-Partisan", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "Économique-Entreprise", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "Local-Communautaire", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "Underground-Contre-culturel", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "Humoristique-Satirique", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:1, nombre: "Sérieux-Traditionnel", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { id:2, nombre: "Presse sensationnaliste", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { id:3, nombre: "Indépendant-Alternatif", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { id:4, nombre: "Humoristique-Satirique", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:5, nombre: "Gouvernement-Officiel", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { id:6, nombre: "Vérification des faits", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { id:7, nombre: "Économique-Entreprise", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { id:8, nombre: "Local-Communautaire", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { id:9, nombre: "Idéologique-Partisan", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { id:10, nombre: "Underground-Contre-culturel", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
 ];

@@ -1,5 +1,5 @@
 export const NEWS = {
-  "lunes": {
+  "0": {
     "principal": {
       "medioLogo": "../../assets/images/companies/observador.png",
       "medio": "El Observador · 2h",
@@ -64,7 +64,7 @@ export const NEWS = {
       ]
     }
   },
-  "martes": {
+  "1": {
     "principal": {
       "titulo": "Cadena de supermercados lanza carrito con GPS",
       "imagen": "../../assets/images/adds/primary/gps.png"
@@ -126,10 +126,10 @@ export const NEWS = {
       ]
     }
   },
-  "miércoles": {
+  "2": {
     "principal": {
       "titulo": "Mujer encerrada en su propia casa porque la cerradura 'inteligente' no reconoció su rostro",
-      "imagen": "../../assets/images/adds/vecina.png"
+      "imagen": "../../assets/images/adds/primary/vecina.png"
     },
     "secundarias": [
       {
@@ -188,10 +188,10 @@ export const NEWS = {
       ]
     }
   },
-  "jueves": {
+  "3": {
     "principal": {
       "titulo": "La nueva obsesión VIP: ¿Por qué los famosos están contratando clones",
-      "imagen": "../../assets/images/adds/clones.png"
+      "imagen": "../../assets/images/adds/primary/clones.png"
     },
     "secundarias": [
       {
@@ -250,10 +250,10 @@ export const NEWS = {
       ]
     }
   },
-  "viernes": {
+  "4": {
     "principal": {
       "titulo": "El mercado desarrolla un nuevo tipo vivienda económica con hipoteca a compartir con otra pareja",
-      "imagen": "../../assets/images/adds/piso.png"
+      "imagen": "../../assets/images/adds/primary/piso.png"
     },
     "secundarias": [
       {
@@ -312,10 +312,10 @@ export const NEWS = {
       ]
     }
   },
-  "sábado": {
+  "5": {
     "principal": {
       "titulo": "Desplome en casas de apuestas 'Arquímedes FC' siempre marca el siguiente decimal de π",
-      "imagen": "../../assets/images/adds/arquimedes.png"
+      "imagen": "../../assets/images/adds/primary/arquimedes.png"
     },
     "secundarias": [
       {
@@ -374,10 +374,10 @@ export const NEWS = {
       ]
     }
   },
-  "domingo": {
+  "6": {
     "principal": {
       "titulo": "Nuevo parche del videojuego GhostWriter añade 'modo jerga para boomers' que intentan entender de que va el juego",
-      "imagen": "../../assets/images/adds/ghost.png"
+      "imagen": "../../assets/images/adds/primary/ghost.png"
     },
     "secundarias": [
       {

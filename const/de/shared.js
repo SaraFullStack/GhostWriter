@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "Faktencheck", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "Sensationspresse", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "Unabhängig-Alternativ", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "Seriös-Traditionell", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "Regierungsnah-Offiziell", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "Ideologisch-Parteiisch", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "Wirtschaftlich-Korporativ", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "Lokal-Gemeinschaftlich", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "Underground-Kontrapulturell", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "Humoristisch-Satirisch", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:1, nombre: "Seriös-Traditionell", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { id:2, nombre: "Sensationspresse", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { id:3, nombre: "Unabhängig-Alternativ", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { id:4, nombre: "Humoristisch-Satirisch", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:5, nombre: "Regierungsnah-Offiziell", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { id:6, nombre: "Faktencheck", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { id:7, nombre: "Wirtschaftlich-Korporativ", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { id:8, nombre: "Lokal-Gemeinschaftlich", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { id:9, nombre: "Ideologisch-Parteiisch", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { id:10, nombre: "Underground-Kontrapulturell", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
 ];

@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "더 콜레이터", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "뉴스 스톰", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "돋보기", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "등대", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "정부 언론", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "미래를 위한 변화", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "임원 채널", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "디지털 광장", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "서브버스 마진", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "글로벌 패러디", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:1, nombre: "등대", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { id:2, nombre: "뉴스 스톰", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { id:3, nombre: "돋보기", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { id:4, nombre: "글로벌 패러디", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:5, nombre: "정부 언론", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { id:6, nombre: "더 콜레이터", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { id:7, nombre: "임원 채널", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { id:8, nombre: "디지털 광장", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { id:9, nombre: "미래를 위한 변화", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { id:10, nombre: "서브버스 마진", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
 ];

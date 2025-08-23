@@ -9,29 +9,80 @@ const modal = document.getElementById("modal");
 const modalContenido = document.getElementById("modalContenido");
 const modalCerrar = document.getElementById("modalCerrar");
 
+// ----------------- Utilidades -----------------
 function formatearFecha(fecha) {
   const partes = fecha.split("-");
   return `${partes[2]}/${partes[1]}/${partes[0]}`;
 }
 
+// Ordena claves: si son numéricas ("0","1","2"...), por número; si no, respeta el orden original
+function getClavesOrdenadas(obj) {
+  const claves = Object.keys(obj);
+  const withIdx = claves.map((k, i) => ({
+    k,
+    i,
+    n: Number(k),
+    isNum: !Number.isNaN(Number(k)),
+  }));
+  withIdx.sort((a, b) => {
+    if (a.isNum && b.isNum) return a.n - b.n;
+    return a.i - b.i; // mantiene orden de inserción si no son numéricas
+  });
+  return withIdx.map(x => x.k);
+}
+
+// ----------------- Prensa fija por carpeta (solo guarda el nombre) -----------------
+function findPrensaByNombre(nombre) {
+  if (!Array.isArray(PRENSA)) return null;
+  // Si hay nombres duplicados, usará la primera coincidencia.
+  return PRENSA.find(p => p && p.nombre === nombre) || null;
+}
+
+function getPrensaForDay() {
+  const dayGame = localStorage.getItem("dayGame") ? Number(localStorage.getItem("dayGame")) : 0;
+  const keyNombre = `press_${dayGame}`;
+
+  // 1) Intentar leer nombre guardado
+  const nombreGuardado = localStorage.getItem(keyNombre);
+  if (nombreGuardado) {
+    const encontrada = findPrensaByNombre(nombreGuardado);
+    if (encontrada) return encontrada;
+    // Si el catálogo cambió y ya no existe esa prensa, limpiar para regenerar
+    localStorage.removeItem(keyNombre);
+  }
+
+  // 2) Elegir aleatoria y guardar SOLO el nombre
+  if (!Array.isArray(PRENSA) || PRENSA.length === 0) return null;
+  const aleatoria = PRENSA[Math.floor(Math.random() * PRENSA.length)];
+  localStorage.setItem(keyNombre, aleatoria.id);
+  return aleatoria;
+}
+
+// ----------------- UI: Carpetas y Archivos -----------------
 function mostrarCarpetas() {
   contenedorCarpetas.innerHTML = "";
   contenedorCarpetas.classList.remove("hidden");
   contenedorArchivos.classList.add("hidden");
 
-  Object.keys(COMPARTIR_ARCHIVOS).forEach(dia => {
+  // dayGame llega desde fuera (window.dayGame = 0,1,2,...)
+  const dayGame = localStorage.getItem("dayGame") ? Number(localStorage.getItem("dayGame")) : 0;
+
+  const clavesOrdenadas = getClavesOrdenadas(COMPARTIR_ARCHIVOS);
+  const visibles = Math.min(dayGame + 1, clavesOrdenadas.length); // n -> n+1 visibles
+
+  for (let i = 0; i < visibles; i++) {
+    const dia = clavesOrdenadas[i];
     const carpeta = document.createElement("div");
     carpeta.className = "flex flex-col items-center cursor-pointer hover:bg-gray-800 rounded p-4";
     carpeta.innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-2 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 7a2 2 0 012-2h5l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
-        </svg>
-        <span class="text-center text-gray-200 text-sm font-medium truncate max-w-full">${dia}</span>
-      `;
-
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-2 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 7a2 2 0 012-2h5l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
+      </svg>
+      <span class="text-center text-gray-200 text-sm font-medium truncate max-w-full">${dia}</span>
+    `;
     carpeta.onclick = () => mostrarArchivos(dia);
     contenedorCarpetas.appendChild(carpeta);
-  });
+  }
 }
 
 function crearIconoArchivo(archivo) {
@@ -39,22 +90,22 @@ function crearIconoArchivo(archivo) {
     return `<img src="${archivo.url}" alt="${archivo.nombre}" class="w-full h-40 object-cover rounded-lg shadow-md" />`;
   } else if (archivo.tipo === "video") {
     return `
-        <div class="w-full h-40 flex items-center justify-center bg-gray-800 rounded-lg shadow-md text-gray-400 text-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M4 6v12a2 2 0 002 2h8a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2z" />
-          </svg>
-          Video
-        </div>
-      `;
+      <div class="w-full h-40 flex items-center justify-center bg-gray-800 rounded-lg shadow-md text-gray-400 text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M4 6v12a2 2 0 002 2h8a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2z" />
+        </svg>
+        Video
+      </div>
+    `;
   } else if (archivo.tipo === "texto") {
     return `
-        <div class="w-full h-40 flex flex-col items-center justify-center bg-gray-800 rounded-lg shadow-md text-gray-400 text-center px-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m-6-8h6m-7 8h.01M6 6h12M6 18h12" />
-          </svg>
-          <span class="truncate">${archivo.nombre}</span>
-        </div>
-      `;
+      <div class="w-full h-40 flex flex-col items-center justify-center bg-gray-800 rounded-lg shadow-md text-gray-400 text-center px-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m-6-8h6m-7 8h.01M6 6h12M6 18h12" />
+        </svg>
+        <span class="truncate">${archivo.nombre}</span>
+      </div>
+    `;
   } else {
     return `<div>${archivo.nombre}</div>`;
   }
@@ -67,17 +118,15 @@ function mostrarArchivos(dia) {
 
   const archivos = COMPARTIR_ARCHIVOS[dia];
 
-  const randomPRENSA = PRENSA[Math.floor(Math.random() * PRENSA.length)];
-
-  if (randomPRENSA) {
+  // Prensa fija por carpeta (resuelta por nombre)
+  const prensa = getPrensaForDay();
+  if (prensa) {
     const divPRENSA = document.createElement("div");
     divPRENSA.className = "cursor-pointer";
     divPRENSA.innerHTML =
-      crearIconoArchivo(randomPRENSA) +
-      `<p class="mt-2 text-blue-400 text-center truncate">${randomPRENSA.nombre}</p>`;
-
-    divPRENSA.onclick = () => abrirModal(randomPRENSA);
-
+      crearIconoArchivo(prensa) +
+      `<p class="mt-2 text-blue-400 text-center truncate">${prensa.nombre}</p>`;
+    divPRENSA.onclick = () => abrirModal(prensa);
     gridArchivos.appendChild(divPRENSA);
   }
 
@@ -92,13 +141,10 @@ function mostrarArchivos(dia) {
     div.innerHTML =
       crearIconoArchivo(archivo) +
       `<p class="mt-2 text-gray-200 text-center truncate">${archivo.nombre}</p>`;
-
     div.onclick = () => abrirModal(archivo);
-
     gridArchivos.appendChild(div);
   });
 }
-
 
 function abrirModal(archivo) {
   modalContenido.innerHTML = "";
@@ -109,8 +155,8 @@ function abrirModal(archivo) {
     modalContenido.innerHTML = `<video src="${archivo.url}" controls autoplay class="max-w-full max-h-[70vh] rounded"></video>`;
   } else if (archivo.tipo === "texto") {
     modalContenido.innerHTML = `
-        <pre class="whitespace-pre-wrap text-gray-200 bg-gray-800 p-4 rounded max-h-[70vh] overflow-auto">${archivo.contenido}</pre>
-      `;
+      <pre class="whitespace-pre-wrap text-gray-200 bg-gray-800 p-4 rounded max-h-[70vh] overflow-auto">${archivo.contenido}</pre>
+    `;
   } else {
     modalContenido.textContent = "No se puede mostrar este archivo.";
   }
@@ -134,4 +180,5 @@ btnVolver.onclick = () => {
   mostrarCarpetas();
 };
 
+// ----------------- Inicializar -----------------
 mostrarCarpetas();

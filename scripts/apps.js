@@ -59,7 +59,6 @@ window.addEventListener("message", (e) => {
 });
 
 
-
 function cerrarModalApp() {
   const modal = document.getElementById('modalGeneral');
   const iframe = document.getElementById('iframeModal');
@@ -74,6 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnCerrarModal) {
     btnCerrarModal.style.display = 'none';
   }
+  const btnTerminarJuego = document.getElementById('btnTerminarJuego');
+  if (btnTerminarJuego) {
+    btnTerminarJuego.addEventListener('click', () => {
+      window.location.replace("./components/end/end.html");
+    });
+  }
 });
+
 window.abrirApp = abrirApp;
 window.cerrarModalApp = cerrarModalApp;
+
+
+export { abrirApp };

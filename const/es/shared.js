@@ -25,14 +25,14 @@ export const COMPARTIR_ARCHIVOS = {
     ]
 };
 export const PRENSA = [
-    { nombre: "Verificación", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
-    { nombre: "Sensacionalista", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
-    { nombre: "Independiente-Alternativa", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
-    { nombre: "Seria-Tradicional", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
-    { nombre: "Gubernamental-Oficialista", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
-    { nombre: "Ideológica-Partidista", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
-    { nombre: "Empresarial-Corporativa", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
-    { nombre: "Local-Comunitaria", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
-    { nombre: "Underground-Contracultural", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
-    { nombre: "Humorística-Satírica", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:1, nombre: "Seria-Tradicional", tipo: "imagen", url: "../../assets/images/prensa/faro.png" },
+    { id:2, nombre: "Sensacionalista", tipo: "imagen", url: "../../assets/images/prensa/tormenta.png" },
+    { id:3, nombre: "Independiente-Alternativa", tipo: "imagen", url: "../../assets/images/prensa/lupa.png" },
+    { id:4, nombre: "Humorística-Satírica", tipo: "imagen", url: "../../assets/images/prensa/parody.png" },
+    { id:5, nombre: "Gubernamental-Oficialista", tipo: "imagen", url: "../../assets/images/prensa/gubernal.png" },
+    { id:6, nombre: "Verificación", tipo: "imagen", url: "../../assets/images/prensa/collator.png" },
+    { id:7, nombre: "Empresarial-Corporativa", tipo: "imagen", url: "../../assets/images/prensa/executive.png" },
+    { id:8, nombre: "Local-Comunitaria", tipo: "imagen", url: "../../assets/images/prensa/plaza.png" },
+    { id:9, nombre: "Ideológica-Partidista", tipo: "imagen", url: "../../assets/images/prensa/change.png" },
+    { id:10, nombre: "Underground-Contracultural", tipo: "imagen", url: "../../assets/images/prensa/subverse.png" },
 ];

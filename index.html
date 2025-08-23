@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="font-family.css" />
   <link rel="icon" href="assets/images/fantasma2.png" type="image/x-icon" />
-  <script>
+  <script type="module">
+    import { abrirApp } from './scripts/apps.js';
+
     const stored = localStorage.getItem("preferredLang");
     let lang;
 
@@ -26,14 +28,26 @@
     if (!dayGame) {
       localStorage.setItem("dayGame", 0);
     } else if (dayGame == 6) {
-      window.location.replace("./components/end/end.html");
+      abrirApp("Firefox");
+      const dock = document.getElementById("dock");
+      if (dock) {
+        dock.style.display = "none";
+      }
+      const end = document.getElementById("btnTerminarJuego");
+      if (end) {
+        setTimeout(() => {
+          end.classList.remove("hidden");
+        }, 3000);
+      }
+
     }
 
     const session = localStorage.getItem("session");
     if (!session) {
       window.location.replace("./components/start/start.html");
-    } 
+    }
   </script>
+
 
 
 </head>
@@ -124,9 +138,18 @@
       </div>
     </div>
   </div>
+  <button id="btnTerminarJuego" class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+         z-50 flex items-center gap-4 px-14 py-8
+         text-3xl font-extrabold text-white
+         bg-[#E95420]/25 rounded-3xl
+         backdrop-blur-lg border-4 border-[#E95420]/50
+         shadow-[0_0_40px_rgba(233,84,32,0.8),0_0_80px_rgba(233,84,32,0.6)]
+         hover:bg-[#E95420]/35 hover:shadow-[0_0_60px_rgba(233,84,32,1),0_0_100px_rgba(233,84,32,0.8)]
+         hover:scale-110 active:scale-95
+         animate-pulse transition-all duration-500">
+    <i class="fas fa-ghost text-4xl"></i> Revelar Destino
+  </button>
 
-  <audio id="ambientSound" src="./assets/audio/mistery-ghost-house-instrumental-223586.mp3" preload="auto" loop
-    muted></audio>
   <audio id="clickSound" src="./assets/audio/click-234708.mp3" preload="auto"></audio>
 
   <script type="module" src="./scripts/main.js"></script>

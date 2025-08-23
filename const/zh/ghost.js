@@ -19,18 +19,18 @@ export const GHOST = {
             "Por fin un supermercado que usa gps para democratizar las ofertas, no para controlar a la ciudadanía… salvo que gobiernen 'ellos'. Nuestra línea es clara: más gps para que las ofertas lleguen a todos los bolsillos, menos pasillos privatizados.",
             "Filtramos el mapa interno: cada carrito con gps dibuja coreografías absurdas que delatan hábitos del cliente —el capitalismo también sabe tus atajos hacia el chocolate. Recomendación subversiva: cambia el ritmo, baila en zigzag, rompe la huella del cliente."
         ],
-        "Puntuacion": {
-            "Frase 1": "P1, P2, P3, P4, P5, P6, P7, P8, P9, P10",
-            "Frase 2": "P2, P3, P4, P5, P6, P7, P8, P9, P10, P1",
-            "Frase 3": "P3, P4, P5, P6, P7, P8, P9, P10, P1, P2",
-            "Frase 4": "P4, P5, P6, P7, P8, P9, P10, P1, P2, P3",
-            "Frase 5": "P5, P6, P7, P8, P9, P10, P1, P2, P3, P4",
-            "Frase 6": "P6, P7, P8, P9, P10, P1, P2, P3, P4, P5",
-            "Frase 7": "P7, P8, P9, P10, P1, P2, P3, P4, P5, P6",
-            "Frase 8": "P8, P9, P10, P1, P2, P3, P4, P5, P6, P7",
-            "Frase 9": "P9, P10, P1, P2, P3, P4, P5, P6, P7, P8",
-            "Frase 10": "P10, P1, P2, P3, P4, P5, P6, P7, P8, P9"
-        }
+        "Puntuacion": [
+            "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+            "2, 3, 4, 5, 6, 7, 8, 9, 10, 1",
+            "3, 4, 5, 6, 7, 8, 9, 10, 1, 2",
+            "4, 5, 6, 7, 8, 9, 10, 1, 2, 3",
+            "5, 6, 7, 8, 9, 10, 1, 2, 3, 4",
+            "6, 7, 8, 9, 10, 1, 2, 3, 4, 5",
+            "7, 8, 9, 10, 1, 2, 3, 4, 5, 6",
+            "8, 9, 10, 1, 2, 3, 4, 5, 6, 7",
+            "9, 10, 1, 2, 3, 4, 5, 6, 7, 8",
+            "10, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+        ]
     },
     "1": {
         "palabrasDisponibles": [
@@ -52,18 +52,18 @@ export const GHOST = {
             "Cuando tu casa depende de una inteligente que evalúa tu rostro, el control ya no es tuyo. Exigimos tecnología abierta y llaves que funcionen sin nube.",
             "Manual irreverente: si la cerradura inteligente niega tu rostro, apaga el Wi-Fi, llama a un cerrajero ético y documenta el fallo. Recuerda: tu puerta no es SaaS."
         ],
-        "Puntuacion": {
-            "Frase 1": "P1, P4, P7, P10, P3, P6, P9, P2, P5, P8",
-            "Frase 2": "P2, P5, P8, P1, P4, P7, P10, P3, P6, P9",
-            "Frase 3": "P3, P6, P9, P2, P5, P8, P1, P4, P7, P10",
-            "Frase 4": "P4, P7, P10, P3, P6, P9, P2, P5, P8, P1",
-            "Frase 5": "P5, P8, P1, P4, P7, P10, P3, P6, P9, P2",
-            "Frase 6": "P6, P9, P2, P5, P8, P1, P4, P7, P10, P3",
-            "Frase 7": "P7, P10, P3, P6, P9, P2, P5, P8, P1, P4",
-            "Frase 8": "P8, P1, P4, P7, P10, P3, P6, P9, P2, P5",
-            "Frase 9": "P9, P2, P5, P8, P1, P4, P7, P10, P3, P6",
-            "Frase 10": "P10, P3, P6, P9, P2, P5, P8, P1, P4, P7"
-        }
+        "Puntuacion": [
+            "1, 4, 7, 10, 3, 6, 9, 2, 5, 8",
+            "2, 5, 8, 1, 4, 7, 10, 3, 6, 9",
+            "3, 6, 9, 2, 5, 8, 1, 4, 7, 10",
+            "4, 7, 10, 3, 6, 9, 2, 5, 8, 1",
+            "5, 8, 1, 4, 7, 10, 3, 6, 9, 2",
+            "6, 9, 2, 5, 8, 1, 4, 7, 10, 3",
+            "7, 10, 3, 6, 9, 2, 5, 8, 1, 4",
+            "8, 1, 4, 7, 10, 3, 6, 9, 2, 5",
+            "9, 2, 5, 8, 1, 4, 7, 10, 3, 6",
+            "10, 3, 6, 9, 2, 5, 8, 1, 4, 7"
+        ]
     },
     "2": {
         "palabrasDisponibles": [
@@ -85,18 +85,18 @@ export const GHOST = {
             "Si una élite VIP sigue contratando dobles de IA y alimentando la obsesión por multiplicarse, toca regular usos y derechos de imagen. Primero la persona, luego el avatar.",
             "Desactiva la obsesión por los clones de IA saltándote la zona VIP y montando tu propio microshow en la acera. Si te venden \"meet & greet\" con algoritmos, exige caché para artistas de carne y hueso."
         ],
-        "Puntuacion": {
-            "Frase 1": "P1, P8, P5, P2, P9, P6, P3, P10, P7, P4",
-            "Frase 2": "P2, P9, P6, P3, P10, P7, P4, P1, P8, P5",
-            "Frase 3": "P3, P10, P7, P4, P1, P8, P5, P2, P9, P6",
-            "Frase 4": "P4, P1, P8, P5, P2, P9, P6, P3, P10, P7",
-            "Frase 5": "P5, P2, P9, P6, P3, P10, P7, P4, P1, P8",
-            "Frase 6": "P6, P3, P10, P7, P4, P1, P8, P5, P2, P9",
-            "Frase 7": "P7, P4, P1, P8, P5, P2, P9, P6, P3, P10",
-            "Frase 8": "P8, P5, P2, P9, P6, P3, P10, P7, P4, P1",
-            "Frase 9": "P9, P6, P3, P10, P7, P4, P1, P8, P5, P2",
-            "Frase 10": "P10, P7, P4, P1, P8, P5, P2, P9, P6, P3"
-        }
+        "Puntuacion": [
+            "1, 8, 5, 2, 9, 6, 3, 10, 7, 4",
+            "2, 9, 6, 3, 10, 7, 4, 1, 8, 5",
+            "3, 10, 7, 4, 1, 8, 5, 2, 9, 6",
+            "4, 1, 8, 5, 2, 9, 6, 3, 10, 7",
+            "5, 2, 9, 6, 3, 10, 7, 4, 1, 8",
+            "6, 3, 10, 7, 4, 1, 8, 5, 2, 9",
+            "7, 4, 1, 8, 5, 2, 9, 6, 3, 10",
+            "8, 5, 2, 9, 6, 3, 10, 7, 4, 1",
+            "9, 6, 3, 10, 7, 4, 1, 8, 5, 2",
+            "10, 7, 4, 1, 8, 5, 2, 9, 6, 3"
+        ]
     },
     "3": {
         "palabrasDisponibles": [
@@ -118,18 +118,18 @@ export const GHOST = {
             "Sin control público, la opción económica con una hipoteca compartida deja a cualquier pareja negociando desde la debilidad. Reclamamos cláusulas de salida sin penalización y parque público de alquiler.",
             "Manual de trinchera: que el mercado no dicte quién duerme dónde; si hay una hipoteca común, que cada pareja firme protocolo de paz y reparto real de espacios. Si hay divorcio, asamblea en la azotea antes que el notario."
         ],
-        "Puntuacion": {
-            "Frase 1": "P1, P3, P7, P6, P5, P8, P4, P9, P2, P10",
-            "Frase 2": "P2, P4, P8, P7, P6, P9, P5, P10, P3, P1",
-            "Frase 3": "P3, P5, P9, P8, P7, P10, P6, P1, P4, P2",
-            "Frase 4": "P4, P6, P10, P9, P8, P1, P7, P2, P5, P3",
-            "Frase 5": "P5, P7, P1, P10, P9, P2, P8, P3, P6, P4",
-            "Frase 6": "P6, P8, P2, P1, P10, P3, P9, P4, P7, P5",
-            "Frase 7": "P7, P9, P3, P2, P1, P4, P10, P5, P8, P6",
-            "Frase 8": "P8, P10, P4, P3, P2, P5, P1, P6, P9, P7",
-            "Frase 9": "P9, P1, P5, P4, P3, P6, P2, P7, P10, P8",
-            "Frase 10": "P10, P2, P6, P5, P4, P7, P3, P8, P1, P9"
-        }
+        "Puntuacion": [
+            "1, 3, 7, 6, 5, 8, 4, 9, 2, 10",
+            "2, 4, 8, 7, 6, 9, 5, 10, 3, 1",
+            "3, 5, 9, 8, 7, 10, 6, 1, 4, 2",
+            "4, 6, 10, 9, 8, 1, 7, 2, 5, 3",
+            "5, 7, 1, 10, 9, 2, 8, 3, 6, 4",
+            "6, 8, 2, 1, 10, 3, 9, 4, 7, 5",
+            "7, 9, 3, 2, 1, 4, 10, 5, 8, 6",
+            "8, 10, 4, 3, 2, 5, 1, 6, 9, 7",
+            "9, 1, 5, 4, 3, 6, 2, 7, 10, 8",
+            "10, 2, 6, 5, 4, 7, 3, 8, 1, 9"
+        ]
     },
     "4": {
         "palabrasDisponibles": [
@@ -151,18 +151,18 @@ export const GHOST = {
             "Si la fiebre por Arquímedes FC se alimenta de acertar el siguiente decimal, toca proteger al pequeño jugador ante el desplome de cuotas. Transparencia, límites a la ludificación y educación financiera en la grada.",
             "Manifiesto de grada: cuando Arquímedes FC clava otro decimal de pi, apagamos la app y tocamos bombos. Si mandan los números, la fiesta se muda a la pista del barrio."
         ],
-        "Puntuacion": {
-            "Frase 1": "P1, P3, P6, P9, P2, P5, P8, P10, P4, P7",
-            "Frase 2": "P2, P4, P7, P10, P3, P6, P9, P1, P5, P8",
-            "Frase 3": "P3, P5, P8, P1, P4, P7, P10, P2, P6, P9",
-            "Frase 4": "P4, P6, P9, P2, P5, P8, P1, P3, P7, P10",
-            "Frase 5": "P5, P7, P10, P3, P6, P9, P2, P4, P8, P1",
-            "Frase 6": "P6, P8, P1, P4, P7, P10, P3, P5, P9, P2",
-            "Frase 7": "P7, P9, P2, P5, P8, P1, P4, P6, P10, P3",
-            "Frase 8": "P8, P10, P3, P6, P9, P2, P5, P7, P1, P4",
-            "Frase 9": "P9, P1, P4, P7, P10, P3, P6, P8, P2, P5",
-            "Frase 10": "P10, P2, P5, P8, P1, P4, P7, P9, P3, P6"
-        }
+        "Puntuacion": [
+            "1, 3, 6, 9, 2, 5, 8, 10, 4, 7",
+            "2, 4, 7, 10, 3, 6, 9, 1, 5, 8",
+            "3, 5, 8, 1, 4, 7, 10, 2, 6, 9",
+            "4, 6, 9, 2, 5, 8, 1, 3, 7, 10",
+            "5, 7, 10, 3, 6, 9, 2, 4, 8, 1",
+            "6, 8, 1, 4, 7, 10, 3, 5, 9, 2",
+            "7, 9, 2, 5, 8, 1, 4, 6, 10, 3",
+            "8, 10, 3, 6, 9, 2, 5, 7, 1, 4",
+            "9, 1, 4, 7, 10, 3, 6, 8, 2, 5",
+            "10, 2, 5, 8, 1, 4, 7, 9, 3, 6"
+        ]
 
     },
     "5": {
@@ -176,30 +176,31 @@ export const GHOST = {
         "textos": [
             "El parche del videojuego GhostWriter añade ayudas de comprensión y un glosario básico para decisiones clave. Se activa en accesibilidad y no altera finales ni rutas narrativas.",
             "¡Última hora! Un parche del videojuego rescata a boomers con pistas tamaño pancarta y flechas que dicen “pulsa aquí”. Prometen menos “¿y esto de qué va?” y más “¡dale al capítulo 2!”.",
-            "Auditamos el parche de GhostWriter: el modo jerga es opcional, no graba voz y muestra definiciones en árbol de diálogo. Pedimos publicar el diccionario y sus licencias.",
+            "Auditamos el parche de GhostWriter: el modo jerga es opcional, no graba voice y muestra definiciones en árbol de diálogo. Pedimos publicar el diccionario y sus licencias.",
             "GhostWriter estrena jerga para boomers y traduce “lore” como “cotilleo bien escrito”. Próxima actualización: el narrador enviará audios de dos minutos explicando cada cliffhanger.",
             "El parche de GhostWriter mejora el acceso para boomers con resúmenes por escena. La medida se alinea con los planes de alfabetización digital y participación cultural.",
             "Afirmación: el videojuego GhostWriter escucha al salón para aprender jerga. Veredicto: Falso; usa un diccionario local y no comparte datos.",
             "Con el parche, el videojuego explica jerga en elecciones ramificadas y notas del narrador. Resultado: más finales vistos y menos abandono en el prólogo.",
             "En el centro cívico, el videojuego traduce jerga a boomers con ejemplos del barrio: “railroad” pasa a “el narrador se puso mandón”. Café, galletas y debate sobre el final “del director”.",
             "Si un parche fija jerga para boomers, que sea configurable y apagable. Libertad de elección y modo clásico para quien no quiera ruedines.",
-            "En el fanzine del barrio, el videojuego GhostWriter se juega con boomers y abuelos punk leyendo en voz alta. Regla de la casa: menos tutorial y más caos narrativo."
+            "En el fanzine del barrio, el videojuego GhostWriter se juega con boomers y abuelos punk leyendo en voice alta. Regla de la casa: menos tutorial y más caos narrativo."
         ],
-        "Puntuacion": {
-            "Frase 1": "P1, P6, P7, P3, P5, P8, P9, P4, P2, P10",
-            "Frase 2": "P2, P7, P8, P4, P6, P9, P10, P5, P3, P1",
-            "Frase 3": "P3, P8, P9, P5, P7, P10, P1, P6, P4, P2",
-            "Frase 4": "P4, P9, P10, P6, P8, P1, P2, P7, P5, P3",
-            "Frase 5": "P5, P10, P1, P7, P9, P2, P3, P8, P6, P4",
-            "Frase 6": "P6, P1, P2, P8, P10, P3, P4, P9, P7, P5",
-            "Frase 7": "P7, P2, P3, P9, P1, P4, P5, P10, P8, P6",
-            "Frase 8": "P8, P3, P4, P10, P2, P5, P6, P1, P9, P7",
-            "Frase 9": "P9, P4, P5, P1, P3, P6, P7, P2, P10, P8",
-            "Frase 10": "P10, P5, P6, P2, P4, P7, P8, P3, P1, P9"
-        }
+        "Puntuacion": [
+            "1, 6, 7, 3, 5, 8, 9, 4, 2, 10",
+            "2, 7, 8, 4, 6, 9, 10, 5, 3, 1",
+            "3, 8, 9, 5, 7, 10, 1, 6, 4, 2",
+            "4, 9, 10, 6, 8, 1, 2, 7, 5, 3",
+            "5, 10, 1, 7, 9, 2, 3, 8, 6, 4",
+            "6, 1, 2, 8, 10, 3, 4, 9, 7, 5",
+            "7, 2, 3, 9, 1, 4, 5, 10, 8, 6",
+            "8, 3, 4, 10, 2, 5, 6, 1, 9, 7",
+            "9, 4, 5, 1, 3, 6, 7, 2, 10, 8",
+            "10, 5, 6, 2, 4, 7, 8, 3, 1, 9"
+        ]
     }
 };
 
 export const WORDS = "Palabras seleccionadas ";
 export const TEXTS = "Texto generado para las palabras seleccionadas.";
 export const WRITE = "Escribiendo...";
+export const ERROR_NOT_READY = "Antes de escribir, he de saber el títular y la prensa que me contrató (Consultar Archivos Compartidos)";

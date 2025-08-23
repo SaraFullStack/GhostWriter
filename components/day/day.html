@@ -14,7 +14,6 @@
   <div class="container">
     <h1 id="diaTexto">...</h1>
   </div>
-  <audio id="introSound" src="../../assets/audio/nigth.mp3" preload="auto" muted autoplay></audio>
 
   <script type="module">
     import { DAYS as DAYS_ES } from "../../const/es/days.js";
@@ -42,25 +41,17 @@
     const DAYS = LOCALES[lang] || DAYS_EN;
 
     document.addEventListener('DOMContentLoaded', function () {
-      const sound = document.getElementById("introSound");
       const diaElemento = document.getElementById("diaTexto");
 
       const diaGuardado = localStorage.getItem("dayGame") || "0";
 
       if (diaElemento) {
-        diaElemento.textContent = DAYS[diaGuardado] || "Lunes";
-      }
-
-      if (sound) {
-        setTimeout(() => {
-          sound.muted = false;
-          window.location.href = '../../index.html';
-        }, 1000);
+        diaElemento.textContent = DAYS[diaGuardado] || "0";
       }
 
       setTimeout(() => {
-
-      }, 2000);
+        window.location.href = '../../index.html';
+      }, 1000);
     });
   </script>
 </body>
