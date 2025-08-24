@@ -1,89 +1,90 @@
+import {
+  mostrarTopbarFirefox,
+  mostrarTopbarGhost,
+  mostrarTopbarCompartir,
+  mostrarTopbarOriginal,
+  mostrarTopbarSettings,
+} from './topbar.js';
 
-import { mostrarTopbarFirefox, mostrarTopbarGhost, mostrarTopbarCompartir, mostrarTopbarOriginal, mostrarTopbarSettings } from './topbar.js';
+const APPS = Object.freeze({
+  Firefox: {
+    src: './components/firefox/firefox.html',
+    topbar: mostrarTopbarFirefox,
+  },
+  Ghost: {
+    src: './components/ghost/ghost.html',
+    topbar: mostrarTopbarGhost,
+  },
+  CompartirArchivos: {
+    src: './components/shared/shared.html',
+    topbar: mostrarTopbarCompartir,
+  },
+  'Configuración': {
+    src: './components/settings/settings.html',
+    topbar: mostrarTopbarSettings,
+  },
+  Correo: {
+    src: './components/email/email.html',
+    topbar: mostrarTopbarCompartir,
+  },
+  Actividades: {
+    src: './components/actividades/actividades.html',
+    topbar: null,
+  },
+});
 
-function abrirApp(nombre) {
-  const modal = document.getElementById('modalGeneral');
-  const iframe = document.getElementById('iframeModal');
-
-  if (nombre === 'Firefox') {
-    iframe.src = './components/firefox/firefox.html';
-    modal.classList.remove('hidden');
-    mostrarTopbarFirefox();
-    return;
-  }
-
-  if (nombre === 'Ghost') {
-    iframe.src = './components/ghost/ghost.html';
-    modal.classList.remove('hidden');
-    mostrarTopbarGhost();
-    return;
-  }
-
-  if (nombre === 'CompartirArchivos') {
-    iframe.src = './components/shared/shared.html';
-    modal.classList.remove('hidden');
-    mostrarTopbarCompartir();
-    return;
-  }
-  if (nombre === 'Configuración') {
-    iframe.src = './components/settings/settings.html';
-    modal.classList.remove('hidden');
-    mostrarTopbarSettings();
-    return;
-  }
-  if (nombre === 'Correo') {
-    iframe.src = './components/email/email.html';
-    modal.classList.remove('hidden');
-    mostrarTopbarCompartir();
-    return;
-  }
-  if (nombre === 'Actividades') {
-    iframe.src = './components/actividades/actividades.html';
-    modal.classList.remove('hidden');
-    return;
-  }
-
+const $ = (id) => document.getElementById(id);
+const showModal = (src) => {
+  const modal = $('modalGeneral');
+  const iframe = $('iframeModal');
+  iframe.src = src;
+  modal.classList.remove('hidden');
+};
+const hideModal = () => {
+  const modal = $('modalGeneral');
+  const iframe = $('iframeModal');
   iframe.src = '';
   modal.classList.add('hidden');
+};
+
+function abrirApp(nombre) {
+  const app = APPS[nombre];
+
+  if (app) {
+    showModal(app.src);
+    if (typeof app.topbar === 'function') app.topbar();
+    return;
+  }
+
+  hideModal();
   mostrarTopbarOriginal();
 }
 
-window.addEventListener("message", (e) => {
-  if (e.data?.type === "close:topbar") {
-    cerrarModalApp();
-  }
-  if (e.data?.type === "goto:day") {
-    cerrarModalApp();
-    window.location.href = "./components/day/day.html";
-  }
-});
-
-
 function cerrarModalApp() {
-  const modal = document.getElementById('modalGeneral');
-  const iframe = document.getElementById('iframeModal');
-  iframe.src = '';
-  modal.classList.add('hidden');
+  hideModal();
   mostrarTopbarOriginal();
   top.location.reload();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('message', ({ data }) => {
+  if (data?.type === 'close:topbar') cerrarModalApp();
 
-  const btnCerrarModal = document.getElementById('btnCerrarModal');
-  if (btnCerrarModal) {
-    btnCerrarModal.style.display = 'none';
+  if (data?.type === 'goto:day') {
+    cerrarModalApp();
+    window.location.href = './components/day/day.html';
   }
-  const btnTerminarJuego = document.getElementById('btnTerminarJuego');
-  if (btnTerminarJuego) {
-    btnTerminarJuego.addEventListener('click', () => {
-      window.location.replace("./components/end/end.html");
-    });
-  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btnCerrarModal = $('btnCerrarModal');
+  if (btnCerrarModal) btnCerrarModal.style.display = 'none';
+
+  $('btnTerminarJuego')?.addEventListener('click', () => {
+    window.location.replace('./components/end/end.html');
+  });
 });
 
 window.abrirApp = abrirApp;
 window.cerrarModalApp = cerrarModalApp;
-
 
 export { abrirApp };

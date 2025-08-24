@@ -1,18 +1,18 @@
-const btnApagar = document.getElementById('btnApagar');
-const modalSalir = document.getElementById('modalSalir');
-const confirmarSalir = document.getElementById('confirmarSalir');
-const cancelarSalir = document.getElementById('cancelarSalir');
+const btnEnd = document.getElementById('btnEnd');
+const modalExit = document.getElementById('modalExit');
+const confirmExit = document.getElementById('confirmExit');
+const cancelExit = document.getElementById('cancelExit');
 
-btnApagar.addEventListener('click', () => {
-  modalSalir.classList.remove('hidden');
+btnEnd.addEventListener('click', () => {
+  modalExit.classList.remove('hidden');
 });
 
-cancelarSalir.addEventListener('click', () => {
-  modalSalir.classList.add('hidden');
+cancelExit.addEventListener('click', () => {
+  modalExit.classList.add('hidden');
 });
 
-confirmarSalir.addEventListener('click', () => {
-  modalSalir.classList.add('hidden');
+confirmExit.addEventListener('click', () => {
+  modalExit.classList.add('hidden');
   window.open('', '_self');
   window.close();
   window.location.href = 'https://sarafullstack.github.io/';

@@ -49,7 +49,7 @@ export const GHOST = {
             "Se viraliza que la mujer fue “baneada” por la inteligente por no maquillar el rostro: Falso. El bloqueo se debió a baja iluminación y mala alineación, según registros.",
             "En su casa, la nueva cerradura inteligente priorizó la protección y activó un modo seguro temporal. Lanzamos actualización con acceso de emergencia y soporte 24/7.",
             "En la casa de la esquina, la cerradura se confundió con el rostro bajo la luz del pasillo; el portero abrió con la maestra. Hubo bizcochos para el susto.",
-            "Cuando tu casa depende de una inteligente que evalúa tu rostro, el control ya no es tuyo. Exigimos tecnología abierta y llaves que funcionen sin nube.",
+            "Si dejamos que la inteligencia controle tu casa con el escaneo de tu rostro, ya no eres dueño de nada. Rechazamos la sumisión a estas imposiciones: primero la autoridad del ciudadano, después la máquina.",
             "Manual irreverente: si la cerradura inteligente niega tu rostro, apaga el Wi-Fi, llama a un cerrajero ético y documenta el fallo. Recuerda: tu puerta no es SaaS."
         ],
         "Puntuacion": [
