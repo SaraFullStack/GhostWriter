@@ -1,27 +1,27 @@
 export const COMPARTIR_ARCHIVOS = {
-    "Día 1": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/supermarket.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "连锁超市推出带GPS的购物车" }
+    "天 1": [
+        { nombre: "视频", tipo: "video", url: "../../assets/videos/supermarket.mp4" },
+        { nombre: "持有者", tipo: "texto", contenido: "连锁超市推出带GPS的购物车" }
     ],
-    "Día 2": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/lock.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "女子因智能门锁未识别其面容被困家中" }
+    "天 2": [
+        { nombre: "视频", tipo: "video", url: "../../assets/videos/lock.mp4" },
+        { nombre: "持有者", tipo: "texto", contenido: "女子因智能门锁未识别其面容被困家中" }
     ],
-    "Día 3": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/clones.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "名人新宠：为什么名人开始雇佣克隆人？" }
+    "天 3": [
+        { nombre: "视频", tipo: "video", url: "../../assets/videos/clones.mp4" },
+        { nombre: "持有者", tipo: "texto", contenido: "名人新宠：为什么名人开始雇佣克隆人？" }
     ],
-    "Día 4": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/house.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "市场开发新型经济住房，可与另一对夫妻共同抵押" }
+    "天 4": [
+        { nombre: "视频", tipo: "video", url: "../../assets/videos/house.mp4" },
+        { nombre: "持有者", tipo: "texto", contenido: "市场开发新型经济住房，可与另一对夫妻共同抵押" }
     ],
-    "Día 5": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/bet.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "博彩公司暴跌，“阿基米德FC”总能猜中π的下一个小数点" }
+    "天 5": [
+        { nombre: "视频", tipo: "video", url: "../../assets/videos/bet.mp4" },
+        { nombre: "持有者", tipo: "texto", contenido: "博彩公司暴跌，“阿基米德FC”总能猜中π的下一个小数点" }
     ],
-    "Día 6": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/boomers.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "GhostWriter游戏新补丁加入“老年人俚语模式”，帮助他们理解游戏内容" }
+    "天 6": [
+        { nombre: "视频", tipo: "video", url: "../../assets/videos/boomers.mp4" },
+        { nombre: "持有者", tipo: "texto", contenido: "GhostWriter游戏新补丁加入“老年人俚语模式”，帮助他们理解游戏内容" }
     ]
 };
 export const PRENSA = [

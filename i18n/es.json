@@ -44,6 +44,7 @@
   "index.exitMessage": "¿Está seguro que quiere salir? Si lo hace perderá la partida.",
   "index.exit": "Salir",
   "index.cancel": "Cancelar",
+  "index.revelate": "Revelar Destino",
 
   "firefox.title": "Portada Noticias",
   "firefox.load": "Cargando...",
@@ -56,5 +57,6 @@
   "ghost.sure": "¿Está seguro de que desea enviar este artículo?",
   "ghost.yes": "Sí, enviar",
   "ghost.cancel": "Cancelar"
+
 
 }

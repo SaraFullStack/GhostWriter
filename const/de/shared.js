@@ -1,27 +1,27 @@
 export const COMPARTIR_ARCHIVOS = {
-    "Día 1": [
+    "Tag 1": [
         { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/supermarket.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Supermarktkette führt Einkaufswagen mit GPS ein" }
+        { nombre: "Halter", tipo: "texto", contenido: "Supermarktkette führt Einkaufswagen mit GPS ein" }
     ],
-    "Día 2": [
+    "Tag 2": [
         { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/lock.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Frau in ihrem eigenen Haus eingeschlossen, weil das 'intelligente' Schloss ihr Gesicht nicht erkannte" }
+        { nombre: "Halter", tipo: "texto", contenido: "Frau in ihrem eigenen Haus eingeschlossen, weil das 'intelligente' Schloss ihr Gesicht nicht erkannte" }
     ],
-    "Día 3": [
+    "Tag 3": [
         { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/clones.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Die neue VIP-Besessenheit: Warum engagieren Prominente Klone?" }
+        { nombre: "Halter", tipo: "texto", contenido: "Die neue VIP-Besessenheit: Warum engagieren Prominente Klone?" }
     ],
-    "Día 4": [
+    "Tag 4": [
         { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/house.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Der Markt entwickelt einen neuen Typ von günstigen Wohnungen mit Hypothek zum Teilen mit einem anderen Paar" }
+        { nombre: "Halter", tipo: "texto", contenido: "Der Markt entwickelt einen neuen Typ von günstigen Wohnungen mit Hypothek zum Teilen mit einem anderen Paar" }
     ],
-    "Día 5": [
+    "Tag 5": [
         { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/bet.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Absturz bei Wettbüros: 'Archimedes FC' erzielt immer die nächste Dezimalstelle von π" }
+        { nombre: "Halter", tipo: "texto", contenido: "Absturz bei Wettbüros: 'Archimedes FC' erzielt immer die nächste Dezimalstelle von π" }
     ],
-    "Día 6": [
+    "Tag 6": [
         { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/boomers.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Neues GhostWriter-Videospiel-Update fügt 'Jargon-Modus für Boomer' hinzu, die versuchen zu verstehen, worum es im Spiel geht" }
+        { nombre: "Halter", tipo: "texto", contenido: "Neues GhostWriter-Videospiel-Update fügt 'Jargon-Modus für Boomer' hinzu, die versuchen zu verstehen, worum es im Spiel geht" }
     ]
 };
 export const PRENSA = [

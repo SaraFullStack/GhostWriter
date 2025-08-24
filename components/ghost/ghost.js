@@ -16,7 +16,6 @@ const modal = document.getElementById('confirmModal');
 const btnNo = document.getElementById('btnNo');
 const btnSi = document.getElementById('btnSi');
 
-// --- NUEVO: helper para clave de prensa del día ---
 function getPressKey(dia) {
   return `press_${dia}`;
 }
@@ -36,10 +35,9 @@ function cargarDatos() {
       mensaje.textContent = ERROR_NOT_READY;
     }
     if (btnEnviar) btnEnviar.disabled = true;
-    return; // ← importante: salir sin renderizar palabras
+    return; 
   }
 
-  // Si existe la clave, habilitamos y seguimos normalmente
   if (btnEnviar) btnEnviar.disabled = false;
 
   if (GHOST[dia]) {
@@ -51,9 +49,7 @@ function cargarDatos() {
   actualizarEstado();
 }
 
-// 1) Añade esta función en cualquier parte superior del archivo
 function mezclar(arr) {
-  // Fisher–Yates
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -171,14 +167,12 @@ modal.addEventListener('click', (e) => {
 });
 
 function PointsDay() {
-  // Como antes incrementas dayGame, el día real del texto es (dayGame - 1).
   const dayGame = Number(localStorage.getItem('dayGame')) || 1;
   const dia = Math.max(0, dayGame - 1);
 
   const ghostDia = GHOST?.[dia];
   if (!ghostDia) return 0;
 
-  // Frase generada y su índice dentro de los textos del día
   const frase = (localStorage.getItem('textDay') || '').trim();
   if (!frase) return 0;
 
@@ -188,28 +182,24 @@ function PointsDay() {
   );
   if (idxTexto === -1) return 0;
 
-  // Leer id de prensa del día: press_<dia> (ej. press_0 = 10)
-  const pressKey = getPressKey(dia); // => `press_${dia}`
+  const pressKey = getPressKey(dia); 
   const rawId = localStorage.getItem(pressKey);
   if (rawId == null) return 0;
   const pressId = Number(String(rawId).trim());
   if (!Number.isFinite(pressId)) return 0;
 
-  // Fila de puntuación para ese texto
-  const tabla = ghostDia.Puntuacion; // se asume esta clave
+  const tabla = ghostDia.Puntuacion; 
   if (!Array.isArray(tabla)) return 0;
 
   const filaRaw = tabla[idxTexto];
   if (filaRaw == null) return 0;
 
-  // Normalizar a array de números
   const orden = (Array.isArray(filaRaw) ? filaRaw : String(filaRaw).split(','))
     .map(s => Number(String(s).trim()))
     .filter(n => Number.isFinite(n));
 
   if (!orden.length) return 0;
 
-  // Posición del id en la fila (0 → 10 pts, ..., 9 → 1 pt)
   const pos = orden.indexOf(pressId);
   if (pos === -1) return 0;
 

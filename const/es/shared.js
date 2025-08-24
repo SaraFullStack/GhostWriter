@@ -1,27 +1,27 @@
 export const COMPARTIR_ARCHIVOS = {
     "Día 1": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/supermarket.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Cadena de supermercados lanza carrito con GPS" }
+        { nombre: "vidéo", tipo: "video", url: "../../assets/videos/supermarket.mp4" },
+        { nombre: "Titulaire", tipo: "texto", contenido: "Cadena de supermercados lanza carrito con GPS" }
     ],
     "Día 2": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/lock.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Mujer encerrada en su propia casa porque la cerradura 'inteligente' no reconoció su rostro" }
+        { nombre: "vidéo", tipo: "video", url: "../../assets/videos/lock.mp4" },
+        { nombre: "Titulaire", tipo: "texto", contenido: "Mujer encerrada en su propia casa porque la cerradura 'inteligente' no reconoció su rostro" }
     ],
     "Día 3": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/clones.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "La nueva obsesión VIP: ¿Por qué los famosos están contratando clones?" }
+        { nombre: "vidéo", tipo: "video", url: "../../assets/videos/clones.mp4" },
+        { nombre: "Titulaire", tipo: "texto", contenido: "La nueva obsesión VIP: ¿Por qué los famosos están contratando clones?" }
     ],
     "Día 4": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/house.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "El mercado desarrolla un nuevo tipo vivienda económica con hipoteca a compartir con otra pareja" }
+        { nombre: "vidéo", tipo: "video", url: "../../assets/videos/house.mp4" },
+        { nombre: "Titulaire", tipo: "texto", contenido: "El mercado desarrolla un nuevo tipo vivienda económica con hipoteca a compartir con otra pareja" }
     ],
     "Día 5": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/bet.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Desplome en casas de apuestas 'Arquímedes FC' siempre marca el siguiente decimal de π" }
+        { nombre: "vidéo", tipo: "video", url: "../../assets/videos/bet.mp4" },
+        { nombre: "Titulaire", tipo: "texto", contenido: "Desplome en casas de apuestas 'Arquímedes FC' siempre marca el siguiente decimal de π" }
     ],
     "Día 6": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/boomers.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "Nuevo parche del videojuego GhostWriter añade 'modo jerga para boomers' que intentan entender de que va el juego" }
+        { nombre: "vidéo", tipo: "video", url: "../../assets/videos/boomers.mp4" },
+        { nombre: "Titulaire", tipo: "texto", contenido: "Nuevo parche del videojuego GhostWriter añade 'modo jerga para boomers' que intentan entender de que va el juego" }
     ]
 };
 export const PRENSA = [

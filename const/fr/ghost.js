@@ -1,23 +1,24 @@
 export const GHOST = {
     "0": {
         "palabrasDisponibles": [
-            "supermercado",
-            "carrito",
-            "gps",
-            "ofertas",
-            "cliente"
+            "supermarché",
+            "intelligent",
+            "chariot",
+            "GPS",
+            "offres",
+            "client"
         ],
         "textos": [
-            "Según la cadena, el supermercado equipará cada carrito con gps para medir rutas y tiempos, según documentos técnicos revisados. Tranquilos: el dato se anonimiza y no vincula ubicación con pagos, pero si su carrito se pierde entre lácteos, el gps sabrá volver.",
-            "¡Carrito con gps arrasa pasillos y huele ofertas desde tres pasillos de distancia! Testigos dicen que el carrito vibra cuando detecta ofertas, y que quien lo suelta… ¡pierde su sitio en la cola!",
-            "Revisamos el contrato del supermercado y comprobamos que el gps solo recoge trayectos, pero no asocia compras a ningún cliente. Aun así, expertos en privacidad piden auditoría externa y un botón físico de apagado.",
-            "El supermercado anuncia que las ofertas ya no perseguirán al cliente: ahora lo adoptarán legalmente y le llevarán el desayuno. En el nuevo programa, cada cliente recibe una carta de amor semanal escrita por las ofertas en papel de cupones.",
-            "Esta modernización del supermercado, con carrito inteligente al servicio de cada cliente, se alinea con el Plan Nacional de Innovación Cotidiana. La medida dinamiza la economía del pasillo 5 y fortalece la confianza del cliente en la cesta patriótica.",
-            "Afirmación viral: \"el gps sube los precios y esconde ofertas del cliente\". Veredicto: Falso — los datos analizados muestran que el gps no modifica precios y las ofertas siguen visibles; confunde correlación con cansancio del cliente tras tres vueltas al pasillo.",
-            "En nuestro supermercado, el carrito redefine la experiencia y acerca ofertas personalizadas en tiempo real. Este avance incrementa la eficiencia de surtido y eleva la satisfacción: más ofertas, menos vueltas, más sonrisas de accionista.",
-            "En la tienda del barrio, Doña Puri probó el carrito y asegura que le encantan las ofertas cuando el cliente pasa por la panadería. \"Si además me avisa del medio kilo de tomates que siempre olvido, le doy propina\", dijo el cliente de la mesa de dominó.",
-            "Por fin un supermercado que usa gps para democratizar las ofertas, no para controlar a la ciudadanía… salvo que gobiernen 'ellos'. Nuestra línea es clara: más gps para que las ofertas lleguen a todos los bolsillos, menos pasillos privatizados.",
-            "Filtramos el mapa interno: cada carrito con gps dibuja coreografías absurdas que delatan hábitos del cliente —el capitalismo también sabe tus atajos hacia el chocolate. Recomendación subversiva: cambia el ritmo, baila en zigzag, rompe la huella del cliente."
+            "Selon la chaîne, le supermarché équipera chaque chariot d’un GPS pour mesurer les trajets et les temps, selon des documents techniques consultés. Rassurez-vous : les données sont anonymisées et ne lient pas la localisation aux paiements, mais si votre chariot se perd parmi les produits laitiers, le GPS saura revenir.",
+            "Chariot avec GPS dévale les rayons et flaire les offres à trois allées de distance ! Des témoins disent que le chariot vibre quand il détecte des offres, et que celui qui le lâche… perd sa place dans la file !",
+            "Nous avons examiné le contrat du supermarché et confirmé que le GPS ne recueille que les trajets, sans associer les achats à un client. Néanmoins, des experts en protection de la vie privée demandent un audit externe et un bouton physique d’arrêt.",
+            "Le supermarché annonce que les offres ne poursuivront plus le client : elles l’adopteront désormais légalement et lui apporteront le petit-déjeuner. Dans le nouveau programme, chaque client reçoit une lettre d’amour hebdomadaire écrite par les offres sur du papier de coupons.",
+            "Cette modernisation du supermarché, avec un chariot intelligent au service de chaque client, s’aligne sur le Plan National d’Innovation Quotidienne. La mesure dynamise l’économie de l’allée 5 et renforce la confiance du client dans le panier patriotique.",
+            "Affirmation virale : « le GPS augmente les prix et cache les offres au client ». Verdict : Faux — les données analysées montrent que le GPS ne modifie pas les prix et que les offres restent visibles ; on confond corrélation et fatigue du client après trois tours de rayon.",
+            "Dans notre supermarché, le chariot redéfinit l’expérience et rapproche des offres personnalisées en temps réel. Ce progrès accroît l’efficacité de l’approvisionnement et élève la satisfaction : plus d’offres, moins de tours, plus de sourires d’actionnaire.",
+            "Dans l’épicerie du quartier, Doña Puri a testé le chariot et affirme qu’elle adore les offres quand le client passe devant la boulangerie. « Si en plus il me rappelle le demi-kilo de tomates que j’oublie toujours, je lui laisse un pourboire », a déclaré le client de la table de dominos.",
+            "Enfin un supermarché qui utilise le GPS pour démocratiser les offres, et non pour contrôler la population… sauf si “eux” gouvernent. Notre ligne est claire : plus de GPS pour que les offres atteignent toutes les poches, moins d’allées privatisées.",
+            "Nous avons divulgué la carte interne : chaque chariot avec GPS dessine des chorégraphies absurdes révélant les habitudes du client — le capitalisme connaît aussi vos raccourcis vers le chocolat. Recommandation subversive : changez le rythme, dansez en zigzag, brisez l’empreinte du client."
         ],
         "Puntuacion": [
             "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
@@ -34,23 +35,23 @@ export const GHOST = {
     },
     "1": {
         "palabrasDisponibles": [
-            "mujer",
-            "casa",
-            "cerradura",
-            "inteligente",
-            "rostro"
+            "femme",
+            "maison",
+            "serrure",
+            "intelligente",
+            "visage"
         ],
         "textos": [
-            "Fuentes técnicas confirman que la cerradura no respondió y la mujer permaneció en su casa hasta la llegada del servicio. Manuales recomiendan un código de respaldo y revisar baterías trimestralmente.",
-            "¡Drama en barrio tranquilo! Una mujer quedó atrapada en su casa cuando la supuesta inteligente decidió hacerse la lista. Vecinos dicen que solo abrió para el repartidor de memes.",
-            "La mujer denuncia que el algoritmo no aceptó su rostro y la mantuvo en la casa sin opciones de emergencia. Piden auditoría del modelo y botón físico accesible.",
-            "La cerradura se declaró demasiado inteligente para mañanas con ojeras y dejó a la mujer ensayando “small talk” con el telefonillo. Nuevo parche promete halagos automáticos y un “perdón, estaba pensando”.",
-            "Las autoridades informan que la cerradura rechazó el rostro de la mujer por parámetros de seguridad y ya se brindó asistencia. El plan Hogar Seguro refuerza líneas de ayuda y kits de llaves físicas.",
-            "Se viraliza que la mujer fue “baneada” por la inteligente por no maquillar el rostro: Falso. El bloqueo se debió a baja iluminación y mala alineación, según registros.",
-            "En su casa, la nueva cerradura inteligente priorizó la protección y activó un modo seguro temporal. Lanzamos actualización con acceso de emergencia y soporte 24/7.",
-            "En la casa de la esquina, la cerradura se confundió con el rostro bajo la luz del pasillo; el portero abrió con la maestra. Hubo bizcochos para el susto.",
-            "Cuando tu casa depende de una inteligente que evalúa tu rostro, el control ya no es tuyo. Exigimos tecnología abierta y llaves que funcionen sin nube.",
-            "Manual irreverente: si la cerradura inteligente niega tu rostro, apaga el Wi-Fi, llama a un cerrajero ético y documenta el fallo. Recuerda: tu puerta no es SaaS."
+            "Des sources techniques confirment que la serrure n’a pas répondu et que la femme est restée dans sa maison jusqu’à l’arrivée du service. Les manuels recommandent un code de secours et de vérifier les piles trimestriellement.",
+            "Drame dans un quartier tranquille ! Une femme est restée coincée dans sa maison lorsque la prétendue intelligente a décidé de faire sa liste. Les voisins disent qu’elle n’a ouvert que pour le livreur de mèmes.",
+            "La femme dénonce que l’algorithme n’a pas accepté son visage et l’a maintenue dans la maison sans options d’urgence. Une expertise externe et un bouton physique accessible sont demandés.",
+            "La serrure s’est déclarée trop intelligente pour les matins avec des cernes et a laissé la femme répéter du « small talk » avec l’interphone. Un nouveau correctif promet des compliments automatiques et un « pardon, je pensais ».",
+            "Les autorités informent que la serrure a rejeté le visage de la femme pour des paramètres de sécurité et une assistance a déjà été fournie. Le plan Maison Sûre renforce les lignes d’aide et les kits de clés physiques.",
+            "On viralise que la femme a été « bannie » par l’intelligente pour ne pas avoir maquillé son visage : Faux. Le blocage était dû à une faible luminosité et à un mauvais alignement, selon les registres.",
+            "Chez elle, la nouvelle serrure intelligente a priorisé la protection et activé un mode sécurisé temporaire. Nous lançons une mise à jour avec accès d’urgence et support 24/7.",
+            "Dans la maison du coin, la serrure s’est trompée avec le visage sous la lumière du couloir ; le concierge a ouvert avec l’enseignante. Il y a eu des gâteaux pour la frayeur.",
+            "Quand ta maison dépend d’une intelligente qui évalue ton visage, le contrôle ne t’appartient plus. Nous exigeons une technologie ouverte et des clés qui fonctionnent sans cloud.",
+            "Manuel irrévérencieux : si la serrure intelligente refuse ton visage, éteins le Wi-Fi, appelle un serrurier éthique et documente la panne. Rappelle-toi : ta porte n’est pas un SaaS."
         ],
         "Puntuacion": [
             "1, 4, 7, 10, 3, 6, 9, 2, 5, 8",
@@ -67,23 +68,23 @@ export const GHOST = {
     },
     "2": {
         "palabrasDisponibles": [
-            "famosos",
-            "contratando",
+            "célébrités",
+            "embauchant",
             "clones",
-            "obsesión",
+            "obsession",
             "VIP"
         ],
         "textos": [
-            "Documentos y agentes confirman que los famosos están contratando clones de IA para entrevistas remotas y dobles de riesgo. Los representantes añaden controles de identidad y supervisión humana.",
-            "¡Alfombra roja en shock! Están contratando clones de IA a toda hora y la obsesión ya exige camerino con neones y perfume digital.",
-            "Revisamos contratos y detectamos agencias contratando clones de IA para ruedas de prensa y alfombras VIP. Ventaja: nunca se despeinan; riesgo: tampoco repreguntan.",
-            "Los famosos presentan a sus clones de IA y la obsesión firma autógrafos por turnos. El original descansa la muñeca; el clon pide vacaciones en la nube.",
-            "En actos VIP, los famosos emplearán clones de IA con protocolos homologados. La medida ordena agendas y refuerza la imagen país.",
-            "La obsesión VIP obliga a los famosos a usar gemelos digitales por decreto. No existe tal norma; son acuerdos privados y demos de marketing.",
-            "Marcas con famosos están contratando gemelos de IA para ampliar presencia sin caer en la obsesión por la ubicuidad. Indicador: menos vuelos, más entrevistas cumplidas.",
-            "En las fiestas, la organización está contratando clones de IA para la fila VIP de selfies. Nadie se coló, pero el clon preguntó dónde servían el pincho de tortilla \"en la nube\".",
-            "Si una élite VIP sigue contratando dobles de IA y alimentando la obsesión por multiplicarse, toca regular usos y derechos de imagen. Primero la persona, luego el avatar.",
-            "Desactiva la obsesión por los clones de IA saltándote la zona VIP y montando tu propio microshow en la acera. Si te venden \"meet & greet\" con algoritmos, exige caché para artistas de carne y hueso."
+            "Des documents et des agents confirment que les célébrités embauchent des clones d’IA pour des interviews à distance et des doublures de cascade. Les représentants ajoutent des contrôles d’identité et une supervision humaine.",
+            "Tapis rouge sous le choc ! On embauche des clones d’IA à toute heure et l’obsession exige déjà une loge avec néons et parfum digital.",
+            "Nous avons examiné des contrats et détecté des agences embauchant des clones d’IA pour des conférences de presse et des tapis VIP. Avantage : jamais décoiffés ; risque : ils ne reposent pas de questions.",
+            "Les célébrités présentent leurs clones d’IA et l’obsession signe des autographes à tour de rôle. L’original repose son poignet ; le clone demande des vacances dans le cloud.",
+            "Lors d’événements VIP, les célébrités emploieront des clones d’IA avec des protocoles homologués. La mesure ordonne les agendas et renforce l’image du pays.",
+            "L’obsession VIP oblige les célébrités à utiliser des jumeaux numériques par décret. Il n’existe pas une telle norme ; ce sont des accords privés et des démos marketing.",
+            "Des marques avec des célébrités embauchent des jumeaux d’IA pour accroître leur présence sans tomber dans l’obsession de l’ubiquité. Indicateur : moins de vols, plus d’interviews assurées.",
+            "Lors des fêtes, l’organisation embauche des clones d’IA pour la file VIP de selfies. Personne ne s’est faufilé, mais le clone a demandé où l’on servait la brochette de tortilla « dans le cloud ».",
+            "Si une élite VIP continue d’embaucher des doublures d’IA et d’alimenter l’obsession de se multiplier, il faut réglementer les usages et les droits à l’image. D’abord la personne, ensuite l’avatar.",
+            "Désactive l’obsession pour les clones d’IA en évitant la zone VIP et en montant ton propre microshow sur le trottoir. Si on te vend un « meet & greet » avec des algorithmes, exige un cachet pour les artistes en chair et en os."
         ],
         "Puntuacion": [
             "1, 8, 5, 2, 9, 6, 3, 10, 7, 4",
@@ -100,23 +101,23 @@ export const GHOST = {
     },
     "3": {
         "palabrasDisponibles": [
-            "mercado",
-            "vivienda",
-            "hipoteca",
-            "pareja",
-            "económica"
+            "marché",
+            "logement",
+            "hypothèque",
+            "couple",
+            "économique"
         ],
         "textos": [
-            "Documentación del piloto: el mercado ensaya reparto de estancias por franjas en una vivienda con una sola hipoteca solidaria. En caso de ruptura, hay tanteo interno y venta asistida con peritaje.",
-            "¡Custodia del sofá en directo! Una vivienda, una hipoteca y cada pareja disputando el viernes por la noche. Si hay divorcio, el felpudo declara estado de emergencia.",
-            "Tras revisar contratos, el mercado promete salida económica, pero la pareja con menos ingresos queda en desventaja. Proponemos mediación obligatoria y fondo de rescate para salidas justas.",
-            "Nuevo reglamento de convivencia: la vivienda trae un semáforo para el baño, la opción económica añade peajes simbólicos en pasillo y la pareja que llegue tarde paga con croquetas. El robot aspirador mediará disputas y guardará rencor en silencio.",
-            "La iniciativa del mercado amplía acceso a vivienda en modalidad económica con manual de convivencia homologado. Ante separaciones, interviene un mediador certificado para transición ordenada.",
-            "Bulo: \"la vivienda compartida económica te ata a una hipoteca con desconocidos al azar\". Veredicto: Engañoso — se firma entre partes elegidas y hay evaluación individual de solvencia.",
-            "Nuestro esquema alinea mercado y ahorro: cuota económica con una hipoteca flexible y reglas de uso transparentes. En caso de ruptura, activamos recompra interna y recolocación sin recargo.",
-            "En el bloque de al lado, el mercado trajo un piloto: una vivienda con calendario de cocina y cada pareja turnándose la terraza. Cuando hubo ruptura, el grupo del portal organizó intercambio de habitaciones sin dramas.",
-            "Sin control público, la opción económica con una hipoteca compartida deja a cualquier pareja negociando desde la debilidad. Reclamamos cláusulas de salida sin penalización y parque público de alquiler.",
-            "Manual de trinchera: que el mercado no dicte quién duerme dónde; si hay una hipoteca común, que cada pareja firme protocolo de paz y reparto real de espacios. Si hay divorcio, asamblea en la azotea antes que el notario."
+            "Documentation du pilote : le marché teste le partage de séjours par créneaux dans un logement avec une seule hypothèque solidaire. En cas de rupture, il y a un droit de préemption interne et une vente assistée avec expertise.",
+            "Garde du canapé en direct ! Un logement, une hypothèque et chaque couple se disputant le vendredi soir. En cas de divorce, le paillasson déclare l’état d’urgence.",
+            "Après avoir examiné les contrats, le marché promet une sortie économique, mais le couple aux revenus les plus faibles reste désavantagé. Nous proposons une médiation obligatoire et un fonds de sauvetage pour des sorties équitables.",
+            "Nouveau règlement de cohabitation : le logement apporte un feu tricolore pour la salle de bain, l’option économique ajoute des péages symboliques dans le couloir et le couple en retard paie en croquettes. Le robot aspirateur servira de médiateur et gardera rancune en silence.",
+            "L’initiative du marché élargit l’accès au logement en modalité économique avec un manuel de cohabitation homologué. En cas de séparation, un médiateur certifié intervient pour une transition ordonnée.",
+            "Intox : « le logement partagé économique t’attache à une hypothèque avec des inconnus au hasard ». Verdict : Trompeur — il est signé entre parties choisies et il y a une évaluation individuelle de la solvabilité.",
+            "Notre schéma aligne marché et épargne : une mensualité économique avec une hypothèque flexible et des règles d’usage transparentes. En cas de rupture, nous activons le rachat interne et le relogement sans surtaxe.",
+            "Dans l’immeuble d’à côté, le marché a apporté un pilote : un logement avec calendrier de cuisine et chaque couple se relayant pour la terrasse. Lorsqu’il y a eu rupture, le groupe de l’immeuble a organisé un échange de chambres sans drames.",
+            "Sans contrôle public, l’option économique avec une hypothèque partagée laisse n’importe quel couple négocier en position de faiblesse. Nous réclamons des clauses de sortie sans pénalités et un parc public de location.",
+            "Manuel de tranchée : que le marché ne dicte pas qui dort où ; s’il y a une hypothèque commune, que chaque couple signe un protocole de paix et un partage réel des espaces. En cas de divorce, assemblée sur le toit avant le notaire."
         ],
         "Puntuacion": [
             "1, 3, 7, 6, 5, 8, 4, 9, 2, 10",
@@ -133,23 +134,23 @@ export const GHOST = {
     },
     "4": {
         "palabrasDisponibles": [
-            "Desplome",
-            "Apuestas",
-            "Arquímedes",
+            "Chute",
+            "Paris",
+            "Archimède",
             "Pi",
-            "Decimal"
+            "Décimal"
         ],
         "textos": [
-            "El desplome en casas de apuestas se atribuye a una racha del club Arquímedes FC: jornada tras jornada, el marcador coincide con la siguiente cifra de la famosa constante. Reguladores analizan cierres temporales y límites, mientras matemáticos recuerdan que la suerte no firma contratos.",
-            "¡Locura total! Las apuestas revientan porque Arquímedes FC encadena goles que clavan el siguiente decimal una y otra vez. La grada pide calculadora y las casas piden agua bendita.",
-            "Rastreando el desplome vemos secuencias donde el “siguiente decimal” se cumple en partidos consecutivos, alineados con pi sin explicación operativa. Publicar datos brutos y activar auditorías externas sería el primer paso.",
-            "Tras el desplome, Arquímedes FC ficha a un matemático para lanzar córners en círculo y rezar a pi antes del minuto 3:14. Si falla, prometen cambiar el balón por una rosquilla.",
-            "Las autoridades informan que, pese a las apuestas ganadas, Arquímedes FC compite con plena integridad y no consulta pi en vestuarios. Se refuerza la supervisión sin afectar el espectáculo.",
-            "Afirmación viral: “el desplome se debe a un script que filtra el próximo decimal y revienta las apuestas”. Veredicto: Sin pruebas — hay racha de aciertos, pero no evidencias técnicas del supuesto filtrado.",
-            "Nuestra plataforma ajusta límites en apuestas cuando la probabilidad del siguiente decimal respecto a pi se dispara por rachas extraordinarias. Objetivo: proteger liquidez y experiencia sin cerrar mercados.",
-            "En el bar, el desplome llegó cuando el primo de la peña dijo: “las apuestas al 9, que lo pide pi”, y encadenaron tres aciertos. Doña Puri guarda la servilleta con la secuencia por si cuela otra vez.",
-            "Si la fiebre por Arquímedes FC se alimenta de acertar el siguiente decimal, toca proteger al pequeño jugador ante el desplome de cuotas. Transparencia, límites a la ludificación y educación financiera en la grada.",
-            "Manifiesto de grada: cuando Arquímedes FC clava otro decimal de pi, apagamos la app y tocamos bombos. Si mandan los números, la fiesta se muda a la pista del barrio."
+            "La chute dans les maisons de paris est attribuée à une série du club Archimède FC : journée après journée, le score coïncide avec le chiffre suivant de la fameuse constante. Les régulateurs analysent des fermetures temporaires et des limites, tandis que les mathématiciens rappellent que la chance ne signe pas de contrats.",
+            "Folie totale ! Les paris explosent parce qu’Archimède FC enchaîne des buts qui reproduisent le chiffre décimal suivant encore et encore. Les tribunes demandent une calculatrice et les maisons demandent de l’eau bénite.",
+            "En suivant la chute, nous voyons des séquences où le « chiffre décimal suivant » se réalise dans des matchs consécutifs, alignés avec pi sans explication opérationnelle. Publier les données brutes et activer des audits externes serait la première étape.",
+            "Après la chute, Archimède FC engage un mathématicien pour tirer les corners en cercle et prier pi avant la minute 3:14. S’il échoue, ils promettent de remplacer le ballon par un beignet.",
+            "Les autorités informent que, malgré les paris gagnés, Archimède FC joue avec une intégrité totale et ne consulte pas pi dans les vestiaires. La supervision est renforcée sans affecter le spectacle.",
+            "Affirmation virale : « la chute est due à un script qui filtre le prochain chiffre décimal et fait exploser les paris ». Verdict : Sans preuves — il y a une série de réussites, mais aucune évidence technique du prétendu filtrage.",
+            "Notre plateforme ajuste les limites des paris lorsque la probabilité du prochain chiffre décimal par rapport à pi s’envole à cause de séries extraordinaires. Objectif : protéger la liquidité et l’expérience sans fermer les marchés.",
+            "Au bar, la chute est arrivée quand le cousin de la bande a dit : « pariez sur le 9, c’est pi qui le demande », et ils ont enchaîné trois réussites. Doña Puri garde la serviette avec la séquence au cas où ça marcherait encore.",
+            "Si la fièvre pour Archimède FC s’alimente en devinant le chiffre décimal suivant, il faut protéger le petit joueur face à la chute des cotes. Transparence, limites à la ludification et éducation financière dans les tribunes.",
+            "Manifeste des tribunes : quand Archimède FC réussit un autre chiffre décimal de pi, nous éteignons l’application et jouons du tambour. Si les nombres commandent, la fête se déplace sur la piste du quartier."
         ],
         "Puntuacion": [
             "1, 3, 6, 9, 2, 5, 8, 10, 4, 7",
@@ -167,23 +168,23 @@ export const GHOST = {
     },
     "5": {
         "palabrasDisponibles": [
-            "parche",
-            "videojuego",
+            "patch",
+            "jeu vidéo",
             "GhostWriter",
-            "jerga",
+            "jargon",
             "boomers"
         ],
         "textos": [
-            "El parche del videojuego GhostWriter añade ayudas de comprensión y un glosario básico para decisiones clave. Se activa en accesibilidad y no altera finales ni rutas narrativas.",
-            "¡Última hora! Un parche del videojuego rescata a boomers con pistas tamaño pancarta y flechas que dicen “pulsa aquí”. Prometen menos “¿y esto de qué va?” y más “¡dale al capítulo 2!”.",
-            "Auditamos el parche de GhostWriter: el modo jerga es opcional, no graba voice y muestra definiciones en árbol de diálogo. Pedimos publicar el diccionario y sus licencias.",
-            "GhostWriter estrena jerga para boomers y traduce “lore” como “cotilleo bien escrito”. Próxima actualización: el narrador enviará audios de dos minutos explicando cada cliffhanger.",
-            "El parche de GhostWriter mejora el acceso para boomers con resúmenes por escena. La medida se alinea con los planes de alfabetización digital y participación cultural.",
-            "Afirmación: el videojuego GhostWriter escucha al salón para aprender jerga. Veredicto: Falso; usa un diccionario local y no comparte datos.",
-            "Con el parche, el videojuego explica jerga en elecciones ramificadas y notas del narrador. Resultado: más finales vistos y menos abandono en el prólogo.",
-            "En el centro cívico, el videojuego traduce jerga a boomers con ejemplos del barrio: “railroad” pasa a “el narrador se puso mandón”. Café, galletas y debate sobre el final “del director”.",
-            "Si un parche fija jerga para boomers, que sea configurable y apagable. Libertad de elección y modo clásico para quien no quiera ruedines.",
-            "En el fanzine del barrio, el videojuego GhostWriter se juega con boomers y abuelos punk leyendo en voice alta. Regla de la casa: menos tutorial y más caos narrativo."
+            "Le patch du jeu vidéo GhostWriter ajoute des aides à la compréhension et un glossaire de base pour les décisions clés. Il s’active dans l’accessibilité et n’altère ni les fins ni les parcours narratifs.",
+            "Dernière minute ! Un patch du jeu vidéo vient au secours des boomers avec des indices taille banderole et des flèches disant « appuie ici ». Promesse : moins de « et ça, ça veut dire quoi ? » et plus de « vas-y, chapitre 2 ! ».",
+            "Nous avons audité le patch de GhostWriter : le mode jargon est optionnel, n’enregistre pas la voix et affiche des définitions dans l’arborescence de dialogue. Nous demandons la publication du dictionnaire et de ses licences.",
+            "GhostWriter lance du jargon pour boomers et traduit « lore » par « ragot bien écrit ». Prochaine mise à jour : le narrateur enverra des audios de deux minutes expliquant chaque cliffhanger.",
+            "Le patch de GhostWriter améliore l’accès pour les boomers avec des résumés par scène. La mesure s’aligne avec les plans d’alphabétisation numérique et de participation culturelle.",
+            "Affirmation : le jeu vidéo GhostWriter écoute le salon pour apprendre du jargon. Verdict : Faux ; il utilise un dictionnaire local et ne partage pas de données.",
+            "Avec le patch, le jeu vidéo explique le jargon dans les choix ramifiés et les notes du narrateur. Résultat : plus de fins vues et moins d’abandon au prologue.",
+            "Au centre civique, le jeu vidéo traduit le jargon aux boomers avec des exemples du quartier : « railroad » devient « le narrateur s’est mis autoritaire ». Café, biscuits et débat sur la fin « du réalisateur ».",
+            "Si un patch fixe du jargon pour boomers, qu’il soit configurable et désactivable. Liberté de choix et mode classique pour ceux qui ne veulent pas de roulettes.",
+            "Dans le fanzine du quartier, le jeu vidéo GhostWriter se joue avec des boomers et des grands-pères punks lisant à voix haute. Règle de la maison : moins de tutoriel et plus de chaos narratif."
         ],
         "Puntuacion": [
             "1, 6, 7, 3, 5, 8, 9, 4, 2, 10",
@@ -200,7 +201,7 @@ export const GHOST = {
     }
 };
 
-export const WORDS = "Palabras seleccionadas ";
-export const TEXTS = "Texto generado para las palabras seleccionadas.";
-export const WRITE = "Escribiendo...";
-export const ERROR_NOT_READY = "Antes de escribir, he de saber el títular y la prensa que me contrató (Consultar Archivos Compartidos)";
+export const WORDS = "Mots sélectionnés";
+export const TEXTS = "Texte généré pour les mots sélectionnés.";
+export const WRITE = "Rédaction...";
+export const ERROR_NOT_READY = "Avant d'écrire, je dois connaître le titre et le nom de la presse qui m'a engagé (voir Fichiers partagés)";

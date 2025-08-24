@@ -16,7 +16,6 @@ const topbarFirefoxHTML = `
 </header>
 `;
 
-
 function mostrarTopbarFirefox() {
   topbar.classList.add('app');          
   topbar.innerHTML = topbarFirefoxHTML;
@@ -90,7 +89,6 @@ const topbarGhostHTML = `
 </header>
 `;
 
-
 function mostrarTopbarGhost() {
   topbar.classList.add('app');
   topbar.innerHTML = topbarGhostHTML;
@@ -109,8 +107,6 @@ function mostrarTopbarGhost() {
   if (btnCerrar) btnCerrar.onclick = () => window.cerrarModalApp();
 }
 
-
-
 const topbarCompartirHTML = `
 <div class="bg-gray-800 px-4 py-1 flex justify-between items-center text-sm select-none text-gray-300">
   <div class="flex space-x-4">
@@ -124,7 +120,6 @@ const topbarCompartirHTML = `
   <button id="btnCerrarCompartir" class="text-gray-300 hover:text-white text-xl font-bold px-2" title="Close">×</button>
 </div>
 `;
-
 
 function mostrarTopbarCompartir() {
   topbar.classList.add('app');
@@ -161,8 +156,6 @@ const topbarSettingsHTML = `
   </div>
 </div>
 `;
-
-
 
 function mostrarTopbarSettings() {
   topbar.classList.add('app');

@@ -39,6 +39,7 @@ function renderList(items = EMAILS) {
 }
 
 function selectMail(c, li, index) {
+bodyEl.scrollIntoView({ behavior: "smooth", block: "start" });
   subjectEl.textContent = c.subject;
   fromEl.textContent = `De: ${c.from} · ${c.time}`;
   bodyEl.innerHTML = c.body + `

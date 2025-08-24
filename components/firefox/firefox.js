@@ -45,26 +45,26 @@ function escapeHtml(str = "") {
 }
 function getNameLogo() {
   const medios = {
-    1: { logo: "faro.png",          name: "The Lighthouse" },
-    2: { logo: "endencidendo.png",  name: "News Storm" },
-    3: { logo: "vaso.png",          name: "The Magnifying Glass" },
-    4: { logo: "payaso.png",        name: "The Global Parody" },
-    5: { logo: "gubernamental.png", name: "Government Press" },
-    6: { logo: "colador.png",       name: "The Collator" },
-    7: { logo: "compania.png",      name: "Executive Channel" },
-    8: { logo: "fuente.png",        name: "The Digital Plaza" },
-    9: { logo: "intercambiar.png",  name: "The Change That Works for the Future" },
-    10:{ logo: "cinta.png",         name: "Subverse Margin" }
+    1: { logo: "faro.png",          name: `The Lighthouse - ${Math.floor(Math.random() * 10) + 1}h` },
+    2: { logo: "endencidendo.png",  name: `News Storm - ${Math.floor(Math.random() * 10) + 1}h` },
+    3: { logo: "vaso.png",          name: `The Magnifying Glass - ${Math.floor(Math.random() * 10) + 1}h` },
+    4: { logo: "payaso.png",        name: `The Global Parody - ${Math.floor(Math.random() * 10) + 1}h` },
+    5: { logo: "gubernamental.png", name: `Government Press - ${Math.floor(Math.random() * 10) + 1}h` },
+    6: { logo: "colador.png",       name: `The Collator - ${Math.floor(Math.random() * 10) + 1}h` },
+    7: { logo: "compania.png",      name: `Executive Channel - ${Math.floor(Math.random() * 10) + 1}h` },
+    8: { logo: "fuente.png",        name: `The Digital Plaza - ${Math.floor(Math.random() * 10) + 1}h` },
+    9: { logo: "intercambiar.png",  name: `The Change That Works for the Future - ${Math.floor(Math.random() * 10) + 1}h` },
+    10:{ logo: "cinta.png",         name: `Subverse Margin - ${Math.floor(Math.random() * 10) + 1}h` } 
   };
 
   const press = localStorage.getItem("press") || Math.floor(Math.random() * 10) + 1;
-  return medios[press] || medios[1]; // fallback al primero
+  return medios[press] || medios[1]; 
 }
 
 function crearPrincipal(n) {
   const art = document.createElement("article");
   const text = localStorage.getItem("textDay") || n.titulo;
-  const medio = getNameLogo(); // <-- logo y nombre juntos
+  const medio = getNameLogo(); 
 
   art.className = "bg-gray-800 rounded-lg overflow-hidden shadow-md flex flex-col cursor-pointer hover:shadow-lg transition-shadow duration-300";
   art.innerHTML = `
@@ -74,8 +74,8 @@ function crearPrincipal(n) {
         <img src="../../assets/images/prensa/icons/${medio.logo}" alt="Logo medio" class="h-4 object-contain" />
         <span>${escapeHtml(medio.name)}</span>
       </div>
-      <h1 class="text-3xl font-semibold text-white leading-tight">${escapeHtml(text)}</h1>
-      <p class="text-gray-300 mt-3 max-w-prose">${escapeHtml(n.resumen)}</p>
+      <h1 class="text-3xl font-semibold text-white leading-tight">${escapeHtml(n.titulo)}</h1>
+      <p class="text-gray-300 mt-3 max-w-prose">${escapeHtml(text)}</p>
     </div>`;
 
   if (n.url) art.onclick = () => window.open(n.url, "_blank");
@@ -103,7 +103,6 @@ function crearSecundaria(s) {
 
 
 function crearAdBanner(ad) {
-  console.log(ad);
   const a = document.createElement("a");
   a.setAttribute("aria-label", "Advertising");
   a.className = "block rounded-lg overflow-hidden bg-gray-800 shadow-md hover:shadow-lg transition-shadow";
@@ -121,7 +120,7 @@ function crearAdCard(ad) {
   a.innerHTML = `
     <img src="${ad.img}" alt="${escapeHtml(ad.alt || "Advertising")}" class="w-40 object-cover brightness-90">
     <div class="p-4 flex items-center justify-center">
-      <span class="text-gray-300 font-medium" data-i18n="firefox.advertising">${escapeHtml(ad.alt || "Advertising")}</span>
+      <span class="text-gray-300 font-medium">${escapeHtml(ad.alt || "Advertising")}</span>
     </div>
   `;
   return a;

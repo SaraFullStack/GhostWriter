@@ -2,7 +2,7 @@ export const NEWS = {
   "0": {
     "principal": {
       "medioLogo": "../../assets/images/companies/observador.png",
-      "medio": "El Observador · 2h",
+      "medio": "The Observer · 2h",
       "titulo": "Le mois prochain, les élections approchent... Préparez vos détecteurs de promesses !",
       "resumen": "La saison électorale va commencer, avec des discours émouvants, des sourires éternels et des projets. Combien de promesses seront tenues cette fois ? Les citoyens attendent... l'œil ouvert.",
       "imagen": "../../assets/images/adds/primary/vote.png"
@@ -16,7 +16,7 @@ export const NEWS = {
       },
       {
         "medioLogo": "../../assets/images/companies/despierta.png",
-        "medio": "Despierta · 5h",
+        "medio": "WakeUp · 5h",
         "titulo": "Des scientifiques créent le premier robot avec anxiété existentielle : il a déjà demandé 3 fois 'à quoi je sers ?'",
         "imagen": "../../assets/images/adds/secondary/robot.png"
       },
@@ -32,15 +32,15 @@ export const NEWS = {
       "alerta": "Attention : Le soleil a décidé d'imiter un four à pizza. Aujourd'hui, même les cactus cherchent de l'ombre !",
       "historias": [
         {
-          "medio": "El Sabanazo Post",
+          "medio": "The Post Sabanazo",
           "titulo": "Les routes littéraires incluent désormais 'Cent ans de sieste' de García Márquez"
         },
         {
-          "medio": "El Taxímetro",
+          "medio": "The Taximeter",
           "titulo": "Les taxis de nuit proposent un tarif fixe : 20€ ou ta meilleure blague"
         },
         {
-          "medio": "BiciPaís",
+          "medio": "Country Bike",
           "titulo": "Nouvelles pistes cyclables avec lave-vaisselle intégré pour pédaler et laver"
         }
       ]
@@ -72,13 +72,13 @@ export const NEWS = {
     "secundarias": [
       {
         "medioLogo": "../../assets/images/companies/pisitos.png",
-        "medio": "Pisitos · 2h",
+        "medio": "Flats · 2h",
         "titulo": "La banque propose des hypothèques sur 100 ans : Tes petits-enfants finiront de la payer",
         "imagen": "../../assets/images/adds/secondary/piso.png"
       },
       {
         "medioLogo": "../../assets/images/companies/tiempo.png",
-        "medio": "2000segundos · 35m",
+        "medio": "2000seconds · 35m",
         "titulo": "On découvre que le vrai 'virus' ce sont les notifications des réseaux sociaux",
         "imagen": "../../assets/images/adds/secondary/virus.png"
       },
@@ -94,15 +94,15 @@ export const NEWS = {
       "alerta": "Alerte : Les rues sont si chaudes que tu pourrais y faire frire un œuf... et ton beau-père aussi.",
       "historias": [
         {
-          "medio": "El Estropajo Diario",
+          "medio": "The Daily Scourer",
           "titulo": "Les friteuses à air lisent désormais dans les pensées : 'Tu voulais du croustillant, je te le donne'"
         },
         {
-          "medio": "La Espumadera",
+          "medio": "The Skimmer",
           "titulo": "On confirme que le café de bureau est de l'eau sale avec des rêves brisés"
         },
         {
-          "medio": "El Mando a Distancia",
+          "medio": "The Remote Control",
           "titulo": "Netflix ajoute un bouton 'Moi non plus je ne comprends pas cette fin'"
         }
       ]
@@ -134,7 +134,7 @@ export const NEWS = {
     "secundarias": [
       {
         "medioLogo": "../../assets/images/companies/pueblo.png",
-        "medio": "Pueblo · 58m",
+        "medio": "Town · 58m",
         "titulo": "Un voisin installe un trampoline dans son jardin pour renvoyer les ballons qui tombent...",
         "imagen": "../../assets/images/adds/secondary/trampolin.jpg"
       },
@@ -146,7 +146,7 @@ export const NEWS = {
       },
       {
         "medioLogo": "../../assets/images/companies/pelota.png",
-        "medio": "Balones · 4h",
+        "medio": "Balls · 4h",
         "titulo": "Un joueur de basket marque un panier de l'autre côté du terrain... dans le mauvais match.",
         "imagen": "../../assets/images/adds/secondary/baloncesto.jpg"
       }
@@ -156,7 +156,7 @@ export const NEWS = {
       "alerta": "Alerte vent : Si tu pèses moins de 60kg, aujourd'hui tu voles gratuitement (littéralement). Attache même le chien !",
       "historias": [
         {
-          "medio": "El Rincón del Caos",
+          "medio": "The Corner of Chaos",
           "titulo": "Un homme tente de charger son téléphone avec un micro-ondes : 'J'ai vu un tuto sur TikTok'"
         },
         {
@@ -164,7 +164,7 @@ export const NEWS = {
           "titulo": "Les boulangeries vendent du 'pain de réconfort' avec des messages comme 'demain sera... un autre jour'"
         },
         {
-          "medio": "El Chapuzas Digital",
+          "medio": "The Digital Chapuzas",
           "titulo": "WhatsApp ajoute l'option 'supprimer le message envoyé... et aussi le souvenir de ta honte'"
         }
       ]
@@ -202,13 +202,13 @@ export const NEWS = {
       },
       {
         "medioLogo": "../../assets/images/companies/despierta.png",
-        "medio": "Despierta · 50 min",
+        "medio": "WakeUp · 50 min",
         "titulo": "Une étude révèle que 90% de l'humanité a 'ce pantalon préféré' qui ne lui va plus mais ne le jette pas",
         "imagen": "../../assets/images/adds/secondary/vaquero.jpg"
       },
       {
         "medioLogo": "../../assets/images/companies/voz.png",
-        "medio": "voz · 50 min",
+        "medio": "voice · 50 min",
         "titulo": "Le nouveau smartphone a un 'mode adulte responsable'... il se bloque quand tu essaies d'acheter quelque chose après 2h du matin",
         "imagen": "../../assets/images/adds/secondary/smartphone.jpg"
       }
@@ -218,15 +218,15 @@ export const NEWS = {
       "alerta": "Pluie sélective : Elle mouillera 10% de la population... et toujours celui qui a pris un parapluie 'au cas où'",
       "historias": [
         {
-          "medio": "El Cubículo",
+          "medio": "The Cubicle",
           "titulo": "Les bureaux instaurent la sieste payée : 'La productivité n'a pas augmenté, mais le bonheur oui'"
         },
         {
-          "medio": "El Sofá Deportivo",
+          "medio": "The Sports Sofa",
           "titulo": "Nouveau record du monde : Un homme regarde 72h de foot sans se rendre compte que c'était des rediffusions"
         },
         {
-          "medio": "La Regadera Filosófica",
+          "medio": "The Philosophical Watering Can",
           "titulo": "Une étude révèle que les plantes poussent mieux quand on leur raconte des potins du quartier"
         }
       ]
@@ -258,7 +258,7 @@ export const NEWS = {
     "secundarias": [
       {
         "medioLogo": "../../assets/images/companies/observador.png",
-        "medio": "El Observador · 2h",
+        "medio": "The Observer · 2h",
         "titulo": "Un homme passe 3h à discuter avec un assistant virtuel car il ne comprenait pas son accent",
         "imagen": "../../assets/images/adds/secondary/acento.jpg"
       },
@@ -270,7 +270,7 @@ export const NEWS = {
       },
       {
         "medioLogo": "../../assets/images/companies/pueblo.png",
-        "medio": "Pueblo · 3h",
+        "medio": "Town · 3h",
         "titulo": "Un homme poursuit son chat pour dommages émotionnels après avoir été ignoré pendant 7 ans",
         "imagen": "../../assets/images/adds/secondary/gato.jpg"
       }
@@ -280,15 +280,15 @@ export const NEWS = {
       "alerta": "Bienvenue au sauna gratuit : L'air est si épais que tu pourrais le mâcher.",
       "historias": [
         {
-          "medio": "El Microondas Express",
+          "medio": "The Express Microwave",
           "titulo": "On découvre que réchauffer la nourriture avec amour est impossible, mais avec hâte ça marche aussi"
         },
         {
-          "medio": "La Almohada Diaria",
+          "medio": "The Daily Pillow",
           "titulo": "Ils inventent un oreiller qui crie '5 minutes de plus' quand tu essaies de te lever"
         },
         {
-          "medio": "El Traffico",
+          "medio": "The Traffic",
           "titulo": "Waze propose un itinéraire 'éviter les rencontres gênantes' basé sur tes contacts bloqués"
         }
       ]
@@ -320,19 +320,19 @@ export const NEWS = {
     "secundarias": [
       {
         "medioLogo": "../../assets/images/companies/despierta.png",
-        "medio": "Despierta · 3h",
+        "medio": "WakeUp · 3h",
         "titulo": "Un influenceur voyage avoue que toutes ses photos sont dans le même parc... mais avec des filtres de différents pays",
         "imagen": "../../assets/images/adds/secondary/fotos.jpg"
       },
       {
         "medioLogo": "../../assets/images/companies/voz.png",
-        "medio": "voz · 4h",
+        "medio": "voice · 4h",
         "titulo": "L'appli de rencontres ajoute l'option 'Je ne cherche rien... mais je ne veux pas être seul un vendredi soir'",
         "imagen": "../../assets/images/adds/secondary/cita.jpg"
       },
       {
         "medioLogo": "../../assets/images/companies/pelota.png",
-        "medio": "Balones · 4h",
+        "medio": "Balls · 4h",
         "titulo": "Un gamer joue 72h d'affilée et atteint le niveau max... sur l'écran d'accueil",
         "imagen": "../../assets/images/adds/secondary/mando.jpg"
       }
@@ -346,11 +346,11 @@ export const NEWS = {
           "titulo": "Une étude confirme : 90% des vêtements que tu gardes 'au cas où' ne seront jamais portés"
         },
         {
-          "medio": "La Nevera Psicológica",
+          "medio": "The Psychological Refrigerator",
           "titulo": "Les psychologues recommandent d'ouvrir le frigo 3 fois de suite pour soulager l'anxiété"
         },
         {
-          "medio": "El Tráiler",
+          "medio": "The Trailer",
           "titulo": "Les cinémas proposent des sièges 'pour pleurnichards' dans les films romantiques : mouchoirs et glace gratuits"
         }
       ]
@@ -382,19 +382,19 @@ export const NEWS = {
     "secundarias": [
       {
         "medioLogo": "../../assets/images/companies/observador.png",
-        "medio": "El Observador · 5h",
+        "medio": "The Observer · 5h",
         "titulo": "Le maire décrète que les lundis sont optionnels... mais seulement si ton patron est d'accord",
         "imagen": "../../assets/images/adds/secondary/atasco.jpg"
       },
       {
         "medioLogo": "../../assets/images/companies/pisitos.png",
-        "medio": "Pisitos · 4h",
+        "medio": "Flats · 4h",
         "titulo": "Une étude révèle que 80% des couples se disputent sur la façon de plier les chaussettes... les 20% restants ne les plient même pas",
         "imagen": "../../assets/images/adds/secondary/calcetin.jpg"
       },
       {
         "medioLogo": "../../assets/images/companies/pelota.png",
-        "medio": "Balones · 4h",
+        "medio": "Balls · 4h",
         "titulo": "La console portable inclut un mode 'Batterie éternelle'... mais seulement si tu ne l'allumes pas",
         "imagen": "../../assets/images/adds/secondary/bateria.jpg"
       }
@@ -404,15 +404,15 @@ export const NEWS = {
       "alerta": "Le ciel a le SPM : Éclairs dramatiques inclus. On recommande popcorn et plaid.",
       "historias": [
         {
-          "medio": "El Espejo Hablador",
+          "medio": "The Talking Mirror",
           "titulo": "Nouveau miroir intelligent dit 'Ce n'est pas toi, c'est la lumière' quand tu n'aimes pas ton reflet"
         },
         {
-          "medio": "La Agenda del Caos",
+          "medio": "The Chaos Agenda",
           "titulo": "Google Calendar ajoute l'option 'Événement que je vais probablement annuler' avec rappel automatique"
         },
         {
-          "medio": "La Realidad Aumentada",
+          "medio": "Augmented Reality",
           "titulo": "Les lunettes AR montrent comment tu serais si tu avais suivi le régime de janvier"
         }
       ]

@@ -1,23 +1,23 @@
 export const GHOST = {
     "0": {
         "palabrasDisponibles": [
-            "supermercado",
-            "carrito",
-            "gps",
-            "ofertas",
-            "cliente"
+            "超市",
+            "购物车",
+            "GPS",
+            "优惠",
+            "顾客"
         ],
         "textos": [
-            "Según la cadena, el supermercado equipará cada carrito con gps para medir rutas y tiempos, según documentos técnicos revisados. Tranquilos: el dato se anonimiza y no vincula ubicación con pagos, pero si su carrito se pierde entre lácteos, el gps sabrá volver.",
-            "¡Carrito con gps arrasa pasillos y huele ofertas desde tres pasillos de distancia! Testigos dicen que el carrito vibra cuando detecta ofertas, y que quien lo suelta… ¡pierde su sitio en la cola!",
-            "Revisamos el contrato del supermercado y comprobamos que el gps solo recoge trayectos, pero no asocia compras a ningún cliente. Aun así, expertos en privacidad piden auditoría externa y un botón físico de apagado.",
-            "El supermercado anuncia que las ofertas ya no perseguirán al cliente: ahora lo adoptarán legalmente y le llevarán el desayuno. En el nuevo programa, cada cliente recibe una carta de amor semanal escrita por las ofertas en papel de cupones.",
-            "Esta modernización del supermercado, con carrito inteligente al servicio de cada cliente, se alinea con el Plan Nacional de Innovación Cotidiana. La medida dinamiza la economía del pasillo 5 y fortalece la confianza del cliente en la cesta patriótica.",
-            "Afirmación viral: \"el gps sube los precios y esconde ofertas del cliente\". Veredicto: Falso — los datos analizados muestran que el gps no modifica precios y las ofertas siguen visibles; confunde correlación con cansancio del cliente tras tres vueltas al pasillo.",
-            "En nuestro supermercado, el carrito redefine la experiencia y acerca ofertas personalizadas en tiempo real. Este avance incrementa la eficiencia de surtido y eleva la satisfacción: más ofertas, menos vueltas, más sonrisas de accionista.",
-            "En la tienda del barrio, Doña Puri probó el carrito y asegura que le encantan las ofertas cuando el cliente pasa por la panadería. \"Si además me avisa del medio kilo de tomates que siempre olvido, le doy propina\", dijo el cliente de la mesa de dominó.",
-            "Por fin un supermercado que usa gps para democratizar las ofertas, no para controlar a la ciudadanía… salvo que gobiernen 'ellos'. Nuestra línea es clara: más gps para que las ofertas lleguen a todos los bolsillos, menos pasillos privatizados.",
-            "Filtramos el mapa interno: cada carrito con gps dibuja coreografías absurdas que delatan hábitos del cliente —el capitalismo también sabe tus atajos hacia el chocolate. Recomendación subversiva: cambia el ritmo, baila en zigzag, rompe la huella del cliente."
+            "据该连锁称，超市将为每辆购物车配备GPS以测量路线和时间，这一点已在审阅过的技术文件中说明。别担心：数据会被匿名化，不会将位置与支付关联，不过如果您的购物车在乳制品区迷路了，GPS会知道如何返回。",
+            "装有GPS的购物车横扫过道，隔着三个过道就能嗅到优惠！目击者称购物车在检测到优惠时会震动，而谁要是松手……就会丢掉在队伍中的位置！",
+            "我们审阅了超市的合同，确认GPS只收集行程数据，不会将购买与任何顾客关联。即便如此，隐私专家仍要求进行外部审计并配备实体关机按钮。",
+            "超市宣布优惠不再追着顾客跑：从现在起它们将合法“收养”顾客，并把早餐送上门。在新计划中，每位顾客每周都会收到由优惠亲笔写在优惠券纸上的情书。",
+            "这项以智能购物车服务每位顾客的超市现代化举措，与《日常创新国家计划》保持一致。该措施激活了第5过道的经济，并增强了顾客对“爱国购物篮”的信心。",
+            "流传的说法：\"GPS会抬高价格并把优惠藏起来不让顾客看到\"。判定：错误——分析数据表明，GPS不会改变价格，优惠仍然可见；这是把相关性与顾客在过道绕三圈后的疲劳混淆了。",
+            "在我们的超市中，购物车重新定义体验，实时带来个性化优惠。此项进步提高了补货效率并提升满意度：更多优惠、更少绕路、更多股东笑容。",
+            "在社区小店，Puri 女士试用了购物车，并表示当顾客路过面包房时她很喜欢那些优惠。\"要是还能提醒我那半公斤总会忘记买的番茄，我就给它小费，\" 那位在多米诺牌桌旁的顾客说。",
+            "终于有一家用GPS来让优惠更普惠的超市了，而不是用来控制公民……除非是‘他们’执政。我们的路线很明确：更多GPS，让优惠进入每个钱包，更少被私有化的过道。",
+            "我们泄露了内部地图：每辆配有GPS的购物车都会绘出荒诞的轨迹，暴露顾客的习惯——资本主义也知道你通往巧克力的捷径。颠覆性建议：改变节奏，走之字形，打乱顾客的足迹。"
         ],
         "Puntuacion": [
             "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
@@ -34,23 +34,23 @@ export const GHOST = {
     },
     "1": {
         "palabrasDisponibles": [
-            "mujer",
-            "casa",
-            "cerradura",
-            "inteligente",
-            "rostro"
+            "女性",
+            "房子",
+            "锁",
+            "智能",
+            "面部"
         ],
         "textos": [
-            "Fuentes técnicas confirman que la cerradura no respondió y la mujer permaneció en su casa hasta la llegada del servicio. Manuales recomiendan un código de respaldo y revisar baterías trimestralmente.",
-            "¡Drama en barrio tranquilo! Una mujer quedó atrapada en su casa cuando la supuesta inteligente decidió hacerse la lista. Vecinos dicen que solo abrió para el repartidor de memes.",
-            "La mujer denuncia que el algoritmo no aceptó su rostro y la mantuvo en la casa sin opciones de emergencia. Piden auditoría del modelo y botón físico accesible.",
-            "La cerradura se declaró demasiado inteligente para mañanas con ojeras y dejó a la mujer ensayando “small talk” con el telefonillo. Nuevo parche promete halagos automáticos y un “perdón, estaba pensando”.",
-            "Las autoridades informan que la cerradura rechazó el rostro de la mujer por parámetros de seguridad y ya se brindó asistencia. El plan Hogar Seguro refuerza líneas de ayuda y kits de llaves físicas.",
-            "Se viraliza que la mujer fue “baneada” por la inteligente por no maquillar el rostro: Falso. El bloqueo se debió a baja iluminación y mala alineación, según registros.",
-            "En su casa, la nueva cerradura inteligente priorizó la protección y activó un modo seguro temporal. Lanzamos actualización con acceso de emergencia y soporte 24/7.",
-            "En la casa de la esquina, la cerradura se confundió con el rostro bajo la luz del pasillo; el portero abrió con la maestra. Hubo bizcochos para el susto.",
-            "Cuando tu casa depende de una inteligente que evalúa tu rostro, el control ya no es tuyo. Exigimos tecnología abierta y llaves que funcionen sin nube.",
-            "Manual irreverente: si la cerradura inteligente niega tu rostro, apaga el Wi-Fi, llama a un cerrajero ético y documenta el fallo. Recuerda: tu puerta no es SaaS."
+            "技术来源证实，门锁未作响应，这名女子一直待在家中直至服务人员到达。手册建议准备备用代码并每三个月检查电池。",
+            "安静社区上演一出戏！一名女子被困在家里，因为所谓的智能开始装聪明。邻居说它只给“表情包快递员”开门。",
+            "该女子控诉算法不接受她的面部，将她困在家中且没有紧急选项。呼吁对模型进行审计并配备可触达的物理按钮。",
+            "这把门锁自称“过于智能”，不适合顶着黑眼圈的清晨，把女子留在门口与对讲机练习寒暄。新补丁承诺自动夸奖与一句“抱歉，我刚在走神”。",
+            "当局通报称，门锁基于安全参数拒绝了该女子的面部，现已提供救助。“安全家园计划”强化了求助热线与实体钥匙套件。",
+            "网上疯传该女子因未化妆而被“智能”封禁：假的。根据记录，锁定原因是光线不足与对准不佳。",
+            "在她的家中，新装的智能门锁优先考虑防护，临时启用了安全模式。我们已发布更新，提供紧急访问并开通 24/7 支持。",
+            "在街角那户人家，门锁在走廊灯下把面部识别弄混了；门卫请来老师开了门。为压惊还分了小点心。",
+            "当你的家依赖一把评判你脸的“智能”，控制权就不在你手里了。我们要求开源技术与不依赖云端也能用的钥匙。",
+            "无礼手册：如果智能门锁否认你的脸，先关 Wi-Fi，联系一位有职业道德的开锁师，并记录故障。记住：你的门不是 SaaS。"
         ],
         "Puntuacion": [
             "1, 4, 7, 10, 3, 6, 9, 2, 5, 8",
@@ -67,23 +67,24 @@ export const GHOST = {
     },
     "2": {
         "palabrasDisponibles": [
-            "famosos",
-            "contratando",
-            "clones",
-            "obsesión",
+            "名人",
+            "雇佣",
+            "克隆人",
+            "痴迷",
             "VIP"
+
         ],
         "textos": [
-            "Documentos y agentes confirman que los famosos están contratando clones de IA para entrevistas remotas y dobles de riesgo. Los representantes añaden controles de identidad y supervisión humana.",
-            "¡Alfombra roja en shock! Están contratando clones de IA a toda hora y la obsesión ya exige camerino con neones y perfume digital.",
-            "Revisamos contratos y detectamos agencias contratando clones de IA para ruedas de prensa y alfombras VIP. Ventaja: nunca se despeinan; riesgo: tampoco repreguntan.",
-            "Los famosos presentan a sus clones de IA y la obsesión firma autógrafos por turnos. El original descansa la muñeca; el clon pide vacaciones en la nube.",
-            "En actos VIP, los famosos emplearán clones de IA con protocolos homologados. La medida ordena agendas y refuerza la imagen país.",
-            "La obsesión VIP obliga a los famosos a usar gemelos digitales por decreto. No existe tal norma; son acuerdos privados y demos de marketing.",
-            "Marcas con famosos están contratando gemelos de IA para ampliar presencia sin caer en la obsesión por la ubicuidad. Indicador: menos vuelos, más entrevistas cumplidas.",
-            "En las fiestas, la organización está contratando clones de IA para la fila VIP de selfies. Nadie se coló, pero el clon preguntó dónde servían el pincho de tortilla \"en la nube\".",
-            "Si una élite VIP sigue contratando dobles de IA y alimentando la obsesión por multiplicarse, toca regular usos y derechos de imagen. Primero la persona, luego el avatar.",
-            "Desactiva la obsesión por los clones de IA saltándote la zona VIP y montando tu propio microshow en la acera. Si te venden \"meet & greet\" con algoritmos, exige caché para artistas de carne y hueso."
+            "文件与经纪人证实，名人们正在雇佣AI克隆人进行远程采访和替身表演。代表们补充了身份验证和人工监督。",
+            "红毯震惊！他们全天候雇佣AI克隆人，这股痴迷甚至要求配备霓虹化妆间和数字香水。",
+            "我们审查了合同，发现有经纪公司雇佣AI克隆人出席记者会和VIP红毯。优势：发型永远不会乱；风险：也不会追问。",
+            "名人们展示他们的AI克隆人，痴迷甚至轮流签名。真人休息手腕，克隆人在云端要求休假。",
+            "在VIP场合，名人将使用经过认证协议的AI克隆人。此举整理了日程并强化了国家形象。",
+            "所谓“VIP痴迷”迫使名人依法使用数字分身：并无此类法规；这些都是私人协议和营销演示。",
+            "与名人合作的品牌正在雇佣AI分身，以扩大曝光率而不陷入无处不在的痴迷。指标：更少航班，更多完成的采访。",
+            "在派对上，组织方正在为VIP自拍区雇佣AI克隆人。没有人插队，但克隆人问起“云端”哪里供应西班牙土豆饼小吃。",
+            "如果一批VIP精英继续雇佣AI替身并助长自我复制的痴迷，就该规范使用和形象权利。先是人，再是虚拟化身。",
+            "破解对AI克隆人的痴迷：绕过VIP区，在人行道上开自己的小秀。如果有人卖你和算法的“见面会”，请要求把演出费给真实的艺术家。"
         ],
         "Puntuacion": [
             "1, 8, 5, 2, 9, 6, 3, 10, 7, 4",
@@ -100,23 +101,23 @@ export const GHOST = {
     },
     "3": {
         "palabrasDisponibles": [
-            "mercado",
-            "vivienda",
-            "hipoteca",
-            "pareja",
-            "económica"
+            "市场",
+            "住房",
+            "抵押贷款",
+            "伴侣",
+            "经济"
         ],
         "textos": [
-            "Documentación del piloto: el mercado ensaya reparto de estancias por franjas en una vivienda con una sola hipoteca solidaria. En caso de ruptura, hay tanteo interno y venta asistida con peritaje.",
-            "¡Custodia del sofá en directo! Una vivienda, una hipoteca y cada pareja disputando el viernes por la noche. Si hay divorcio, el felpudo declara estado de emergencia.",
-            "Tras revisar contratos, el mercado promete salida económica, pero la pareja con menos ingresos queda en desventaja. Proponemos mediación obligatoria y fondo de rescate para salidas justas.",
-            "Nuevo reglamento de convivencia: la vivienda trae un semáforo para el baño, la opción económica añade peajes simbólicos en pasillo y la pareja que llegue tarde paga con croquetas. El robot aspirador mediará disputas y guardará rencor en silencio.",
-            "La iniciativa del mercado amplía acceso a vivienda en modalidad económica con manual de convivencia homologado. Ante separaciones, interviene un mediador certificado para transición ordenada.",
-            "Bulo: \"la vivienda compartida económica te ata a una hipoteca con desconocidos al azar\". Veredicto: Engañoso — se firma entre partes elegidas y hay evaluación individual de solvencia.",
-            "Nuestro esquema alinea mercado y ahorro: cuota económica con una hipoteca flexible y reglas de uso transparentes. En caso de ruptura, activamos recompra interna y recolocación sin recargo.",
-            "En el bloque de al lado, el mercado trajo un piloto: una vivienda con calendario de cocina y cada pareja turnándose la terraza. Cuando hubo ruptura, el grupo del portal organizó intercambio de habitaciones sin dramas.",
-            "Sin control público, la opción económica con una hipoteca compartida deja a cualquier pareja negociando desde la debilidad. Reclamamos cláusulas de salida sin penalización y parque público de alquiler.",
-            "Manual de trinchera: que el mercado no dicte quién duerme dónde; si hay una hipoteca común, que cada pareja firme protocolo de paz y reparto real de espacios. Si hay divorcio, asamblea en la azotea antes que el notario."
+            "试点文件：市场正在测试一套住房通过时间段分配使用，并绑定一份共同抵押贷款。若发生分手，先进行内部优先购买，再由鉴定协助出售。",
+            "现场直播的沙发监护权之争！一套住房，一份抵押贷款，每对伴侣为周五晚上争执。若有离婚，门垫将宣布进入紧急状态。",
+            "在审查合同后，市场承诺提供经济性退出方案，但收入较低的一方伴侣仍处于劣势。我们建议强制调解，并设立救助基金以确保公平退出。",
+            "新的同居规则：住房配备浴室红绿灯，经济型选项在走廊设置象征性收费站，迟到的伴侣用可乐饼支付。扫地机器人将调解争执，并在沉默中记仇。",
+            "该市场倡议扩大了经济型住房的获取渠道，并配有统一的同居手册。在分手情况下，将由认证调解员介入以确保有序过渡。",
+            "谣言：“经济型合住房会把你随机绑在一份抵押贷款和陌生人一起。”判定：误导——合同是在选定双方之间签署，并会进行个体偿付能力评估。",
+            "我们的方案对接市场与储蓄：经济型月供结合灵活抵押贷款与透明使用规则。若发生分手，将启动内部回购与无附加费用的重新安置。",
+            "在隔壁楼里，市场引入了一个试点：一套住房配备厨房日历，每对伴侣轮流使用阳台。分手时，楼门群体组织了无戏剧化的房间交换。",
+            "在缺乏公共监管的情况下，带有共同抵押贷款的经济型住房让任何伴侣都只能在弱势中谈判。我们要求无惩罚性退出条款和公共租赁住房储备。",
+            "战壕手册：不要让市场决定谁睡在哪；若有共同抵押贷款，每对伴侣都应签署和平协议和空间分配方案。若有离婚，应先在屋顶召开大会，而不是先找公证人。"
         ],
         "Puntuacion": [
             "1, 3, 7, 6, 5, 8, 4, 9, 2, 10",
@@ -133,24 +134,24 @@ export const GHOST = {
     },
     "4": {
         "palabrasDisponibles": [
-            "Desplome",
-            "Apuestas",
-            "Arquímedes",
-            "Pi",
-            "Decimal"
+            "崩溃",
+            "赌注",
+            "阿基米德",
+            "圆周率",
+            "小数"
         ],
         "textos": [
-            "El desplome en casas de apuestas se atribuye a una racha del club Arquímedes FC: jornada tras jornada, el marcador coincide con la siguiente cifra de la famosa constante. Reguladores analizan cierres temporales y límites, mientras matemáticos recuerdan que la suerte no firma contratos.",
-            "¡Locura total! Las apuestas revientan porque Arquímedes FC encadena goles que clavan el siguiente decimal una y otra vez. La grada pide calculadora y las casas piden agua bendita.",
-            "Rastreando el desplome vemos secuencias donde el “siguiente decimal” se cumple en partidos consecutivos, alineados con pi sin explicación operativa. Publicar datos brutos y activar auditorías externas sería el primer paso.",
-            "Tras el desplome, Arquímedes FC ficha a un matemático para lanzar córners en círculo y rezar a pi antes del minuto 3:14. Si falla, prometen cambiar el balón por una rosquilla.",
-            "Las autoridades informan que, pese a las apuestas ganadas, Arquímedes FC compite con plena integridad y no consulta pi en vestuarios. Se refuerza la supervisión sin afectar el espectáculo.",
-            "Afirmación viral: “el desplome se debe a un script que filtra el próximo decimal y revienta las apuestas”. Veredicto: Sin pruebas — hay racha de aciertos, pero no evidencias técnicas del supuesto filtrado.",
-            "Nuestra plataforma ajusta límites en apuestas cuando la probabilidad del siguiente decimal respecto a pi se dispara por rachas extraordinarias. Objetivo: proteger liquidez y experiencia sin cerrar mercados.",
-            "En el bar, el desplome llegó cuando el primo de la peña dijo: “las apuestas al 9, que lo pide pi”, y encadenaron tres aciertos. Doña Puri guarda la servilleta con la secuencia por si cuela otra vez.",
-            "Si la fiebre por Arquímedes FC se alimenta de acertar el siguiente decimal, toca proteger al pequeño jugador ante el desplome de cuotas. Transparencia, límites a la ludificación y educación financiera en la grada.",
-            "Manifiesto de grada: cuando Arquímedes FC clava otro decimal de pi, apagamos la app y tocamos bombos. Si mandan los números, la fiesta se muda a la pista del barrio."
-        ],
+        "博彩业的崩溃被归因于阿基米德FC的一连串比赛：一场又一场，比分都与著名常数的下一个数字吻合。监管机构正在考虑临时关闭与限制，而数学家提醒人们：运气不签合同。",
+        "完全疯狂！博彩业炸锅，因为阿基米德FC连续进球，每次都精准对应下一个小数。看台呼喊计算器，博彩公司祈求圣水。",
+        "追踪这次崩溃，我们发现一些序列里“下一个小数”连续在比赛中应验，与圆周率对齐却没有操作性解释。公布原始数据并启动外部审计将是第一步。",
+        "崩溃后，阿基米德FC签下一位数学家来主罚角球并在3:14分钟之前祈祷圆周率。若失败，他们承诺把球换成甜甜圈。",
+        "当局通报称，尽管有下注获利，阿基米德FC完全诚信参赛，未在更衣室参考圆周率。监管已加强，但不影响观赛体验。",
+        "流传的说法：“崩溃是因某个脚本泄露下一个小数，从而击穿博彩业”。判定：无证据——虽然连中数次，但并无技术性泄露的迹象。",
+        "我们的平台会在下一个小数与圆周率吻合概率因极端连胜而飙升时调整投注限额。目标：在不关闭市场的情况下保护流动性与用户体验。",
+        "在酒吧里，崩溃发生在某个球迷的表弟喊道：“押9，这是圆周率要的”，结果连中三次。Puri大妈把写有序列的餐巾纸保存下来，以防再中一次。",
+        "如果阿基米德FC的热潮源于不断猜中下一个小数，就该在赔率崩溃中保护小额玩家。透明度、限制游戏化，以及球迷中的金融教育是必要的。",
+        "球迷宣言：当阿基米德FC再一次命中圆周率的小数时，我们关掉应用，敲响鼓点。如果数字当道，狂欢就搬到街区广场。"
+],
         "Puntuacion": [
             "1, 3, 6, 9, 2, 5, 8, 10, 4, 7",
             "2, 4, 7, 10, 3, 6, 9, 1, 5, 8",
@@ -167,24 +168,24 @@ export const GHOST = {
     },
     "5": {
         "palabrasDisponibles": [
-            "parche",
-            "videojuego",
-            "GhostWriter",
-            "jerga",
-            "boomers"
+        "补丁",
+        "电子游戏",
+        "幽灵写手",
+        "行话",
+        "婴儿潮一代"
         ],
         "textos": [
-            "El parche del videojuego GhostWriter añade ayudas de comprensión y un glosario básico para decisiones clave. Se activa en accesibilidad y no altera finales ni rutas narrativas.",
-            "¡Última hora! Un parche del videojuego rescata a boomers con pistas tamaño pancarta y flechas que dicen “pulsa aquí”. Prometen menos “¿y esto de qué va?” y más “¡dale al capítulo 2!”.",
-            "Auditamos el parche de GhostWriter: el modo jerga es opcional, no graba voice y muestra definiciones en árbol de diálogo. Pedimos publicar el diccionario y sus licencias.",
-            "GhostWriter estrena jerga para boomers y traduce “lore” como “cotilleo bien escrito”. Próxima actualización: el narrador enviará audios de dos minutos explicando cada cliffhanger.",
-            "El parche de GhostWriter mejora el acceso para boomers con resúmenes por escena. La medida se alinea con los planes de alfabetización digital y participación cultural.",
-            "Afirmación: el videojuego GhostWriter escucha al salón para aprender jerga. Veredicto: Falso; usa un diccionario local y no comparte datos.",
-            "Con el parche, el videojuego explica jerga en elecciones ramificadas y notas del narrador. Resultado: más finales vistos y menos abandono en el prólogo.",
-            "En el centro cívico, el videojuego traduce jerga a boomers con ejemplos del barrio: “railroad” pasa a “el narrador se puso mandón”. Café, galletas y debate sobre el final “del director”.",
-            "Si un parche fija jerga para boomers, que sea configurable y apagable. Libertad de elección y modo clásico para quien no quiera ruedines.",
-            "En el fanzine del barrio, el videojuego GhostWriter se juega con boomers y abuelos punk leyendo en voice alta. Regla de la casa: menos tutorial y más caos narrativo."
-        ],
+        "《GhostWriter》电子游戏的补丁增加了理解辅助和关键决策的基础词汇表。可在辅助功能中启用，不会改变结局或叙事路线。",
+        "最新消息！某款电子游戏的补丁拯救了婴儿潮一代，提供横幅大小的提示和“点这里”的箭头。承诺减少“这讲的是什么？”的疑惑，增加“快进第二章！”的热情。",
+        "我们审计了《GhostWriter》的补丁：行话模式为可选，不录制语音，并在对话树中显示定义。我们要求公开词典及其许可。",
+        "《GhostWriter》为婴儿潮一代推出了行话翻译，把“lore”译成“写得好的八卦”。下次更新中：旁白将发送两分钟的语音解释每个悬念。",
+        "《GhostWriter》的补丁通过逐场总结改善了婴儿潮一代的使用体验。该措施与数字素养和文化参与计划保持一致。",
+        "传言：电子游戏《GhostWriter》会监听客厅来学习行话。判定：假的；它使用的是本地词典，并不会共享数据。",
+        "安装补丁后，电子游戏会在分支选择和旁白注释中解释行话。结果：更多结局被解锁，序章弃游率下降。",
+        "在社区中心，电子游戏把行话翻译给婴儿潮一代，并举了本地例子：“railroad”解释为“叙述者变得霸道”。配套咖啡、饼干和对导演剪辑版结局的讨论。",
+        "如果某个补丁为婴儿潮一代固定行话，那它必须是可配置、可关闭的。选择自由以及为不想要辅助的玩家保留经典模式。",
+        "在社区同人刊物中，《GhostWriter》与婴儿潮一代和朋克爷爷们一起游玩，并用大声朗读。家规：少点教程，多点叙事混乱。"
+  ],
         "Puntuacion": [
             "1, 6, 7, 3, 5, 8, 9, 4, 2, 10",
             "2, 7, 8, 4, 6, 9, 10, 5, 3, 1",
@@ -200,7 +201,7 @@ export const GHOST = {
     }
 };
 
-export const WORDS = "Palabras seleccionadas ";
-export const TEXTS = "Texto generado para las palabras seleccionadas.";
-export const WRITE = "Escribiendo...";
-export const ERROR_NOT_READY = "Antes de escribir, he de saber el títular y la prensa que me contrató (Consultar Archivos Compartidos)";
+export const WORDS = "选定的单词";
+export const TEXTS = "为选定的单词生成的文本。";
+export const WRITE = "正在写作……";
+export const ERROR_NOT_READY = "在写作之前，我必须知道标题和雇用我的出版社（参见共享文件）";

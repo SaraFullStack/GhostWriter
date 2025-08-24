@@ -1,6 +1,6 @@
 export const EMAILS = [
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '介绍 — 欢迎',
     time: '08:20',
     body: `
@@ -40,7 +40,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '步骤 1 — Firefox',
     time: '09:15',
     body: `
@@ -77,7 +77,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '步骤 2 — 共享文件',
     time: '08:50',
     body: `
@@ -119,7 +119,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '步骤 3 — FocusWriter',
     time: '08:20',
     body: `
@@ -157,7 +157,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '额外 - 设置',
     time: '08:20',
     body: `

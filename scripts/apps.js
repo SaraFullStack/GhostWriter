@@ -20,7 +20,7 @@ function abrirApp(nombre) {
   }
 
   if (nombre === 'CompartirArchivos') {
-    iframe.src = './components/compartirArchivos/compartirArchivos.html';
+    iframe.src = './components/shared/shared.html';
     modal.classList.remove('hidden');
     mostrarTopbarCompartir();
     return;
@@ -65,6 +65,7 @@ function cerrarModalApp() {
   iframe.src = '';
   modal.classList.add('hidden');
   mostrarTopbarOriginal();
+  top.location.reload();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

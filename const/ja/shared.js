@@ -1,27 +1,27 @@
 export const COMPARTIR_ARCHIVOS = {
-    "Día 1": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/supermarket.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "スーパーマーケットチェーンがGPS付きカートを導入" }
+    "日 1": [
+        { nombre: "ビデオ", tipo: "video", url: "../../assets/videos/supermarket.mp4" },
+        { nombre: "ホルダー", tipo: "texto", contenido: "スーパーマーケットチェーンがGPS付きカートを導入" }
     ],
-    "Día 2": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/lock.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "スマートロックが顔を認識せず、女性が自宅に閉じ込められる" }
+    "日 2": [
+        { nombre: "ビデオ", tipo: "video", url: "../../assets/videos/lock.mp4" },
+        { nombre: "ホルダー", tipo: "texto", contenido: "スマートロックが顔を認識せず、女性が自宅に閉じ込められる" }
     ],
-    "Día 3": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/clones.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "VIPの新たな執着：有名人がクローンを雇う理由とは？" }
+    "日 3": [
+        { nombre: "ビデオ", tipo: "video", url: "../../assets/videos/clones.mp4" },
+        { nombre: "ホルダー", tipo: "texto", contenido: "VIPの新たな執着：有名人がクローンを雇う理由とは？" }
     ],
-    "Día 4": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/house.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "市場が新しいタイプの経済的住宅を開発、他のカップルと共同で住宅ローン" }
+    "日 4": [
+        { nombre: "ビデオ", tipo: "video", url: "../../assets/videos/house.mp4" },
+        { nombre: "ホルダー", tipo: "texto", contenido: "市場が新しいタイプの経済的住宅を開発、他のカップルと共同で住宅ローン" }
     ],
-    "Día 5": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/bet.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "賭博場の暴落「アルキメデスFC」は常にπの次の小数点を記録" }
+    "日 5": [
+        { nombre: "ビデオ", tipo: "video", url: "../../assets/videos/bet.mp4" },
+        { nombre: "ホルダー", tipo: "texto", contenido: "賭博場の暴落「アルキメデスFC」は常にπの次の小数点を記録" }
     ],
-    "Día 6": [
-        { nombre: "video1.mp4", tipo: "video", url: "../../assets/videos/boomers.mp4" },
-        { nombre: "Títular", tipo: "texto", contenido: "ゲーム『GhostWriter』の新パッチで、ブーマー向けスラングモードが追加" }
+    "日 6": [
+        { nombre: "ビデオ", tipo: "video", url: "../../assets/videos/boomers.mp4" },
+        { nombre: "ホルダー", tipo: "texto", contenido: "ゲーム『GhostWriter』の新パッチで、ブーマー向けスラングモードが追加" }
     ]
 };
 export const PRENSA = [

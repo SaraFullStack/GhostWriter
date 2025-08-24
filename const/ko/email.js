@@ -1,6 +1,6 @@
 export const EMAILS = [
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '소개 — 환영합니다',
     time: '08:20',
     body: `
@@ -40,7 +40,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '1단계 — Firefox',
     time: '09:15',
     body: `
@@ -77,7 +77,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '2단계 — 공유 파일',
     time: '08:50',
     body: `
@@ -119,7 +119,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '3단계 — FocusWriter',
     time: '08:20',
     body: `
@@ -157,7 +157,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'support@ghost-writer.com',
+    from: 'sara.cgc.94@gmail.com',
     subject: '추가 - 설정',
     time: '08:20',
     body: `

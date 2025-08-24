@@ -88,8 +88,11 @@ const I18N = {
       const active = [...btns].find(b => b.classList.contains('ring-2'));
       const lang = active?.dataset.lang ?? this.current;
       await this.setLanguage(lang);
+
+      top.location.reload();
       window.parent?.postMessage({ type: 'idiomaCambiado', idioma: this.current }, '*');
     });
+
   },
 
   _markActiveButton(lang) {

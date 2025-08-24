@@ -1,7 +1,5 @@
-// ================= CLICK SOUND =================
 const clickSound = document.getElementById('clickSound');
 
-// Función para activar sonido de clic en un documento cualquiera
 function activarClickSound(doc) {
   if (!doc) return;
   doc.addEventListener('pointerdown', () => {
@@ -12,10 +10,8 @@ function activarClickSound(doc) {
   });
 }
 
-// Activar en el documento principal
 activarClickSound(document);
 
-// Activar también en iframes (del mismo dominio) cuando carguen
 window.addEventListener('load', () => {
   document.querySelectorAll('iframe').forEach(iframe => {
     iframe.addEventListener('load', () => {
@@ -29,11 +25,9 @@ window.addEventListener('load', () => {
 });
 
 
-// ================= AMBIENT SOUND =================
 const ambientSound = document.getElementById('ambientSound');
 const btnSonido = document.getElementById('btnSonido');
 
-// Configuración inicial desde localStorage
 window.addEventListener('load', () => {
   const muted = localStorage.getItem('ambientMuted') === 'true';
   const volume = localStorage.getItem('ambientVolume') || 1;
@@ -44,7 +38,6 @@ window.addEventListener('load', () => {
   btnSonido.classList.toggle('fa-volume-high', !muted);
   btnSonido.classList.toggle('fa-volume-xmark', muted);
 
-  // Intentar reproducir (autoplay policy)
   ambientSound.play().catch(() => {
     const activarAudio = () => {
       ambientSound.muted = muted;
@@ -55,7 +48,6 @@ window.addEventListener('load', () => {
   });
 });
 
-// Botón activar/desactivar sonido ambiente
 btnSonido.addEventListener('click', () => {
   ambientSound.muted = !ambientSound.muted;
   localStorage.setItem('ambientMuted', ambientSound.muted);
@@ -64,7 +56,6 @@ btnSonido.addEventListener('click', () => {
   btnSonido.classList.toggle('fa-volume-xmark', ambientSound.muted);
 });
 
-// ================= CONTROL DE VOLUMEN (opcional) =================
 const slider = document.getElementById('volumenSlider');
 if (slider) {
   slider.addEventListener('input', () => {

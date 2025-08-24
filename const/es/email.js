@@ -1,6 +1,6 @@
 export const EMAILS = [
   {
-    from: 'soporte@ghost-writer.es',
+    from: 'sara.cgc.94@gmail.com',
     subject: 'Introducción — Bienvenida',
     time: '08:20',
     body: `
@@ -43,7 +43,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'soporte@ghost-writer.es',
+    from: 'sara.cgc.94@gmail.com',
     subject: 'Paso 1 — Firefox',
     time: '09:15',
     body: `
@@ -80,7 +80,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'soporte@ghost-writer.es',
+    from: 'sara.cgc.94@gmail.com',
     subject: 'Paso 2 — Archivos compartidos',
     time: '08:50',
     body: `
@@ -122,7 +122,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'soporte@ghost-writer.es',
+    from: 'sara.cgc.94@gmail.com',
     subject: 'Paso 3 — FocusWriter',
     time: '08:20',
     body: `
@@ -160,7 +160,7 @@ export const EMAILS = [
     `
   },
   {
-    from: 'soporte@ghost-writer.es',
+    from: 'sara.cgc.94@gmail.com',
     subject: 'Extra - Configuración',
     time: '08:20',
     body: `

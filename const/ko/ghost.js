@@ -1,23 +1,23 @@
 export const GHOST = {
     "0": {
         "palabrasDisponibles": [
-            "supermercado",
-            "carrito",
-            "gps",
-            "ofertas",
-            "cliente"
+            "슈퍼마켓",
+            "카트",
+            "GPS",
+            "할인",
+            "고객"
         ],
         "textos": [
-            "Según la cadena, el supermercado equipará cada carrito con gps para medir rutas y tiempos, según documentos técnicos revisados. Tranquilos: el dato se anonimiza y no vincula ubicación con pagos, pero si su carrito se pierde entre lácteos, el gps sabrá volver.",
-            "¡Carrito con gps arrasa pasillos y huele ofertas desde tres pasillos de distancia! Testigos dicen que el carrito vibra cuando detecta ofertas, y que quien lo suelta… ¡pierde su sitio en la cola!",
-            "Revisamos el contrato del supermercado y comprobamos que el gps solo recoge trayectos, pero no asocia compras a ningún cliente. Aun así, expertos en privacidad piden auditoría externa y un botón físico de apagado.",
-            "El supermercado anuncia que las ofertas ya no perseguirán al cliente: ahora lo adoptarán legalmente y le llevarán el desayuno. En el nuevo programa, cada cliente recibe una carta de amor semanal escrita por las ofertas en papel de cupones.",
-            "Esta modernización del supermercado, con carrito inteligente al servicio de cada cliente, se alinea con el Plan Nacional de Innovación Cotidiana. La medida dinamiza la economía del pasillo 5 y fortalece la confianza del cliente en la cesta patriótica.",
-            "Afirmación viral: \"el gps sube los precios y esconde ofertas del cliente\". Veredicto: Falso — los datos analizados muestran que el gps no modifica precios y las ofertas siguen visibles; confunde correlación con cansancio del cliente tras tres vueltas al pasillo.",
-            "En nuestro supermercado, el carrito redefine la experiencia y acerca ofertas personalizadas en tiempo real. Este avance incrementa la eficiencia de surtido y eleva la satisfacción: más ofertas, menos vueltas, más sonrisas de accionista.",
-            "En la tienda del barrio, Doña Puri probó el carrito y asegura que le encantan las ofertas cuando el cliente pasa por la panadería. \"Si además me avisa del medio kilo de tomates que siempre olvido, le doy propina\", dijo el cliente de la mesa de dominó.",
-            "Por fin un supermercado que usa gps para democratizar las ofertas, no para controlar a la ciudadanía… salvo que gobiernen 'ellos'. Nuestra línea es clara: más gps para que las ofertas lleguen a todos los bolsillos, menos pasillos privatizados.",
-            "Filtramos el mapa interno: cada carrito con gps dibuja coreografías absurdas que delatan hábitos del cliente —el capitalismo también sabe tus atajos hacia el chocolate. Recomendación subversiva: cambia el ritmo, baila en zigzag, rompe la huella del cliente."
+            "체인점에 따르면, 슈퍼마켓은 각 카트에 GPS를 장착해 이동 경로와 시간을 측정할 예정이라고 합니다. 기술 문서에 따르면 데이터는 익명화되며 결제와 위치 정보는 연결되지 않습니다. 하지만 카트가 유제품 코너에서 길을 잃더라도 GPS가 다시 돌아오게 합니다.",
+            "GPS가 장착된 카트가 통로를 질주하며 세 통로 밖의 할인도嗅ぎつけます! 목격자들은 카트가 할인을 감지하면 진동하고, 손을 놓은 사람은… 줄에서 자리를 잃는다고 말합니다!",
+            "슈퍼마켓 계약서를 검토한 결과, GPS는 이동 경로만 수집하며 구매 내역을 고객과 연결하지 않는다는 것을 확인했습니다. 그럼에도 불구하고 개인정보 보호 전문가들은 외부 감사와 물리적 전원 끄기 버튼을 요구합니다.",
+            "슈퍼마켓은 이제 할인 행사가 고객을 쫓아다니지 않고, 합법적으로 고객을 '입양'하여 아침 식사를 가져다줄 것이라고 발표했습니다. 새로운 프로그램에서는 각 고객이 매주 쿠폰 용지에 적힌 할인 행사로부터의 연애 편지를 받게 됩니다.",
+            "이 슈퍼마켓의 현대화는 각 고객을 위한 스마트 카트를 도입하여 일상 혁신 국가 계획과 일치합니다. 이 조치는 5번 통로의 경제를 활성화하고, 애국적 장바구니에 대한 고객의 신뢰를 강화합니다.",
+            "바이럴 주장: \"GPS가 가격을 올리고 고객에게서 할인을 숨긴다.\" 판정: 거짓 — 분석된 데이터는 GPS가 가격을 변경하지 않으며 할인이 그대로 보이는 것을 보여줍니다. 이는 고객이 세 바퀴를 돌고 난 뒤의 피로와 상관관계를 혼동한 것입니다.",
+            "우리 슈퍼마켓에서는 카트가 경험을 재정의하고, 실시간으로 개인 맞춤형 할인을 제공합니다. 이 진보는 상품 구색의 효율성을 높이고 만족도를 향상시킵니다: 더 많은 할인, 더 적은 회전, 더 많은 주주의 미소.",
+            "동네 가게에서 두냐 푸리는 카트를 시험해보고, 고객이 빵집을 지나갈 때의 할인이 마음에 든다고 말했습니다. \"게다가 내가 항상 잊어버리는 토마토 500g을 알려준다면 팁을 줄 거야\"라고 도미노 테이블의 고객이 말했습니다.",
+            "마침내 시민을 통제하기 위해서가 아니라, 할인을 민주화하기 위해 GPS를 사용하는 슈퍼마켓이 등장했습니다… 다만 ‘그들’이 지배하지 않는 한. 우리의 방침은 분명합니다: 더 많은 GPS로 모든 지갑에 할인을 전달하고, 사유화된 통로는 줄입니다.",
+            "내부 지도를 유출했습니다: GPS가 장착된 각 카트는 고객의 습관을 드러내는 우스꽝스러운 동선을 그립니다 — 자본주의는 당신의 초콜릿 지름길도 알고 있습니다. 전복적 권고: 리듬을 바꾸고, 지그재그로 춤추며, 고객의 흔적을 깨뜨리세요."
         ],
         "Puntuacion": [
             "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
@@ -34,23 +34,23 @@ export const GHOST = {
     },
     "1": {
         "palabrasDisponibles": [
-            "mujer",
-            "casa",
-            "cerradura",
-            "inteligente",
-            "rostro"
+            "여성",
+            "집",
+            "자물쇠",
+            "스마트",
+            "얼굴"
         ],
         "textos": [
-            "Fuentes técnicas confirman que la cerradura no respondió y la mujer permaneció en su casa hasta la llegada del servicio. Manuales recomiendan un código de respaldo y revisar baterías trimestralmente.",
-            "¡Drama en barrio tranquilo! Una mujer quedó atrapada en su casa cuando la supuesta inteligente decidió hacerse la lista. Vecinos dicen que solo abrió para el repartidor de memes.",
-            "La mujer denuncia que el algoritmo no aceptó su rostro y la mantuvo en la casa sin opciones de emergencia. Piden auditoría del modelo y botón físico accesible.",
-            "La cerradura se declaró demasiado inteligente para mañanas con ojeras y dejó a la mujer ensayando “small talk” con el telefonillo. Nuevo parche promete halagos automáticos y un “perdón, estaba pensando”.",
-            "Las autoridades informan que la cerradura rechazó el rostro de la mujer por parámetros de seguridad y ya se brindó asistencia. El plan Hogar Seguro refuerza líneas de ayuda y kits de llaves físicas.",
-            "Se viraliza que la mujer fue “baneada” por la inteligente por no maquillar el rostro: Falso. El bloqueo se debió a baja iluminación y mala alineación, según registros.",
-            "En su casa, la nueva cerradura inteligente priorizó la protección y activó un modo seguro temporal. Lanzamos actualización con acceso de emergencia y soporte 24/7.",
-            "En la casa de la esquina, la cerradura se confundió con el rostro bajo la luz del pasillo; el portero abrió con la maestra. Hubo bizcochos para el susto.",
-            "Cuando tu casa depende de una inteligente que evalúa tu rostro, el control ya no es tuyo. Exigimos tecnología abierta y llaves que funcionen sin nube.",
-            "Manual irreverente: si la cerradura inteligente niega tu rostro, apaga el Wi-Fi, llama a un cerrajero ético y documenta el fallo. Recuerda: tu puerta no es SaaS."
+            "기술적 출처에 따르면 자물쇠가 반응하지 않아 여성이 서비스가 도착할 때까지 집에 머물렀다고 합니다. 매뉴얼은 백업 코드 사용과 분기별 배터리 점검을 권장합니다.",
+            "조용한 동네에서 드라마 발생! 한 여성이 이른바 스마트 장치가 제멋대로 행동하면서 집에 갇혔습니다. 이웃들은 그것이 밈 배달원에게만 열렸다고 전했습니다.",
+            "여성은 알고리즘이 자신의 얼굴을 인식하지 못해 집에 긴급 수단 없이 갇혔다고 고발했습니다. 전문가들은 모델의 외부 감사와 물리적 긴급 버튼을 요구합니다.",
+            "자물쇠는 다크서클 있는 아침에는 자신이 너무 똑똑하다며 여성을 인터폰으로 ‘스몰 토크’를 연습하게 했습니다. 새로운 패치는 자동 칭찬과 ‘미안, 생각 중이었어’를 약속합니다.",
+            "당국은 자물쇠가 보안상의 이유로 여성의 얼굴을 거부했으며 이미 지원이 제공되었다고 발표했습니다. ‘안전한 집’ 계획은 지원 라인과 물리적 열쇠 키트를 강화합니다.",
+            "소문: 여성이 화장을 하지 않았기 때문에 스마트 장치에 의해 ‘차단’되었다. 판정: 거짓 — 기록에 따르면 차단은 조명 부족과 잘못된 정렬 때문이었습니다.",
+            "집에서 새 스마트 자물쇠는 보호를 우선시하고 일시적인 안전 모드를 활성화했습니다. 우리는 긴급 접근과 24시간 지원이 포함된 업데이트를 배포합니다.",
+            "모퉁이 집에서 자물쇠가 복도 조명 아래서 얼굴을 혼동했고, 관리인이 교사와 함께 열었습니다. 놀란 뒤에는 빵이 제공되었습니다.",
+            "당신의 집이 얼굴을 평가하는 스마트 장치에 의존한다면, 통제권은 더 이상 당신의 것이 아닙니다. 우리는 오픈 기술과 클라우드 없이 작동하는 열쇠를 요구합니다.",
+            "불손한 매뉴얼: 스마트 자물쇠가 얼굴을 거부하면, Wi-Fi를 끄고 윤리적인 자물쇠 수리공을 부르며 오류를 기록하세요. 잊지 마세요: 당신의 문은 SaaS가 아닙니다."
         ],
         "Puntuacion": [
             "1, 4, 7, 10, 3, 6, 9, 2, 5, 8",
@@ -67,23 +67,23 @@ export const GHOST = {
     },
     "2": {
         "palabrasDisponibles": [
-            "famosos",
-            "contratando",
-            "clones",
-            "obsesión",
+            "유명인",
+            "계약",
+            "클론",
+            "집착",
             "VIP"
         ],
         "textos": [
-            "Documentos y agentes confirman que los famosos están contratando clones de IA para entrevistas remotas y dobles de riesgo. Los representantes añaden controles de identidad y supervisión humana.",
-            "¡Alfombra roja en shock! Están contratando clones de IA a toda hora y la obsesión ya exige camerino con neones y perfume digital.",
-            "Revisamos contratos y detectamos agencias contratando clones de IA para ruedas de prensa y alfombras VIP. Ventaja: nunca se despeinan; riesgo: tampoco repreguntan.",
-            "Los famosos presentan a sus clones de IA y la obsesión firma autógrafos por turnos. El original descansa la muñeca; el clon pide vacaciones en la nube.",
-            "En actos VIP, los famosos emplearán clones de IA con protocolos homologados. La medida ordena agendas y refuerza la imagen país.",
-            "La obsesión VIP obliga a los famosos a usar gemelos digitales por decreto. No existe tal norma; son acuerdos privados y demos de marketing.",
-            "Marcas con famosos están contratando gemelos de IA para ampliar presencia sin caer en la obsesión por la ubicuidad. Indicador: menos vuelos, más entrevistas cumplidas.",
-            "En las fiestas, la organización está contratando clones de IA para la fila VIP de selfies. Nadie se coló, pero el clon preguntó dónde servían el pincho de tortilla \"en la nube\".",
-            "Si una élite VIP sigue contratando dobles de IA y alimentando la obsesión por multiplicarse, toca regular usos y derechos de imagen. Primero la persona, luego el avatar.",
-            "Desactiva la obsesión por los clones de IA saltándote la zona VIP y montando tu propio microshow en la acera. Si te venden \"meet & greet\" con algoritmos, exige caché para artistas de carne y hueso."
+            "문서와 관계자들에 따르면, 유명인들은 원격 인터뷰와 스턴트 대역을 위해 AI 클론을 계약하고 있습니다. 대리인들은 신원 확인과 인간 감독을 추가하고 있습니다.",
+            "레드카펫 충격! AI 클론이 하루 종일 계약되고 있으며, 집착은 이미 네온과 디지털 향수가 있는 분장실을 요구하고 있습니다.",
+            "계약을 검토한 결과, 기자회견과 VIP 레드카펫을 위해 AI 클론을 계약하는 에이전시들이 발견되었습니다. 장점: 절대 머리가 흐트러지지 않는다; 위험: 다시 질문하지 않는다.",
+            "유명인들은 자신들의 AI 클론을 선보이고, 집착은 교대로 사인을 합니다. 원본은 손목을 쉬게 하고, 클론은 클라우드에서 휴가를 요구합니다.",
+            "VIP 행사에서 유명인들은 인증된 프로토콜로 AI 클론을 사용할 것입니다. 이 조치는 일정을 정리하고 국가 이미지를 강화합니다.",
+            "VIP 집착은 유명인들이 법령에 의해 디지털 쌍둥이를 사용하도록 강요합니다. 그러나 그런 규정은 존재하지 않으며, 이는 사적 계약과 마케팅 시연일 뿐입니다.",
+            "유명인과 함께하는 브랜드들은 편재에 대한 집착에 빠지지 않고 존재감을 확대하기 위해 AI 쌍둥이를 계약하고 있습니다. 지표: 비행은 줄고, 인터뷰는 늘었습니다.",
+            "파티에서 주최 측은 VIP 셀카 줄을 위해 AI 클론을 계약하고 있습니다. 아무도 새치기를 하지 않았지만, 클론은 ‘토르티야 꼬치가 클라우드 어디에서 나오는 거죠?’라고 물었습니다.",
+            "만약 VIP 엘리트가 AI 대역을 계속 계약하고 자신들의 증식을 향한 집착을 키운다면, 사용법과 초상권을 규제해야 합니다. 먼저 사람, 그다음 아바타.",
+            "AI 클론에 대한 집착을 끄려면 VIP 구역을 건너뛰고 인도에서 자신만의 마이크로쇼를 여세요. ‘알고리즘과의 만남’을 판다면, 반드시 실제 아티스트에게 출연료를 요구하세요."
         ],
         "Puntuacion": [
             "1, 8, 5, 2, 9, 6, 3, 10, 7, 4",
@@ -100,23 +100,23 @@ export const GHOST = {
     },
     "3": {
         "palabrasDisponibles": [
-            "mercado",
-            "vivienda",
-            "hipoteca",
-            "pareja",
-            "económica"
+            "시장",
+            "주택",
+            "주택담보대출",
+            "커플",
+            "경제적"
         ],
         "textos": [
-            "Documentación del piloto: el mercado ensaya reparto de estancias por franjas en una vivienda con una sola hipoteca solidaria. En caso de ruptura, hay tanteo interno y venta asistida con peritaje.",
-            "¡Custodia del sofá en directo! Una vivienda, una hipoteca y cada pareja disputando el viernes por la noche. Si hay divorcio, el felpudo declara estado de emergencia.",
-            "Tras revisar contratos, el mercado promete salida económica, pero la pareja con menos ingresos queda en desventaja. Proponemos mediación obligatoria y fondo de rescate para salidas justas.",
-            "Nuevo reglamento de convivencia: la vivienda trae un semáforo para el baño, la opción económica añade peajes simbólicos en pasillo y la pareja que llegue tarde paga con croquetas. El robot aspirador mediará disputas y guardará rencor en silencio.",
-            "La iniciativa del mercado amplía acceso a vivienda en modalidad económica con manual de convivencia homologado. Ante separaciones, interviene un mediador certificado para transición ordenada.",
-            "Bulo: \"la vivienda compartida económica te ata a una hipoteca con desconocidos al azar\". Veredicto: Engañoso — se firma entre partes elegidas y hay evaluación individual de solvencia.",
-            "Nuestro esquema alinea mercado y ahorro: cuota económica con una hipoteca flexible y reglas de uso transparentes. En caso de ruptura, activamos recompra interna y recolocación sin recargo.",
-            "En el bloque de al lado, el mercado trajo un piloto: una vivienda con calendario de cocina y cada pareja turnándose la terraza. Cuando hubo ruptura, el grupo del portal organizó intercambio de habitaciones sin dramas.",
-            "Sin control público, la opción económica con una hipoteca compartida deja a cualquier pareja negociando desde la debilidad. Reclamamos cláusulas de salida sin penalización y parque público de alquiler.",
-            "Manual de trinchera: que el mercado no dicte quién duerme dónde; si hay una hipoteca común, que cada pareja firme protocolo de paz y reparto real de espacios. Si hay divorcio, asamblea en la azotea antes que el notario."
+            "파일럿 문서에 따르면, 시장은 단일 공동 주택담보대출을 가진 주택에서 거주 시간을 구간별로 나누는 실험을 진행하고 있습니다. 파탄 시에는 내부 우선권과 감정평가가 포함된 보조 판매가 있습니다.",
+            "소파 양육권 분쟁 생중계! 한 채의 주택, 한 개의 주택담보대출, 그리고 매주 금요일 밤 다투는 커플들. 이혼 시에는 현관 매트가 비상사태를 선언합니다.",
+            "계약을 검토한 결과, 시장은 경제적 출구를 약속했지만, 소득이 적은 커플은 불리한 입장에 놓였습니다. 의무적 조정과 공정한 출구를 위한 구제 기금을 제안합니다.",
+            "새로운 공동생활 규칙: 주택에는 욕실 신호등이 설치되고, 경제적 옵션에는 복도에 상징적인 통행료가 추가됩니다. 늦게 도착한 커플은 크로켓으로 지불해야 합니다. 로봇 청소기가 분쟁을 중재하고 조용히 원한을 품습니다.",
+            "시장의 이니셔티브는 인증된 공동생활 매뉴얼과 함께 경제적 형태의 주택 접근을 확대합니다. 별거 시에는 공인 중재자가 개입하여 질서 있는 전환을 돕습니다.",
+            "유언비어: \"경제적 공동 주택은 무작위의 낯선 사람들과 주택담보대출을 묶는다.\" 판정: 기만적 — 선택된 당사자 간에 계약되며 개별적인 신용 평가가 있습니다.",
+            "우리의 구조는 시장과 저축을 조율합니다: 유연한 주택담보대출과 투명한 사용 규칙을 갖춘 경제적 할부금. 파탄 시에는 내부 재매입과 추가 비용 없는 재배치를 실행합니다.",
+            "옆 블록에서 시장은 파일럿을 도입했습니다: 부엌 달력과 테라스를 번갈아 사용하는 커플이 있는 주택. 파탄이 발생했을 때, 입주민 모임이 방 교환을 드라마 없이 조직했습니다.",
+            "공적 통제가 없을 경우, 공동 주택담보대출이 포함된 경제적 옵션은 어떤 커플도 불리한 위치에서 협상하게 만듭니다. 우리는 위약금 없는 출구 조항과 공공 임대 주택 단지를 요구합니다.",
+            "참호 매뉴얼: 시장이 ‘누가 어디서 잘지’를 결정하게 해서는 안 됩니다. 공동 주택담보대출이 있다면, 각 커플은 평화 프로토콜과 실제 공간 분배에 서명해야 합니다. 이혼 시에는 공증인보다 옥상 회의가 먼저입니다."
         ],
         "Puntuacion": [
             "1, 3, 7, 6, 5, 8, 4, 9, 2, 10",
@@ -133,23 +133,23 @@ export const GHOST = {
     },
     "4": {
         "palabrasDisponibles": [
-            "Desplome",
-            "Apuestas",
-            "Arquímedes",
-            "Pi",
-            "Decimal"
+            "폭락",
+            "도박",
+            "아르키메데스",
+            "원주율",
+            "소수"
         ],
         "textos": [
-            "El desplome en casas de apuestas se atribuye a una racha del club Arquímedes FC: jornada tras jornada, el marcador coincide con la siguiente cifra de la famosa constante. Reguladores analizan cierres temporales y límites, mientras matemáticos recuerdan que la suerte no firma contratos.",
-            "¡Locura total! Las apuestas revientan porque Arquímedes FC encadena goles que clavan el siguiente decimal una y otra vez. La grada pide calculadora y las casas piden agua bendita.",
-            "Rastreando el desplome vemos secuencias donde el “siguiente decimal” se cumple en partidos consecutivos, alineados con pi sin explicación operativa. Publicar datos brutos y activar auditorías externas sería el primer paso.",
-            "Tras el desplome, Arquímedes FC ficha a un matemático para lanzar córners en círculo y rezar a pi antes del minuto 3:14. Si falla, prometen cambiar el balón por una rosquilla.",
-            "Las autoridades informan que, pese a las apuestas ganadas, Arquímedes FC compite con plena integridad y no consulta pi en vestuarios. Se refuerza la supervisión sin afectar el espectáculo.",
-            "Afirmación viral: “el desplome se debe a un script que filtra el próximo decimal y revienta las apuestas”. Veredicto: Sin pruebas — hay racha de aciertos, pero no evidencias técnicas del supuesto filtrado.",
-            "Nuestra plataforma ajusta límites en apuestas cuando la probabilidad del siguiente decimal respecto a pi se dispara por rachas extraordinarias. Objetivo: proteger liquidez y experiencia sin cerrar mercados.",
-            "En el bar, el desplome llegó cuando el primo de la peña dijo: “las apuestas al 9, que lo pide pi”, y encadenaron tres aciertos. Doña Puri guarda la servilleta con la secuencia por si cuela otra vez.",
-            "Si la fiebre por Arquímedes FC se alimenta de acertar el siguiente decimal, toca proteger al pequeño jugador ante el desplome de cuotas. Transparencia, límites a la ludificación y educación financiera en la grada.",
-            "Manifiesto de grada: cuando Arquímedes FC clava otro decimal de pi, apagamos la app y tocamos bombos. Si mandan los números, la fiesta se muda a la pista del barrio."
+            "도박장에서의 폭락은 아르키메데스 FC의 연승에 기인한다고 합니다. 경기마다 점수가 유명한 상수의 다음 숫자와 일치했습니다. 규제 당국은 일시적 폐쇄와 제한을 검토 중이며, 수학자들은 ‘운은 계약에 서명하지 않는다’고 상기시킵니다.",
+            "완전한 광란! 아르키메데스 FC가 다음 소수를 정확히 맞히는 골을 연이어 넣자 도박장은 폭발했습니다. 관중은 계산기를 요구하고, 도박장은 성수를 요구했습니다.",
+            "폭락을 추적한 결과, ‘다음 소수’가 연속 경기에서 실현되어 원주율과 일치하지만, 운영상의 설명은 없습니다. 첫 단계로 원시 데이터 공개와 외부 감사 실시가 필요합니다.",
+            "폭락 이후 아르키메데스 FC는 수학자를 영입해 원을 그리며 코너킥을 차고 3분14초 전에 원주율에 기도하게 했습니다. 실패하면 공을 도넛으로 바꾸겠다고 약속했습니다.",
+            "당국은 도박에서 승리했음에도 아르키메데스 FC가 완전한 정직성으로 경기하며, 라커룸에서 원주율을 참고하지 않았다고 보고했습니다. 감독은 강화되지만 경기 자체에는 영향을 주지 않습니다.",
+            "바이럴 주장: ‘폭락은 다음 소수를 걸러내는 스크립트 때문에 도박장이 무너졌다.’ 판정: 증거 없음 — 적중 행렬은 있었지만, 해당 필터링의 기술적 증거는 없습니다.",
+            "우리 플랫폼은 원주율에 따른 다음 소수의 확률이 비정상적으로 치솟을 때 도박 한도를 조정합니다. 목적: 시장을 닫지 않고 유동성과 경험을 보호하는 것.",
+            "술집에서 폭락은 동호회의 사촌이 ‘9에 걸어라, 원주율이 그렇게 말한다’라고 했을 때 일어났고, 세 번 연속 적중했습니다. 도냐 푸리는 그 수열을 냅킨에 적어 혹시 또 통할까 보관하고 있습니다.",
+            "아르키메데스 FC 열기가 ‘다음 소수’를 맞히는 것에서 비롯된다면, 배당 폭락 앞에 놓인 소액 도박꾼을 보호해야 합니다. 투명성, 과도한 게임화 제한, 그리고 관중 대상 금융 교육이 필요합니다.",
+            "관중 선언문: 아르키메데스 FC가 원주율의 또 다른 소수를 맞힐 때마다 우리는 앱을 끄고 북을 칩니다. 숫자가 지배한다면 축제는 동네 광장으로 옮겨집니다."
         ],
         "Puntuacion": [
             "1, 3, 6, 9, 2, 5, 8, 10, 4, 7",
@@ -167,23 +167,23 @@ export const GHOST = {
     },
     "5": {
         "palabrasDisponibles": [
-            "parche",
-            "videojuego",
+            "패치",
+            "비디오게임",
             "GhostWriter",
-            "jerga",
-            "boomers"
+            "은어",
+            "부머"
         ],
         "textos": [
-            "El parche del videojuego GhostWriter añade ayudas de comprensión y un glosario básico para decisiones clave. Se activa en accesibilidad y no altera finales ni rutas narrativas.",
-            "¡Última hora! Un parche del videojuego rescata a boomers con pistas tamaño pancarta y flechas que dicen “pulsa aquí”. Prometen menos “¿y esto de qué va?” y más “¡dale al capítulo 2!”.",
-            "Auditamos el parche de GhostWriter: el modo jerga es opcional, no graba voice y muestra definiciones en árbol de diálogo. Pedimos publicar el diccionario y sus licencias.",
-            "GhostWriter estrena jerga para boomers y traduce “lore” como “cotilleo bien escrito”. Próxima actualización: el narrador enviará audios de dos minutos explicando cada cliffhanger.",
-            "El parche de GhostWriter mejora el acceso para boomers con resúmenes por escena. La medida se alinea con los planes de alfabetización digital y participación cultural.",
-            "Afirmación: el videojuego GhostWriter escucha al salón para aprender jerga. Veredicto: Falso; usa un diccionario local y no comparte datos.",
-            "Con el parche, el videojuego explica jerga en elecciones ramificadas y notas del narrador. Resultado: más finales vistos y menos abandono en el prólogo.",
-            "En el centro cívico, el videojuego traduce jerga a boomers con ejemplos del barrio: “railroad” pasa a “el narrador se puso mandón”. Café, galletas y debate sobre el final “del director”.",
-            "Si un parche fija jerga para boomers, que sea configurable y apagable. Libertad de elección y modo clásico para quien no quiera ruedines.",
-            "En el fanzine del barrio, el videojuego GhostWriter se juega con boomers y abuelos punk leyendo en voice alta. Regla de la casa: menos tutorial y más caos narrativo."
+            "비디오게임 GhostWriter의 패치는 이해를 돕는 기능과 주요 선택을 위한 기본 용어집을 추가합니다. 접근성에서 활성화할 수 있으며, 결말이나 스토리 경로에는 영향을 주지 않습니다.",
+            "속보! 비디오게임 패치가 부머들을 구출, 현수막 크기의 힌트와 '여기를 눌러라'라는 화살표가 등장합니다. 약속: '이게 뭐야?'는 줄어들고 '챕터 2 가자!'는 늘어납니다.",
+            "GhostWriter의 패치를 감사한 결과: 은어 모드는 선택 사항이며, 음성을 기록하지 않고 대화 트리에서 정의를 표시합니다. 우리는 사전과 그 라이선스 공개를 요구합니다.",
+            "GhostWriter는 부머들을 위해 새로운 은어를 도입하고 'lore'를 '잘 쓰인 가십'으로 번역합니다. 다음 업데이트: 내레이터가 각 클리프행어를 2분짜리 오디오로 설명할 예정입니다.",
+            "GhostWriter의 패치는 장면별 요약으로 부머들의 접근성을 향상시킵니다. 이 조치는 디지털 문해력 및 문화 참여 계획과 일치합니다.",
+            "주장: 비디오게임 GhostWriter는 은어를 배우기 위해 거실을 도청한다. 판정: 거짓; 로컬 사전을 사용하며 데이터를 공유하지 않습니다.",
+            "이 패치로 비디오게임은 분기 선택과 내레이터의 주석에서 은어를 설명합니다. 결과: 더 많은 결말이 확인되고, 프롤로그에서의 이탈은 줄었습니다.",
+            "시민 센터에서 비디오게임은 동네 예시로 부머들에게 은어를 번역합니다: 'railroad'는 '내레이터가 강압적으로 변했다'가 됩니다. 커피, 과자, 그리고 '감독판' 결말에 대한 토론이 이어졌습니다.",
+            "부머용 은어를 고정하는 패치가 있다면, 설정 가능하고 꺼질 수 있어야 합니다. 선택의 자유와 보조 바퀴 없는 클래식 모드를 원한다면 그렇게 할 수 있습니다.",
+            "동네 팬진에서는 비디오게임 GhostWriter를 부머들과 펑크 할아버지들이 큰 소리로 읽으며 플레이합니다. 집 규칙: 튜토리얼은 줄이고, 서사적 혼돈은 늘린다."
         ],
         "Puntuacion": [
             "1, 6, 7, 3, 5, 8, 9, 4, 2, 10",
@@ -200,7 +200,7 @@ export const GHOST = {
     }
 };
 
-export const WORDS = "Palabras seleccionadas ";
-export const TEXTS = "Texto generado para las palabras seleccionadas.";
-export const WRITE = "Escribiendo...";
-export const ERROR_NOT_READY = "Antes de escribir, he de saber el títular y la prensa que me contrató (Consultar Archivos Compartidos)";
+export const WORDS = "선택한 단어";
+export const TEXTS = "선택한 단어에 대해 생성된 텍스트입니다.";
+export const WRITE = "글쓰기...";
+export const ERROR_NOT_READY = "글을 쓰기 전에 헤드라인과 저를 고용한 언론사를 알아야 합니다(공유 파일 참조)";

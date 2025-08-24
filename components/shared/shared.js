@@ -9,13 +9,11 @@ const modal = document.getElementById("modal");
 const modalContenido = document.getElementById("modalContenido");
 const modalCerrar = document.getElementById("modalCerrar");
 
-// ----------------- Utilidades -----------------
 function formatearFecha(fecha) {
   const partes = fecha.split("-");
   return `${partes[2]}/${partes[1]}/${partes[0]}`;
 }
 
-// Ordena claves: si son numéricas ("0","1","2"...), por número; si no, respeta el orden original
 function getClavesOrdenadas(obj) {
   const claves = Object.keys(obj);
   const withIdx = claves.map((k, i) => ({
@@ -26,15 +24,13 @@ function getClavesOrdenadas(obj) {
   }));
   withIdx.sort((a, b) => {
     if (a.isNum && b.isNum) return a.n - b.n;
-    return a.i - b.i; // mantiene orden de inserción si no son numéricas
+    return a.i - b.i;
   });
   return withIdx.map(x => x.k);
 }
 
-// ----------------- Prensa fija por carpeta (solo guarda el nombre) -----------------
 function findPrensaByNombre(nombre) {
   if (!Array.isArray(PRENSA)) return null;
-  // Si hay nombres duplicados, usará la primera coincidencia.
   return PRENSA.find(p => p && p.nombre === nombre) || null;
 }
 
@@ -42,33 +38,28 @@ function getPrensaForDay() {
   const dayGame = localStorage.getItem("dayGame") ? Number(localStorage.getItem("dayGame")) : 0;
   const keyNombre = `press_${dayGame}`;
 
-  // 1) Intentar leer nombre guardado
   const nombreGuardado = localStorage.getItem(keyNombre);
   if (nombreGuardado) {
     const encontrada = findPrensaByNombre(nombreGuardado);
     if (encontrada) return encontrada;
-    // Si el catálogo cambió y ya no existe esa prensa, limpiar para regenerar
     localStorage.removeItem(keyNombre);
   }
 
-  // 2) Elegir aleatoria y guardar SOLO el nombre
   if (!Array.isArray(PRENSA) || PRENSA.length === 0) return null;
   const aleatoria = PRENSA[Math.floor(Math.random() * PRENSA.length)];
   localStorage.setItem(keyNombre, aleatoria.id);
   return aleatoria;
 }
 
-// ----------------- UI: Carpetas y Archivos -----------------
 function mostrarCarpetas() {
   contenedorCarpetas.innerHTML = "";
   contenedorCarpetas.classList.remove("hidden");
   contenedorArchivos.classList.add("hidden");
 
-  // dayGame llega desde fuera (window.dayGame = 0,1,2,...)
   const dayGame = localStorage.getItem("dayGame") ? Number(localStorage.getItem("dayGame")) : 0;
 
   const clavesOrdenadas = getClavesOrdenadas(COMPARTIR_ARCHIVOS);
-  const visibles = Math.min(dayGame + 1, clavesOrdenadas.length); // n -> n+1 visibles
+  const visibles = Math.min(dayGame + 1, clavesOrdenadas.length);
 
   for (let i = 0; i < visibles; i++) {
     const dia = clavesOrdenadas[i];
@@ -118,7 +109,6 @@ function mostrarArchivos(dia) {
 
   const archivos = COMPARTIR_ARCHIVOS[dia];
 
-  // Prensa fija por carpeta (resuelta por nombre)
   const prensa = getPrensaForDay();
   if (prensa) {
     const divPRENSA = document.createElement("div");
@@ -180,5 +170,4 @@ btnVolver.onclick = () => {
   mostrarCarpetas();
 };
 
-// ----------------- Inicializar -----------------
 mostrarCarpetas();
